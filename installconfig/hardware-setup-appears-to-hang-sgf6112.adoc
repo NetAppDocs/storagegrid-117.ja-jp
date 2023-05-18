@@ -1,0 +1,24 @@
+---
+permalink: installconfig/hardware-setup-appears-to-hang-sgf6112.html 
+sidebar: sidebar 
+keywords: storagegrid, sgf6112, sg6100, troubleshoot, troubleshooting, hardware, setup, hang, hangs, fails, failure, stop, terminate, terminates, stuck 
+summary: ハードウェア障害やケーブル接続エラーによってアプライアンスのブート処理が完了しなかった場合は、 StorageGRID アプライアンスインストーラを使用できなくなることがあります。 
+---
+= ハードウェアのセットアップがハングしたように見える（SGF6112）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ハードウェア障害やケーブル接続エラーによってアプライアンスのブート処理が完了しなかった場合は、 StorageGRID アプライアンスインストーラを使用できなくなることがあります。
+
+.手順
+. アプライアンスの LED と、 BMC に表示されるブートコードとエラーコードを確認します。
+. 問題 の解決にサポートが必要な場合は、テクニカルサポートにお問い合わせください。
+
+
+.関連情報
+* link:viewing-boot-up-codes-for-sgf6112.html["ブート時のコードの表示（SGF6112）"]
+* link:viewing-error-codes-for-sgf6112.html["エラーコードの表示（SGF6112）"]
+

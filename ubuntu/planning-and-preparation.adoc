@@ -1,0 +1,41 @@
+---
+permalink: ubuntu/planning-and-preparation.html 
+sidebar: sidebar 
+keywords: how to prepare for ubuntu or debian installation 
+summary: グリッドノードの導入および StorageGRID グリッドの設定を行う前に、手順 を完了するためのステップと要件を把握しておく必要があります。 
+---
+= インストールする前に（ Ubuntu または Debian ）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+グリッドノードの導入とStorageGRID の設定を行う前に、手順 を完了するための手順と要件を理解しておく必要があります。
+
+StorageGRID の導入手順と設定手順を実行するには、 StorageGRID システムのアーキテクチャと運用に関する十分な知識が必要です。
+
+一度に 1 つ以上のサイトを導入できますが、ストレージノードが少なくとも 3 つ必要であるという最小要件をすべてのサイトが満たしている必要があります。
+
+StorageGRID のインストールを開始する前に、次の作業を実行する必要があります
+
+* ノードごとのCPUとRAMの最小要件など、コンピューティング要件を確認します。
+* トラフィックの分離、セキュリティ、および管理性の向上のために複数のネットワークをサポートする StorageGRID の仕組みについて理解し、 StorageGRID の各ノードに接続するネットワークを決めます。
++
+StorageGRID を参照してください link:../network/index.html["ネットワークのガイドライン"]。
+
+* 各タイプのグリッドノードのストレージ要件とパフォーマンス要件を把握します。
+* 導入予定の StorageGRID ノードの数とタイプに応じて、それらをサポートできる十分なリソースを備えた一連のサーバ（物理、仮想、またはその両方）を特定します。
+* を理解します link:node-container-migration-requirements.html["ノード移行の要件"]（サービスを中断せずに物理ホストで定期的なメンテナンスを実行する場合）。
+* すべてのネットワーク情報を事前に収集します。DHCPを使用している場合を除き、各グリッドノードに割り当てるIPアドレス、および使用するDNSサーバとNTPサーバのIPアドレスを収集します。
+* StorageGRID アプライアンスを含む必要なすべてのハードウェアを仕様に従って設置、接続、設定します。
++
+
+IMPORTANT: StorageGRID 環境でStorageGRID アプライアンス（ハードウェア）ストレージノードを使用しない場合は、バッテリバックアップ式書き込みキャッシュ（BBWC）を備えたハードウェアRAIDストレージを使用する必要があります。StorageGRID は、Virtual Storage Area Network（VSAN;仮想ストレージエリアネットワーク）、ソフトウェアRAID、またはRAID保護なしの使用をサポートしていません。
+
++
+
+NOTE: ハードウェア固有のインストールと統合の手順は、StorageGRID のインストール手順 には含まれていません。StorageGRID アプライアンスのインストール方法については、を参照してください link:../installconfig/index.html["アプライアンスハードウェアを設置"]。
+
+* 使用する導入ツールと設定ツールを決定します。
+

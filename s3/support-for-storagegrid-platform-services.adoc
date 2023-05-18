@@ -1,0 +1,63 @@
+---
+permalink: s3/support-for-storagegrid-platform-services.html 
+sidebar: sidebar 
+keywords: platform services, cloudmirror replication, notifications, search integration 
+summary: StorageGRID プラットフォームサービスでは、 StorageGRID のテナントアカウントでリモート S3 バケット、 Simple Notification Service （ SNS ）エンドポイント、 Elasticsearch クラスタなどの外部サービスを利用して、グリッドが提供するサービスを拡張できます。 
+---
+= StorageGRID プラットフォームサービスのサポート
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID プラットフォームサービスでは、 StorageGRID のテナントアカウントでリモート S3 バケット、 Simple Notification Service （ SNS ）エンドポイント、 Elasticsearch クラスタなどの外部サービスを利用して、グリッドが提供するサービスを拡張できます。
+
+次の表に、使用可能なプラットフォームサービスとその設定に使用する S3 API を示します。
+
+[cols="1a,2a,1a"]
+|===
+| プラットフォームサービス | 目的 | サービスの設定に使用する S3 API 
+
+
+ a| 
+CloudMirror レプリケーション
+ a| 
+ソースの StorageGRID バケットから、設定したリモートの S3 バケットにオブジェクトをレプリケートします。
+ a| 
+PUT Bucket replication（を参照 link:operations-on-buckets.html["バケットの処理"])
+
+
+
+ a| 
+通知
+ a| 
+ソースの StorageGRID バケットでのイベントに関する通知を、設定した Simple Notification Service （ SNS ）エンドポイントに送信します。
+ a| 
+PUT Bucket通知（を参照 link:operations-on-buckets.html["バケットの処理"])
+
+
+
+ a| 
+検索統合
+ a| 
+StorageGRID バケットに格納されているオブジェクトメタデータを、設定した Elasticsearch インデックスに送信します。
+ a| 
+link:put-bucket-metadata-notification-configuration-request.html["PUT Bucket metadata notification configuration のコマンドです"]
+
+* 注： * これは StorageGRID のカスタム S3 API です。
+
+|===
+グリッド管理者がテナントアカウントでプラットフォームサービスの使用を有効にするには、事前にプラットフォームサービスを使用できるようにする必要があります。を参照してください link:../admin/index.html["StorageGRID の管理"]。その後、テナント管理者が、テナントアカウントのリモートサービスを表すエンドポイントを作成する必要があります。この手順は、サービスを設定する前に実行する必要があります。を参照してください link:../tenant/index.html["テナントアカウントを使用する"]。
+
+
+
+== プラットフォームサービスの使用に関する推奨事項
+
+プラットフォームサービスを使用する前に、次の推奨事項を確認してください。
+
+* CloudMirror のレプリケーション、通知、検索統合を必要とする S3 要求ではアクティブなテナントが 100 個を超えないようにすることを推奨します。アクティブなテナントが 100 を超えると、 S3 クライアントのパフォーマンスが低下する可能性があります。
+* StorageGRID システムのS3バケットで、バージョン管理とCloudMirrorレプリケーションの両方が有効になっている場合は、デスティネーションエンドポイントでもS3バケットのバージョン管理を有効にすることを推奨します。これにより、 CloudMirror レプリケーションでエンドポイントに同様のオブジェクトバージョンを生成できます。
+* ソースバケットで S3 オブジェクトのロックが有効になっている場合、 CloudMirror レプリケーションはサポートされません。
+* デスティネーションバケットでレガシー準拠が有効になっていると、 CloudMirror レプリケーションは AccessDenied エラーで失敗します。
+

@@ -1,0 +1,25 @@
+---
+permalink: upgrade/changes-to-tenant-management-api.html 
+sidebar: sidebar 
+keywords: tenant management api, api, api version, swagger, rest api 
+summary: StorageGRID 11.7では、バージョン3のテナント管理APIが使用されます。バージョン 3 はバージョン 2 に代わるものですが、バージョン 1 とバージョン 2 も引き続きサポートされます。 
+---
+= テナント管理 API に変更が加えられました
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID 11.7では、バージョン3のテナント管理APIが使用されます。バージョン 3 はバージョン 2 に代わるものですが、バージョン 1 とバージョン 2 も引き続きサポートされます。
+
+
+IMPORTANT: バージョン1およびバージョン2の管理APIはStorageGRID 11.7で引き続き使用できますが、これらのバージョンのAPIのサポートはStorageGRID の今後のリリースで削除される予定です。StorageGRID 11.7にアップグレードしたあと、を使用して廃止されたv1およびv2 APIを非アクティブ化できます `PUT /grid/config/management` API
+
+
+
+== グリッドフェデレーションの新しいエンドポイント
+
+grid-federation-connections * APIエンドポイントを使用すると、現在のテナントのグリッドフェデレーション接続をリストし、現在のテナントと選択したグリッドフェデレーション接続に関する最後のグリッド間レプリケーションエラーをクリアできます。
+
+詳細については、を参照してください link:../tenant/understanding-tenant-management-api.html["テナント管理 API について理解する"]。

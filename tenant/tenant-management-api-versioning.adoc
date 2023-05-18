@@ -1,0 +1,79 @@
+---
+permalink: tenant/tenant-management-api-versioning.html 
+sidebar: sidebar 
+keywords: tenant management api version 
+summary: テナント管理 API では、バージョン管理機能を使用して無停止アップグレードがサポートされます。 
+---
+= テナント管理 API のバージョン管理
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+テナント管理 API では、バージョン管理機能を使用して無停止アップグレードがサポートされます。
+
+たとえば、次の要求 URL ではバージョン 3 の API が指定されています。
+
+`https://_hostname_or_ip_address_/api/v3/authorize`
+
+テナント管理APIのメジャーバージョンは、古いバージョンとの互換性がない_変更を行うと更新されます。テナント管理APIのマイナーバージョンは、_が古いバージョンと互換性がある_に変更されると更新されます。互換性のある変更には、新しいエンドポイントやプロパティの追加などがあります。次の例は、変更のタイプに基づいて API バージョンがどのように更新されるかを示しています。
+
+[cols="2a,1a,1a"]
+|===
+| API に対する変更のタイプ | 古いバージョン | 新しいバージョン 
+
+
+ a| 
+旧バージョンと互換性があります
+ a| 
+2.1
+ a| 
+2.2.
+
+
+
+ a| 
+旧バージョンとの互換性がありません
+ a| 
+2.1
+ a| 
+3.0
+
+|===
+StorageGRID ソフトウェアを初めてインストールした場合は、最新バージョンのテナント管理 API のみが有効になります。ただし、 StorageGRID を新しい機能リリースにアップグレードした場合、少なくとも StorageGRID の機能リリース 1 つ分の間は、古い API バージョンにも引き続きアクセスできます。
+
+古い要求は、次の方法で廃止とマークされます。
+
+* 応答ヘッダーが「 Deprecated ： true 」となる。
+* JSON 応答の本文に「 deprecated ： true 」が追加される
+
+
+
+
+== 現在のリリースでサポートされている API のバージョンを確認します
+
+サポートされている API のメジャーバージョンのリストを返すには、次の API 要求を使用します。
+
+[listing]
+----
+GET https://{{IP-Address}}/api/versions
+{
+  "responseTime": "2019-01-10T20:41:00.845Z",
+  "status": "success",
+  "apiVersion": "3.0",
+  "data": [
+    2,
+    3
+  ]
+}
+----
+
+
+== 要求する API バージョンを指定してください
+
+パスパラメータを使用してAPIバージョンを指定できます (`/api/v3`）またはヘッダー (`Api-Version: 3`）。両方の値を指定した場合は、ヘッダー値がパス値よりも優先されます。
+
+`curl \https://<IP-Address>/api/v3/grid/accounts`
+
+`curl -H "Api-Version: 3" \https://<IP-Address>/api/grid/accounts`

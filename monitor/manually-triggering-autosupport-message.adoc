@@ -1,0 +1,31 @@
+---
+permalink: monitor/manually-triggering-autosupport-message.html 
+sidebar: sidebar 
+keywords: autosupport, triggering autosupport, manually triggering autosupport, autosupport triggers 
+summary: テクニカルサポートによる StorageGRID システムの問題のトラブルシューティングを支援するために、 AutoSupport メッセージの送信を手動でトリガーできます。 
+---
+= AutoSupport メッセージを手動でトリガーする
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+テクニカルサポートによる StorageGRID システムの問題のトラブルシューティングを支援するために、 AutoSupport メッセージの送信を手動でトリガーできます。
+
+.作業を開始する前に
+* を使用して Grid Manager にサインインする必要があります link:../admin/web-browser-requirements.html["サポートされている Web ブラウザ"]。
+* Root Access権限またはその他のグリッド設定権限が必要です。
+
+
+.手順
+. [ * support * > * Tools * > * AutoSupport * ] を選択します。
+. [設定]タブで、*[ユーザートリガーAutoSupport の送信]*を選択します。
++
+StorageGRID は、テクニカルサポートに AutoSupport メッセージを送信しようとします。試行に成功した場合は、 [ 結果（ Results ） ] タブの [ 最新結果（ Recent Result ） ] * 値と [ 前回成功した時間（ Last Successful Time ） ] * 値が更新されます。問題がある場合、「最新の結果 * 」の値が「失敗」に更新され、 StorageGRID は AutoSupport メッセージの送信を再試行しません。
+
++
+
+NOTE: ユーザトリガー型 AutoSupport メッセージを送信したあと、 1 分後にブラウザの AutoSupport ページを更新して最新の結果にアクセスします。
+
+

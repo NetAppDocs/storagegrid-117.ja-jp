@@ -1,0 +1,374 @@
+---
+permalink: installconfig/viewing-error-codes-for-sgf6112.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100, sgf6112, error codes, bmc 
+summary: アプライアンスのブート時にハードウェアエラーが発生すると、 BMC にエラーコードが記録されます。必要に応じて BMC インターフェイスを使用してこれらのエラーコードを確認し、テクニカルサポートと協力して問題 を解決できます。 
+---
+= エラーコードの表示（SGF6112）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アプライアンスのブート時にハードウェアエラーが発生すると、 BMC にエラーコードが記録されます。必要に応じて BMC インターフェイスを使用してこれらのエラーコードを確認し、テクニカルサポートと協力して問題 を解決できます。
+
+.作業を開始する前に
+* BMC ダッシュボードへのアクセス方法を確認しておく必要があります。
+
+
+.手順
+. BMC ダッシュボードで、 * BIOS POST Code * を選択します。
+. 現在のコードと前のコードについて表示された情報を確認します。
++
+次のいずれかのエラーコードが表示された場合は、テクニカルサポートに連絡して問題 を解決してください。
+
++
+[cols="1a,3a"]
+|===
+| コード | を示します 
+
+
+ a| 
+0x0E
+ a| 
+マイクロコードが見つかりません
+
+
+
+ a| 
+0x0F
+ a| 
+マイクロコードがロードされません
+
+
+
+ a| 
+0x50
+ a| 
+メモリの初期化エラー。メモリタイプが無効か、メモリ速度に互換性がありません。
+
+
+
+ a| 
+0x51
+ a| 
+メモリの初期化エラー。SPD の読み取りに失敗しました。
+
+
+
+ a| 
+0x52
+ a| 
+メモリの初期化エラー。メモリサイズが無効か、メモリモジュールが一致しません。
+
+
+
+ a| 
+0x53
+ a| 
+メモリの初期化エラー。使用可能なメモリが検出されませんでし
+
+
+
+ a| 
+0x54
+ a| 
+不明なメモリ初期化エラー
+
+
+
+ a| 
+0x55
+ a| 
+メモリが取り付けられていません
+
+
+
+ a| 
+0x56
+ a| 
+CPU のタイプまたは速度が無効です
+
+
+
+ a| 
+0x57
+ a| 
+CPU が一致しません
+
+
+
+ a| 
+0x58
+ a| 
+CPU セルフテストに失敗したか、 CPU キャッシュエラーの可能性があります
+
+
+
+ a| 
+0x59
+ a| 
+CPU マイクロコードが見つからないか、マイクロコードの更新に失敗しました
+
+
+
+ a| 
+0x5A
+ a| 
+内部 CPU エラー
+
+
+
+ a| 
+0x5B
+ a| 
+リセット PPI が使用できません
+
+
+
+ a| 
+0x5C
+ a| 
+PEI フェーズの BMC セルフテストに失敗しました
+
+
+
+ a| 
+0xD0
+ a| 
+CPU の初期化エラー
+
+
+
+ a| 
+0xD1
+ a| 
+ノースブリッジの初期化エラー
+
+
+
+ a| 
+0xD2
+ a| 
+サウスブリッジの初期化エラー
+
+
+
+ a| 
+0xd3
+ a| 
+一部のアーキテクチャプロトコルは使用できません
+
+
+
+ a| 
+0xD4
+ a| 
+PCI リソースの割り当てエラー。リソース不足です。
+
+
+
+ a| 
+0xD5
+ a| 
+レガシーオプション ROM 用のスペースがありません
+
+
+
+ a| 
+0xD6
+ a| 
+コンソール出力デバイスが見つかりません
+
+
+
+ a| 
+0xD7
+ a| 
+コンソール入力デバイスが見つかりません
+
+
+
+ a| 
+0xD8
+ a| 
+パスワードが無効です
+
+
+
+ a| 
+0xD9
+ a| 
+ブートオプションのロードエラー（ LoadImage がエラーを返しました）
+
+
+
+ a| 
+0xda
+ a| 
+ブートオプションが失敗しました（ StartImage がエラーを返しました）。
+
+
+
+ a| 
+0xDB
+ a| 
+フラッシュの更新に失敗しました
+
+
+
+ a| 
+0xDC
+ a| 
+リセットプロトコルは使用できません
+
+
+
+ a| 
+0xDD
+ a| 
+DXE フェーズの BMC セルフテストに失敗しました
+
+
+
+ a| 
+0xE8
+ a| 
+MRC ： ERR_NO_MEMORY
+
+
+
+ a| 
+0xE9
+ a| 
+MRC ： ERR_LT_LOCK
+
+
+
+ a| 
+0xEA
+ a| 
+MRC ： ERR_DDR_INIT
+
+
+
+ a| 
+0xEB
+ a| 
+MRC ： ERR_MEM_TEST
+
+
+
+ a| 
+0xEC
+ a| 
+MRC ： ERR_VENDER_Specific
+
+
+
+ a| 
+0xED
+ a| 
+MRC ： ERR_DIMM_COMPAT
+
+
+
+ a| 
+0xEE
+ a| 
+MRC ： ERR_MRC_compatibility
+
+
+
+ a| 
+0xef
+ a| 
+MRC ： ERR_MRC_STRUCT
+
+
+
+ a| 
+0xF0
+ a| 
+MRC ： ERR_SET_VDD
+
+
+
+ a| 
+0xf1
+ a| 
+MRC ： ERR_IOT_MEM_BUFFER
+
+
+
+ a| 
+0xF2
+ a| 
+MRC ： ERR_RC_INTERNAL
+
+
+
+ a| 
+0xF3
+ a| 
+MRC ： ERR_INVALL_REG_ACCESS
+
+
+
+ a| 
+0xF4
+ a| 
+MRC ： ERR_SET_MC_Freq
+
+
+
+ a| 
+0xf5
+ a| 
+MRC ： ERR_READ_MC_Freq
+
+
+
+ a| 
+0x70
+ a| 
+MRC ： ERR_DIMM_CHANNEL
+
+
+
+ a| 
+0x74
+ a| 
+MRC ： ERR_BIST チェック
+
+
+
+ a| 
+0xF6
+ a| 
+MRC ： ERR_SMBus
+
+
+
+ a| 
+0xF7
+ a| 
+MRC ： ERR_PCU
+
+
+
+ a| 
+0xf8
+ a| 
+MRC ： ERR_NGN
+
+
+
+ a| 
+0xF9
+ a| 
+MRC ： ERR_interleave_failure
+
+|===
+

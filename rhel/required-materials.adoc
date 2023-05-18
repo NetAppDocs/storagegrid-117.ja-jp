@@ -1,0 +1,60 @@
+---
+permalink: rhel/required-materials.html 
+sidebar: sidebar 
+keywords: installation materials red hat linux 
+summary: StorageGRID をインストールする前に、必要な情報やデータ、機器を揃えておく必要があります。 
+---
+= 前提要件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID をインストールする前に、必要な情報やデータ、機器を揃えておく必要があります。
+
+[cols="1a,2a"]
+|===
+| 項目 | 注： 
+
+
+ a| 
+NetApp StorageGRID ライセンス
+ a| 
+デジタル署名された有効なネットアップライセンスが必要です。
+
+* 注： StorageGRID インストールアーカイブには、グリッドのテストとコンセプトの実証に使用できる非本番環境のライセンスが含まれています。
+
+
+
+ a| 
+StorageGRID インストールアーカイブ
+ a| 
+実行する必要があります link:downloading-and-extracting-storagegrid-installation-files.html["StorageGRID インストールアーカイブをダウンロードして、ファイルを展開します"]。
+
+
+
+ a| 
+サービスラップトップ
+ a| 
+StorageGRID システムは、サービスラップトップを介してインストールされます。
+
+サービスラップトップには次のものが必要です。
+
+* ネットワークポート
+* SSH クライアント（ PuTTY など）
+* link:../admin/web-browser-requirements.html["サポートされている Web ブラウザ"]
+
+
+
+
+ a| 
+StorageGRID のドキュメント
+ a| 
+* link:../release-notes/index.html["リリースノート"]
+* link:../admin/index.html["StorageGRID の管理手順"]
+
+
+|===
+.関連情報
+https://["NetApp Interoperability Matrix Tool で確認できます"^]

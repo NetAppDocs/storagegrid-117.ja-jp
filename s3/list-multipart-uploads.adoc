@@ -1,0 +1,32 @@
+---
+permalink: s3/list-multipart-uploads.html 
+sidebar: sidebar 
+keywords: list multipart uploads, uploads, multipart uploads, bucket 
+summary: List Multipart Uploads 処理では、バケットの進行中のマルチパートアップロードがリストされます。 
+---
+= マルチパートアップロードをリストします
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+List Multipart Uploads 処理では、バケットの進行中のマルチパートアップロードがリストされます。
+
+次の要求パラメータがサポートされています。
+
+* `encoding-type`
+* `key-marker`
+* `max-uploads`
+* `prefix`
+* `upload-id-marker`
+* `Host`
+* `Date`
+* `Authorization`
+
+
+
+
+== バージョン管理
+
+マルチパートアップロードは、アップロードの開始、アップロードのリストの表示、パートのアップロード、アップロードしたパートのアセンブル、およびアップロードの完了の個別の処理に分けられます。Complete Multipart Upload 処理が実行されると、オブジェクトが作成される時点（およびバージョン管理されている場合）になります。

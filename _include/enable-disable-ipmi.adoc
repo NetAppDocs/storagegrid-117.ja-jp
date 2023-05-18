@@ -1,0 +1,6 @@
+= 
+:allow-uri-read: 
+
+
+
+NOTE: 管理APIのプライベートエンドポイントPUT /private/bmcを使用して、BMCを含むすべてのアプライアンスに対してリモートIPMIアクセスを有効または無効にできます。

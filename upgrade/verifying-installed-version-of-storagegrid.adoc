@@ -1,0 +1,63 @@
+---
+permalink: upgrade/verifying-installed-version-of-storagegrid.html 
+sidebar: sidebar 
+keywords: storagegrid, version, current version, previous version 
+summary: アップグレードを開始する前に、利用可能な最新のホットフィックスを適用して以前のバージョンの StorageGRID が現在インストールされていることを確認する必要があります。 
+---
+= インストールされている StorageGRID のバージョンを確認します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アップグレードを開始する前に、利用可能な最新のホットフィックスを適用して以前のバージョンの StorageGRID が現在インストールされていることを確認する必要があります。
+
+.このタスクについて
+StorageGRID 11.7にアップグレードする前に、グリッドにStorageGRID 11.6がインストールされている必要があります。現在以前のバージョンのStorageGRID を使用している場合は、グリッドの現在のバージョンがStorageGRID 11.6._x.y_になるまで、以前のアップグレードファイルと最新のホットフィックス（強く推奨）をすべてインストールする必要があります。
+
+に、アップグレード可能なパスの 1 つを示します <<例：バージョン11.3.0.8からStorageGRID 11.6にアップグレードします,例>>。
+
+
+IMPORTANT: StorageGRID の各バージョンに最新のホットフィックスを適用してから次のバージョンにアップグレードすることを強く推奨します。また、インストールした新しいバージョンごとに最新のホットフィックスも適用します。場合によっては、データ損失のリスクを回避するためにホットフィックスを適用する必要があります。を参照してください https://["ネットアップのダウンロード： StorageGRID"^] 各ホットフィックスのリリースノートで詳細を確認できます。
+
+11.3.0.13+ から 11.2.0._y_in へのアップデートを 1 つの手順で実行し、 11.2.0.7+ から 11.5.0.0._y_in へのアップデートを 1 つの手順で実行できることに注意してください。を参照してください https://["ネットアップのナレッジベース：「 How to run combined Major upgrade and hotfix script for StorageGRID"^]。
+
+.手順
+. を使用して Grid Manager にサインインします link:../admin/web-browser-requirements.html["サポートされている Web ブラウザ"]。
+. Grid Manager の上部から * ヘルプ * > * バージョン情報 * を選択します。
+. Version *が11.6._x.y_であることを確認します。
++
+StorageGRID 11.6._x.y_version番号：
+
++
+** メジャーリリース*の_x_valueは0（11.6.0）です。
+** ホットフィックス*（適用されている場合）の値は_y_valueです（11.6.0.1など）。
+
+
+. * Version *が11.6._x.y_でない場合は、に進みます https://["ネットアップのダウンロード： StorageGRID"^] 各リリースの最新のホットフィックスを含めて、以前の各リリースのファイルをダウンロードします。
+. ダウンロードした各リリースのアップグレード手順を入手します。次に、そのリリースのソフトウェアアップグレード手順 を実行し、そのリリースの最新のホットフィックスを適用します（強く推奨）。
++
+を参照してください link:../maintain/storagegrid-hotfix-procedure.html["StorageGRID ホットフィックス手順"]。
+
+
+
+
+
+== 例：バージョン11.3.0.8からStorageGRID 11.6にアップグレードします
+
+次の例は、StorageGRID 11.7へのアップグレードに備えて、StorageGRID バージョン11.3.0.8からバージョン11.6にアップグレードする手順を示しています。
+
+
+IMPORTANT: 必要に応じて、手順 2 と 3 を組み合わせて（ 11.3.0.13+ から 11.4.0_y__ に更新）、手順 4 と 5 を組み合わせて（ 11.4.0.7 以降から 11.5.0_y_y _ に更新）、スクリプトを実行することもできます。を参照してください https://["ネットアップのナレッジベース：「 How to run combined Major upgrade and hotfix script for StorageGRID"^]。
+
+次の順序でソフトウェアをダウンロードしてインストールし、システムをアップグレードする準備をします。
+
+. 最新の StorageGRID 11.3.0 ._y_hotfix を適用します。
+. StorageGRID 11.4.0 メジャーリリースにアップグレードします。
+. 最新の StorageGRID 11.11.0._y_hotfix を適用します。
+. StorageGRID 11.5.0 メジャーリリースにアップグレードします。
+. 最新の StorageGRID 11.5.0_y_hotfix を適用します。
+. StorageGRID 11.6.0メジャーリリースにアップグレードします。
+. 最新のStorageGRID 11.6.0._y_hotfixを適用します。
+

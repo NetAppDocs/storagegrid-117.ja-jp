@@ -1,0 +1,28 @@
+---
+permalink: installconfig/connecting-power-cords-and-applying-power-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, gateway node, admin node, wiring, cabling, cable, Connecting, connect, power cords, power, applying power, apply power, turn on, power up, ac, ac power 
+summary: ネットワーク・ケーブルを接続したら、アプライアンスに電源を投入できます。 
+---
+= 電源コードを接続して電源を投入（ SG100 および SG1000 ）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ネットワーク・ケーブルを接続したら、アプライアンスに電源を投入できます。
+
+.手順
+. アプライアンスの 2 つ電源装置のそれぞれに電源コードを接続します。
+. これらの 2 本の電源コードを、キャビネットまたはラック内の別々の配電ユニット（ PDU ）に接続します。
+. アプライアンス前面の電源ボタンが青色に点灯していない場合は、ボタンを押してアプライアンスの電源をオンにします。
++
+電源投入プロセス中に電源ボタンを再度押さないでください。
+
+. エラーが発生した場合は、問題を修正します。
+. 前面ベゼルを取り外した場合は、アプライアンスに取り付けます。
+
+
+.関連情報
+link:viewing-status-indicators.html["ステータスインジケータを表示します"]

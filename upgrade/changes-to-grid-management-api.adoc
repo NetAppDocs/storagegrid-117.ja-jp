@@ -1,0 +1,37 @@
+---
+permalink: upgrade/changes-to-grid-management-api.html 
+sidebar: sidebar 
+keywords: grid management api, api, api version, swagger, rest api 
+summary: StorageGRID 11.7では、バージョン3のグリッド管理APIが使用されます。バージョン 3 はバージョン 2 に代わるものですが、バージョン 1 とバージョン 2 も引き続きサポートされます。 
+---
+= Grid 管理 API に対する変更
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID 11.7では、バージョン3のグリッド管理APIが使用されます。バージョン 3 はバージョン 2 に代わるものですが、バージョン 1 とバージョン 2 も引き続きサポートされます。
+
+
+IMPORTANT: バージョン1およびバージョン2の管理APIはStorageGRID 11.7で引き続き使用できますが、これらのバージョンのAPIのサポートはStorageGRID の今後のリリースで削除される予定です。StorageGRID 11.7にアップグレードしたあと、を使用して廃止されたv1およびv2 APIを非アクティブ化できます `PUT /grid/config/management` API
+
+詳細については、を参照してください link:../admin/using-grid-management-api.html["グリッド管理 API を使用します"]。
+
+
+
+== ノードヘルス要求への応答に表示名が含まれるようになりました
+
+新しいに関連しています link:../maintain/rename-grid-site-node-overview.html["グリッド、サイト、ノードの名前を手順 に変更します"]では、サイトまたはノードの名前を変更すると、項目の名前（システム名）と表示名の両方が* node-health * APIによって返されます。
+
+
+
+== 新しいS3テナント用のバケットとアクセスキーを作成できる
+
+新規 `s3Bucket` および `s3AccessKey` オプションが* accounts * APIに追加されました。グリッド管理APIを使用してS3テナントアカウントを作成する場合は、必要に応じて、そのテナント用のバケットと、テナントのrootユーザのアクセスキーIDとシークレットキーを作成できます。
+
+
+
+== ストレージノードのストレージの状態を変更できます
+
+新しい* node-storage-state * APIエンドポイントを使用して、ストレージノード内のストレージの状態（オンライン、オフライン、読み取り専用）を確認および変更できます。

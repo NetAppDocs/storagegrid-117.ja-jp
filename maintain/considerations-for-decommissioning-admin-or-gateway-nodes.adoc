@@ -1,0 +1,22 @@
+---
+permalink: maintain/considerations-for-decommissioning-admin-or-gateway-nodes.html 
+sidebar: sidebar 
+keywords: storagegrid, decommission admin node, decommission gateway node 
+summary: 管理ノードまたはゲートウェイノードの運用を停止する前に、次の考慮事項を確認してください。 
+---
+= 管理ノードまたはゲートウェイノードの運用停止に関する考慮事項
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+管理ノードまたはゲートウェイノードの運用を停止する前に、次の考慮事項を確認してください。
+
+* 運用停止手順 では、一部のシステムリソースに排他的にアクセスする必要があるため、他のメンテナンス手順が実行されていないことを確認する必要があります。
+* プライマリ管理ノードは運用停止できません。
+* いずれかのネットワークインターフェイスがハイアベイラビリティ（HA）グループに属している管理ノードまたはゲートウェイノードの運用を停止することはできません。最初に、 HA グループからネットワークインターフェイスを削除する必要があります。の手順を参照してください link:../admin/managing-high-availability-groups.html["HAグループの管理"]。
+* 必要に応じて、ゲートウェイノードまたは管理ノードの運用停止中に、安全に ILM ポリシーを変更できます。
+* シングルサインオン（ SSO ）が有効な StorageGRID システムで管理ノードの運用を停止した場合は、ノードの証明書利用者信頼を Active Directory フェデレーションサービス（ AD FS ）から削除する必要があります。
+* を使用する場合 link:../admin/grid-federation-overview.html["グリッドフェデレーション"]をクリックし、運用停止するノードのIPアドレスがグリッドフェデレーション接続に指定されていないことを確認します。
+

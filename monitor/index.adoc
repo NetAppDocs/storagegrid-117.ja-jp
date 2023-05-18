@@ -1,0 +1,24 @@
+---
+permalink: monitor/index.html 
+sidebar: sidebar 
+keywords: monitor StorageGRID 
+summary: 以下の手順に従って、 StorageGRID システムを監視し、発生する可能性のある問題を評価および解決します。 
+---
+= StorageGRID システムの監視：概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID システムを監視し、発生する可能性のある問題を評価するには、次の手順を実行します。
+
+以下の手順では、 Grid Manager を使用して StorageGRID システムを監視する方法について説明します。定期的に監視する必要がある情報、アラートやレガシーアラームの管理方法、監視に SNMP を使用する方法、および指標や診断などの追加の StorageGRID データを取得する方法について説明します。
+
+.作業を開始する前に
+* を使用して Grid Manager にサインインする必要があります link:../admin/web-browser-requirements.html["サポートされている Web ブラウザ"]。
+* が必要です link:../admin/admin-group-permissions.html["特定のアクセス権限"]。
+
+
+
+NOTE: Grid Managerに表示されるストレージ値の単位を変更するには、Grid Managerの右上にあるユーザドロップダウンを選択し、*[ユーザ設定]*を選択します。

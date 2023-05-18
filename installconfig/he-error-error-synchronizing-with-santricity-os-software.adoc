@@ -1,0 +1,23 @@
+---
+permalink: installconfig/he-error-error-synchronizing-with-santricity-os-software.html 
+sidebar: sidebar 
+keywords: storage node, storage appliance, troubleshooting, HE, error, synchronize, synchronizing, sunconization, SANtricity OS Software, santricity 
+summary: StorageGRID アプライアンスインストーラが SANtricity OS ソフトウェアと同期できない場合は、コンピューティングコントローラのデジタル表示ディスプレイに HE エラーコードが表示されます。 
+---
+= HEエラー：SANtricity OSソフトウェアとの同期エラー（SG5700）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID アプライアンスインストーラがSANtricity OSソフトウェアと同期できない場合、コンピューティングコントローラのデジタル表示ディスプレイにHEエラーコードが表示されます。
+
+.このタスクについて
+HE エラーコードが表示された場合は、次の対処策を実施します。
+
+.手順
+. 2 本の SAS インターコネクトケーブルの整合性をチェックし、しっかりと接続されていることを確認します。
+. 必要に応じて、一方または両方のケーブルを交換し、再試行します。
+. この方法で問題 が解決しない場合は、テクニカルサポートにお問い合わせください。
+

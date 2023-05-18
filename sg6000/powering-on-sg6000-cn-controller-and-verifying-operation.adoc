@@ -1,0 +1,112 @@
+---
+permalink: sg6000/powering-on-sg6000-cn-controller-and-verifying-operation.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, power on, turn on, start, sg6000-cn, controller 
+summary: メンテナンスが完了したら、コントローラの電源をオンにします。 
+---
+= SG6000-CN コントローラの電源をオンにして、動作を確認します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+メンテナンスが完了したら、コントローラの電源をオンにします。
+
+.作業を開始する前に
+* コントローラをキャビネットまたはラックに設置し、データケーブルと電源ケーブルを接続しておきます。
++
+link:reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html["SG6000-CN コントローラをキャビネットまたはラックに再度取り付けます"]
+
+* コントローラをデータセンターに物理的に配置しておきます。
++
+link:locating-controller-in-data-center.html["データセンターでコントローラを探します"]
+
+
+
+.手順
+. SG6000-CN コントローラの電源をオンにし、次のいずれかの方法でコントローラの LED とブート時のコードを監視します。
++
+** コントローラ前面の電源スイッチを押します。
++
+image::../media/sg6060_front_panel_power_led_off.jpg[SG6060 の前面パネルの電源 LED オフ]
+
+** コントローラの BMC インターフェイスを使用します。
++
+... コントローラの BMC インターフェイスにアクセスします。
++
+link:../installconfig/accessing-bmc-interface.html["BMC インターフェイスにアクセスします"]
+
+... 「 * 電源制御 * 」を選択します。
+... [ サーバーの電源をオンにする *] を選択し、 [ アクションの実行 *] を選択します。
++
+image::../media/sg6060_power_on_from_bmc.png[BMC からコントローラの電源をオンにします]
+
++
+BMC インターフェイスを使用して、起動ステータスを監視します。
+
+
+
+
+
+. アプライアンスコントローラが Grid Manager に表示され、アラートがないことを確認します。
++
+コントローラが Grid Manager に表示されるまでに最大 20 分かかることがあります。
+
+. 新しい SG6000-CN コントローラが完全に動作していることを確認します。
++
+.. PuTTY または別の SSH クライアントを使用して、グリッドノードにログインします。
++
+... 次のコマンドを入力します。 `ssh admin@_grid_node_IP_`
+... に記載されているパスワードを入力します `Passwords.txt` ファイル。
+... 次のコマンドを入力してrootに切り替えます。 `su -`
+... に記載されているパスワードを入力します `Passwords.txt` ファイル。
++
+rootとしてログインすると、プロンプトがから変わります `$` 終了： `#`。
+
+
+
+.. 次のコマンドを入力して、想定される出力が返されることを確認します。+
+`cat /sys/class/fc_host/*/port_state`
++
+想定される出力：
+
++
+[listing]
+----
+Online
+Online
+Online
+Online
+----
++
+想定する出力が返されない場合は、テクニカルサポートにお問い合わせください。
+
+.. 次のコマンドを入力して、想定される出力が返されることを確認します。+
+`cat /sys/class/fc_host/*/speed`
++
+想定される出力：
+
++
+[listing]
+----
+16 Gbit
+16 Gbit
+16 Gbit
+16 Gbit
+----
++
+想定する出力が返されない場合は、テクニカルサポートにお問い合わせください。
+
+.. Grid Manager のノードページで、アプライアンスノードがグリッドに接続されていてアラートがないことを確認する。
++
+
+CAUTION: このアプライアンスに緑色のアイコンが表示されている場合を除き、別のアプライアンスノードをオフラインにしないでください。
+
+
+
+. オプション：前面ベゼルが取り外されている場合は、取り付けます。
+
+
+.関連情報
+link:../installconfig/viewing-status-indicators.html["ステータスインジケータを表示します"]

@@ -1,0 +1,46 @@
+---
+permalink: tenant/changing-consistency-level.html 
+sidebar: sidebar 
+keywords: how to change bucket consistency level, read after new write, read-after-new-write, strong site, strong-site, strong global, strong-global 
+summary: S3テナントを使用している場合は、S3バケット内のオブジェクトに対して実行される処理の整合性レベルを変更できます。 
+---
+= バケットの整合性レベルを変更する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+S3テナントを使用している場合は、S3バケット内のオブジェクトに対して実行される処理の整合性レベルを変更できます。
+
+.作業を開始する前に
+* Tenant Manager にはを使用してサインインします link:../admin/web-browser-requirements.html["サポートされている Web ブラウザ"]。
+* が設定されたユーザグループに属している必要があります link:tenant-management-permissions.html["すべてのバケットまたはRoot Access権限を管理します"]。これらの権限は、グループまたはバケットポリシーの権限の設定よりも優先されます。
+
+
+.このタスクについて
+整合性制御では、オブジェクトの可用性と、異なるストレージノードおよびサイト間でのオブジェクトの整合性のバランスを調整できます。通常は、バケットに * Read-after-new-write * 整合性レベルを使用してください。
+
+Read-after-new-write *整合性レベルがクライアントアプリケーションの要件を満たさない場合は、バケットの整合性レベルを設定するか、を使用して整合性レベルを変更できます `Consistency-Control` ヘッダー。。 `Consistency-Control` ヘッダーはバケットの整合性レベルよりも優先されます。
+
+
+NOTE: バケットの整合性レベルを変更した場合、変更後のレベルを満たすことが保証されるのは、変更後に取り込まれたオブジェクトのみです。
+
+.手順
+. ダッシュボードで* View Buckets *を選択するか、* storage（S3）*>* Buckets *を選択します。
+. 表からバケット名を選択します。
++
+バケットの詳細ページが表示されます。
+
+. [Bucket options]タブで、*[Consistency level]*アコーディオンを選択します。
+. このバケット内のオブジェクトに対して実行される処理の整合性レベルを選択します。
++
+** *all*:最高レベルの一貫性を提供します。すべてのノードが即座にデータを受け取り、受け取れない場合は要求が失敗します。
+** * strong-global *：すべてのサイトのすべてのクライアント要求について、リードアフターライト整合性が保証されます。
+** *strong-site *：サイト内のすべてのクライアント要求に対してリードアフターライト整合性が保証されます。
+** * Read-after-new-write *（デフォルト）：新規オブジェクトにはリードアフターライト整合性を提供し、オブジェクトの更新には結果整合性を提供します。高可用性が確保され、データ保護が保証されます。ほとんどの場合に推奨されます。
+** * available *：新しいオブジェクトとオブジェクトの更新の両方について、結果整合性を提供します。S3バケットの場合は、必要な場合にのみ使用します（読み取り頻度の低いログ値を含むバケットや、存在しないキーに対するHEAD処理やGET処理など）。S3 FabricPool バケットではサポートされません。
+
+
+. 「変更を保存」を選択します。
+

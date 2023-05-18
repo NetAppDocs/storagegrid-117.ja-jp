@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: earlier-versions.html 
+keywords: storagegrid, earlier version, documentation, doc site, 11.5, 11.4, 11.3 
+summary: NetApp StorageGRID ソフトウェアの最新リリースに関するドキュメントは、こちらから入手できます。 
+---
+= 以前のバージョンの NetApp StorageGRID ドキュメント
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp StorageGRID ソフトウェアの最新リリースに関するドキュメントは、次のURLから入手できます。
+
+* https://["StorageGRID 11.6のドキュメント"^]
+* https://["StorageGRID 11.5 のドキュメント"^]
+* https://["StorageGRID 11.4 ドキュメントセンター"^]
+* https://["StorageGRID 11.3 ドキュメントセンター"^]
+

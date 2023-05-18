@@ -1,0 +1,55 @@
+---
+permalink: sg6000/reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, install, installing, installation, cabinet, rack, controller, sg6000-cn 
+summary: ハードウェアのメンテナンスが完了したら、コントローラをキャビネットまたはラックに再度取り付けます。 
+---
+= SG6000-CN コントローラをキャビネットまたはラックに再度取り付けます
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ハードウェアのメンテナンスが完了したら、コントローラをキャビネットまたはラックに再度取り付けます。
+
+.作業を開始する前に
+コントローラカバーを再度取り付けておきます。
+
+link:reinstalling-sg6000-cn-controller-cover.html["SG6000-CN コントローラのカバーを再度取り付けます"]
+
+.手順
+. 青色のレールを同時に押して両方のラックレールを外し、 SG6000-CN コントローラをラックに完全に挿入するまでスライドします。
++
+コントローラをこれ以上動かせない場合は、シャーシの両側にある青いラッチを引いて、コントローラを奥までスライドさせます。
+
++
+image::../media/sg6000_cn_rails_blue_button.gif[SG6000 のスライド式レール]
+
++
+
+NOTE: コントローラの電源を入れるまでは、前面ベゼルを取り付けないでください。
+
+. コントローラの前面パネルの非脱落型ネジを締めて、コントローラをラックに固定します。
++
+image::../media/sg6060_rack_retaining_screws.png[SG6060 ラック固定ネジ]
+
+. ESD リストバンドのストラップの端を手首に巻き付け、静電気の放電を防ぐためにクリップの端をメタルアースに固定します。
+. コントローラのデータケーブルと SFP+ または SFP28 トランシーバを再接続します。
++
+
+IMPORTANT: パフォーマンスの低下を防ぐため、ケーブルをねじったり、折り曲げたり、挟んだり、踏んだりしないでください。
+
++
+link:../installconfig/cabling-appliance-sg6000.html["アプライアンスをケーブル接続（ SG6000 ）"]
+
+. コントローラの電源ケーブルを再接続します。
++
+link:../installconfig/connecting-power-cords-and-applying-power-sg6000.html["電源コードを接続して電源（ SG6000 ）を投入"]
+
+
+
+.完了後
+コントローラは再起動可能です。
+
+link:powering-on-sg6000-cn-controller-and-verifying-operation.html["SG6000-CN コントローラの電源をオンにして、動作を確認します"]

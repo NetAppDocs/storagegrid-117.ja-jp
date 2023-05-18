@@ -1,0 +1,75 @@
+---
+permalink: sg6100/powering-on-sgf6112-and-verifying-operation.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100, sgf6112,storage node, storage appliance, power on, turn on, start 
+summary: メンテナンスが完了したら、アプライアンスの電源をオンにします。 
+---
+= SGF6112の電源をオンにし、動作を確認します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+メンテナンスが完了したら、コントローラの電源をオンにします。
+
+.作業を開始する前に
+* コントローラをキャビネットまたはラックに設置し、データケーブルと電源ケーブルを接続しておきます。
++
+link:reinstalling-sgf6112-into-cabinet-or-rack.html["SGF6112コントローラをキャビネットまたはラックに再度取り付けます"]
+
+* コントローラをデータセンターに物理的に配置しておきます。
++
+link:locating-sgf6112-in-data-center.html["データセンターでSGF6112アプライアンスの場所を確認します"]
+
+
+
+.手順
+. アプライアンスの電源をオンにします。
++
+電源スイッチにアクセスするためにベゼルを取り外しなければならない場合があります。ベゼルを取り外した場合は、あとで再度取り付けてください。
+
+. 次のいずれかの方法を使用して、コントローラのLEDとブート時のコードを監視します。
++
+** コントローラ前面の電源スイッチを押します。
+** コントローラの BMC インターフェイスを使用します。
++
+... コントローラの BMC インターフェイスにアクセスします。
++
+link:../installconfig/accessing-bmc-interface.html["BMC インターフェイスにアクセスします"]
+
+... 「 * 電源制御 * 」を選択します。
+... [電源オン]*を選択し、*[操作の実行]*を選択します。
++
+image::../media/sgf6112_power_on_from_bmc.png[BMCからアプライアンスの電源をオンにします]
+
++
+BMC インターフェイスを使用して、起動ステータスを監視します。
+
+
+
+
+
+. アプライアンスコントローラが Grid Manager に表示され、アラートがないことを確認します。
++
+コントローラが Grid Manager に表示されるまでに最大 20 分かかることがあります。
+
++
+
+CAUTION: このアプライアンスに緑色のアイコンが表示されている場合を除き、別のアプライアンスノードをオフラインにしないでください。
+
+. PuTTYまたは別のsshクライアントを使用してグリッドノードにログインし、新しいアプライアンスが完全に動作していることを確認します。
++
+.. 次のコマンドを入力します。 `ssh _Appliance_IP_`
+.. に記載されているパスワードを入力します `Passwords.txt` ファイル。
+.. 次のコマンドを入力してrootに切り替えます。 `su -`
+.. に記載されているパスワードを入力します `Passwords.txt` ファイル。
++
+rootとしてログインすると、プロンプトがから変わります `$` 終了： `#`。
+
+
+
+
+
+.関連情報
+link:../installconfig/viewing-status-indicators.html["ステータスインジケータを表示します"]

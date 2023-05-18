@@ -1,0 +1,56 @@
+---
+permalink: sg6000/locating-controller-in-data-center.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, locate, find, locating, finding, identify, blue led, blue light 
+summary: ハードウェアのメンテナンスやアップグレードを実行できるように、コントローラを特定します。 
+---
+= データセンターでコントローラを探します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ハードウェアのメンテナンスやアップグレードを実行できるように、コントローラを特定します。
+
+.作業を開始する前に
+* メンテナンスが必要なコントローラを特定しておきます。
++
+（オプション）データセンター内のコントローラの位置を確認するには、青色の識別 LED をオンにします。
+
++
+link:turning-controller-identify-led-on-and-off.html["コントローラ識別 LED のオンとオフを切り替えます"]
+
+
+
+.手順
+. データセンターでメンテナンスが必要なコントローラを特定します。
++
+** コントローラの前面または背面の LED が青色に点灯していることを確認します。
++
+前面の識別 LED はコントローラの前面ベゼルの背面にあり、ベゼルが取り付けられているかどうかを確認するのが困難な場合があります。
+
++
+image::../media/sg6060_front_panel_service_led_on.jpg[前面識別 LED オン]
+
+** 各コントローラの前面にあるタグで、一致するパーツ番号を確認します。
+
+
+. コントローラの前面ベゼルが取り付けられている場合は、前面パネルのコントロールとインジケータにアクセスするために取り外します。
+. オプション：コントローラの場所を確認するために使用した場合は、青色の識別 LED を消灯します。
++
+** コントローラの前面パネルにある識別 LED スイッチを押します。
+** コントローラの BMC インターフェイスを使用します。
++
+link:turning-controller-identify-led-on-and-off.html["コントローラ識別 LED のオンとオフを切り替えます"]
+
+
+
+
+
+.関連情報
+link:removing-fibre-channel-hba.html["ファイバチャネル HBA を取り外します"]
+
+link:removing-sg6000-cn-controller-from-cabinet-or-rack.html["キャビネットまたはラックから SG6000-CN コントローラを取り外します"]
+
+link:shutting-down-sg6000-cn-controller.html["SG6000-CN コントローラをシャットダウンします"]

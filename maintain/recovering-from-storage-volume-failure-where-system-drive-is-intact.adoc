@@ -1,0 +1,21 @@
+---
+permalink: maintain/recovering-from-storage-volume-failure-where-system-drive-is-intact.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, storage volume failure, volume failure, system drive intact 
+summary: ストレージノードで 1 個以上のストレージボリュームに障害が発生したものの、システムドライブに損傷がない場合は、一連のタスクを実行してソフトウェアベースのストレージノードをリカバリする必要があります。ストレージボリュームだけで障害が発生した場合は、ストレージノードを引き続き StorageGRID システムで使用できます。 
+---
+= システムドライブに損傷がない場合のストレージボリューム障害からのリカバリ：ワークフロー
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージノードで 1 個以上のストレージボリュームに障害が発生したものの、システムドライブに損傷がない場合は、一連のタスクを実行してソフトウェアベースのストレージノードをリカバリする必要があります。ストレージボリュームだけで障害が発生した場合は、ストレージノードを引き続き StorageGRID システムで使用できます。
+
+
+NOTE: このリカバリ用 手順 環境 ソフトウェアベースのストレージノードのみ。アプライアンスストレージノードのストレージボリュームで障害が発生した場合は、代わりにアプライアンス手順 を使用します。 link:recovering-storagegrid-appliance-storage-node.html["アプライアンスストレージノードをリカバリします"]。
+
+ワークフロー図に示すように、障害ストレージボリュームを特定してアンマウントし、ボリュームをリカバリし、Cassandraデータベースを再構築し、オブジェクトデータをリストアする必要があります。
+
+image::../media/storage_node_recovery_storage_vol_only.gif[ストレージボリュームのリカバリの概要フローチャート]

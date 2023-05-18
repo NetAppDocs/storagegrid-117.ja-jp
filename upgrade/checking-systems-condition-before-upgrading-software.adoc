@@ -1,0 +1,67 @@
+---
+permalink: upgrade/checking-systems-condition-before-upgrading-software.html 
+sidebar: sidebar 
+keywords: upgrade, grid tasks, firewall, ports 
+summary: StorageGRID システムをアップグレードする前に、システムがアップグレードできる状態にあることを確認する必要があります。システムが正常に稼働し、すべてのグリッドノードが動作している必要があります。 
+---
+= システムの状態を確認します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID システムをアップグレードする前に、システムがアップグレードできる状態にあることを確認する必要があります。システムが正常に稼働し、すべてのグリッドノードが動作している必要があります。
+
+.手順
+. を使用して Grid Manager にサインインします link:../admin/web-browser-requirements.html["サポートされている Web ブラウザ"]。
+. アクティブなアラートがないかを確認し、ある場合は解決します。
+. 競合するグリッドタスクがアクティブまたは保留中でないことを確認します。
++
+.. サポート * > * ツール * > * グリッドトポロジ * を選択します。
+.. _site * > * _primary Admin Node_* > * CMN * > * Grid Tasks * > * Configuration * を選択します。
++
+情報ライフサイクル管理評価（ ILME ）タスクは、ソフトウェアのアップグレードと同時に実行できる唯一のグリッドタスクです。
+
+.. 他のグリッドタスクがアクティブまたは保留中の場合は、それらが終了するまで、またはロックが解放されるまで待ちます。
++
+
+NOTE: タスクが終了しない、またはロックが解放されない場合は、テクニカルサポートにお問い合わせください。
+
+
+
+. を参照してください link:../network/internal-grid-node-communications.html["内部でのグリッドノードの通信"] および link:../network/external-communications.html["外部との通信"] を使用して、アップグレード前にStorageGRID 11.7に必要なすべてのポートが開いていることを確認します。
++
+次のようになります link:../network/internal-grid-node-communications.html#storagegrid-internal-ports["内部ポート"] StorageGRID 11.7にアップグレードする前に開いておく必要があります。
+
++
+[cols="1a,2a"]
+|===
+| ポート | 説明 
+
+
+ a| 
+1055年
+
+8011だ
+
+10342.
+ a| 
+ファイアウォールコントロールノッキングプロトコルに使用されます。
+
+アップグレードする前に、グリッドネットワーク上のすべてのグリッドノード間でこのポートが開いていることを確認してください。
+
+
+
+ a| 
+18086年
+ a| 
+新しいLDRサービスに使用するTCPポート。
+
+アップグレードの前に、このポートがすべてのグリッドノードからすべてのストレージノードに対して開いていることを確認してください。
+
+|===
+
+
+
+IMPORTANT: カスタムのファイアウォールポートが開いている場合は、アップグレードの事前確認中に通知されます。アップグレードを続行する前に、テクニカルサポートに連絡する必要があります。

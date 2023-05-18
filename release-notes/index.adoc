@@ -1,0 +1,16 @@
+---
+permalink: release-notes/index.html 
+sidebar: sidebar 
+keywords: release notes 
+summary: 新機能、削除または廃止された機能、解決済みの問題、および既知の問題に関するリリース固有の情報を取得します。 
+---
+= リリースノート
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+新機能、削除または廃止された機能、解決済みの問題、および既知の問題に関するリリース固有の情報を取得します。
+
+NetApp Support Siteにログインします https://["PDF ファイルを表示またはダウンロードします"^] StorageGRID 11.7リリースノートが含まれています。

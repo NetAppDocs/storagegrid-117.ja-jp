@@ -1,0 +1,24 @@
+---
+permalink: installconfig/gathering-installation-information-overview.html 
+sidebar: sidebar 
+keywords: install, information, site, pre-install, preparing, prepare, preinstall, info, preparation 
+summary: StorageGRID アプライアンスを設置して設定する際には、イーサネットスイッチポート、IPアドレス、およびポートとネットワークのボンディングモードを決定し、情報を収集します。 
+---
+= インストール情報の収集：概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID アプライアンスを設置して設定する際には、イーサネットスイッチポート、IPアドレス、およびポートとネットワークのボンディングモードを決定し、情報を収集します。
+
+必要な情報については、アプライアンスの手順書を参照してください。
+
+* link:gathering-installation-information-sg6100.html["SGF6112を参照してください"]
+* link:gathering-installation-information-sg6000.html["SG6000を使用します"]
+* link:gathering-installation-information-sg5700.html["SG5700を使用します"]
+* link:gathering-installation-information-sg100-and-sg1000.html["SG100およびSG1000"]
+
+
+また、ネットアッププロフェッショナルサービスのコンサルタントと連携して、NetApp ConfigBuilderツールを使用して設定手順を合理化、自動化することもできます。を参照してください link:automating-appliance-installation-and-configuration.html["アプライアンスのインストールと設定を自動化"]。

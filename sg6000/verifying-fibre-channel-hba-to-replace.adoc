@@ -1,0 +1,51 @@
+---
+permalink: sg6000/verifying-fibre-channel-hba-to-replace.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, sg6000-cn, hba, host bus adapter, fibre channel, fiber channel, locate, identify, find, replace, replacing, replacement 
+summary: 交換するファイバ・チャネル・ホスト・バス・アダプタ（ HBA\ ）が不明な場合は、この手順 を使用して識別します。 
+---
+= 交換するファイバチャネル HBA を確認します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+交換する Fibre Channel Host Bus Adapter （ HBA ；ホストバスアダプタ）が不明な場合は、この手順 を確認してください。
+
+.作業を開始する前に
+* Fibre Channel HBA を交換する必要があるストレージアプライアンスまたは SG6000-CN コントローラのシリアル番号を確認しておきます。
++
+
+NOTE: 交換するファイバチャネル HBA を搭載したストレージアプライアンスのシリアル番号が先頭の文字が Q である場合、 Grid Manager には表示されません。データセンター内の各 SG6000-CN コントローラの前面に接続されているタグが一致するまで確認しておく必要があります。
+
+* を使用して Grid Manager にサインインします link:../admin/web-browser-requirements.html["サポートされている Web ブラウザ"]。
+
+
+.手順
+. Grid Manager から * nodes * を選択します。
+. ノードページのテーブルで、アプライアンスストレージノードを選択します。
+. [* ハードウェア * ] タブを選択します。
++
+StorageGRID アプライアンスのセクションで、ストレージアプライアンスのシャーシのシリアル番号 * とコンピューティングコントローラのシリアル番号 * を確認します。これらのシリアル番号のいずれかが、ファイバ・チャネル HBA を交換するストレージ・アプライアンスのシリアル番号と一致しているかどうかを確認します。いずれかのシリアル番号が一致していれば、正しいアプライアンスが見つかりました。
+
++
+image::../media/nodes_page_hardware_tab_for_appliance_verify_HBA.png[ファイバチャネル HCA のアプライアンスセクション]
+
++
+** StorageGRID アプライアンスのセクションが表示されない場合、選択したノードは StorageGRID アプライアンスではありません。ツリービューから別のノードを選択する。
+** アプライアンスモデルがSG6060またはSG6060Xでない場合は、ツリービューから別のノードを選択します。
+** シリアル番号が一致しない場合は、ツリービューから別のノードを選択します。
+
+
+. Fibre Channel HBA を交換する必要があるノードの場所を特定したら、コンピューティングコントローラの BMC IP アドレスをメモします。 StorageGRID アプライアンスのセクションに記載されています。
++
+この IP アドレスを使用すると、コンピューティングコントローラの識別 LED をオンにして、データセンターでアプライアンスを探す際に役立ちます。
+
++
+link:turning-controller-identify-led-on-and-off.html["コントローラ識別 LED をオンまたはオフにします"]
+
+
+
+.関連情報
+link:removing-fibre-channel-hba.html["ファイバチャネル HBA を取り外します"]

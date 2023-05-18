@@ -1,0 +1,29 @@
+---
+section: sg100-1000
+title: SG100およびSG1000ハードウェアのメンテナンス
+entries:
+- title: 概要
+  pdf-filename: SG100およびSG1000ハードウェアのメンテナンス
+  url: "/sg100-1000/index.html"
+- title: メンテナンス設定手順
+  pdf-filename: メンテナンス設定手順- SG100およびSG1000
+  entries:
+  - title: コントローラ識別 LED のオンとオフを切り替えます
+    url: "/sg100-1000/turning-controller-identify-led-on-and-off.html"
+  - title: データセンターでコントローラを探します
+    url: "/sg100-1000/locating-controller-in-data-center.html"
+  - title: アプライアンスをシャットダウンします
+    url: "/sg100-1000/shut-down-sg100-and-sg1000.html"
+  - title: サービスアプライアンスのリンク設定を変更します
+    url: "/sg100-1000/changing-link-configuration-of-services-appliance.html"
+- title: ハードウェアの手順
+  pdf-filename: ハードウェアの手順- SG100およびSG1000
+  entries:
+  - title: サービスアプライアンスの一方または両方の電源装置を交換します
+    url: "/sg100-1000/replacing-one-or-more-power-supplies-in-services-appliance.html"
+  - title: サービスアプライアンスのファンを交換します
+    url: "/sg100-1000/replacing-fan-in-services-appliance.html"
+  - title: サービスアプライアンスのドライブを交換します
+    url: "/sg100-1000/replacing-drive-in-services-appliance.html"
+  - title: サービスアプライアンスを交換します
+    url: "/sg100-1000/replacing-services-appliance.html"

@@ -1,0 +1,49 @@
+---
+permalink: tenant/use-s3-console.html 
+sidebar: sidebar 
+keywords: how to use s3 console 
+summary: S3 コンソールを使用して S3 バケット内のオブジェクトを表示できます。 
+---
+= Experimental S3 Console を使用します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+S3 コンソールを使用して S3 バケット内のオブジェクトを表示できます。
+
+S3 コンソールを使用して、次の操作を実行することもできます。
+
+* オブジェクト、オブジェクトバージョン、およびフォルダの追加と削除
+* オブジェクトの名前を変更する
+* バケットとフォルダ間でオブジェクトを移動およびコピーする
+* オブジェクトタグを管理します
+* オブジェクトのメタデータを表示します
+* オブジェクトをダウンロードします
+
+
+
+NOTE: S3コンソールはまだ完全ではなく、本番環境での使用が承認されていないため、「experimental」とマークされます。テナントで S3 コンソールを使用するのは、オブジェクトをアップロードして新しい ILM ポリシーをシミュレートするとき、取り込みの問題をトラブルシューティングするとき、コンセプトの実証（ POC ）グリッドや非本番環境のグリッドを使用するときなど、少数のオブジェクトに対して機能を実行する場合のみにしてください。
+
+.作業を開始する前に
+* Tenant Manager にはを使用してサインインします link:../admin/web-browser-requirements.html["サポートされている Web ブラウザ"]。
+* Root Access権限が割り当てられたユーザグループ、またはManage All BucketsとManage Objects with S3 Consoleの両方が割り当てられているユーザグループに属している必要があります link:tenant-management-permissions.html["権限"]。
++
+
+NOTE: Manage objects with S3 Console権限はあるものの、Manage All Buckets権限がないユーザは、引き続きExperimental S3 Consoleに直接移動できます。
+
+* バケットを作成しておきます。
+* S3グループまたはバケットポリシーがユーザに設定されている。
+* ユーザのアクセスキー ID とシークレットアクセスキーを確認しておきます。必要に応じて、があります `.csv` この情報を含むファイル。を参照してください link:creating-your-own-s3-access-keys.html["アクセスキーの作成手順"]。
+
+
+.手順
+. [ * バケット * ] を選択します。
+. 選択するオプション image:../media/s3_console_link.png["S3 コンソールのリンク"]。このリンクには、バケットの詳細ページからもアクセスできます。
+. Experimental S3 Console のサインインページで、アクセスキー ID とシークレットアクセスキーをフィールドに貼り付けます。それ以外の場合は、*アクセスキーのアップロード*を選択し、を選択します `.csv` ファイル。
+. 「サインイン」を選択します。
+. 必要に応じてオブジェクトを管理します。
+
+
+image::../media/s3_console_example.png[S3 コンソールの例]

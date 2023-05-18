@@ -1,0 +1,36 @@
+---
+permalink: sg6100/removing-sgf6112-cover.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100, sgf6112, storage node, storage appliance, cover, remove, removing, removal 
+summary: アプライアンスのカバーを取り外して、メンテナンスのために内部コンポーネントにアクセスします。 
+---
+= SGF6112カバーを取り外します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アプライアンスのカバーを取り外して、メンテナンスのために内部コンポーネントにアクセスします。
+
+.作業を開始する前に
+上部カバーに手が届くように、キャビネットまたはラックからアプライアンスを取り外します。
+
+link:reinstalling-sgf6112-into-cabinet-or-rack.html#remove-from-rack["SGF6112をキャビネットまたはラックから取り外します"]
+
+.手順
+. SGF6112のカバーラッチがロックされていないことを確認します。必要に応じて、ラッチロックに表示されているように、プラスチック製ラッチロックの青色の 4 分の 1 回転をアンロック方向に回します。
+. ラッチをSGF6112シャーシの背面方向に上下に回転させて停止し、カバーをシャーシから慎重に持ち上げて脇に置きます。
++
+image::../media/sg6060_cover_latch_open.jpg[SGF6112のカバーラッチが開いています]
+
++
+
+IMPORTANT: 静電気防止用リストバンドのストラップの端を手首に巻き付け、SGF6112内部での作業時に静電気が発生しないようにクリップの端を金属製のアースに固定します。
+
+
+
+部品の交換後、障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://["パーツの返品と交換"^] 詳細については、を参照してください。
+
+.関連情報
+link:replace-nic-in-sgf6112.html["NICを交換してください"]

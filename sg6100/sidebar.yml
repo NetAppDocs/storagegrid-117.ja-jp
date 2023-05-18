@@ -1,0 +1,41 @@
+---
+section: sg6100
+title: SGF6112ハードウェアのメンテナンス
+entries:
+- title: 概要
+  pdf-filename: sg6100ハードウェアのメンテナンス
+  url: "/sg6100/index.html"
+- title: 設定のメンテナンス手順
+  pdf-filename: 設定メンテナンス手順- SGF6112
+  entries:
+  - title: アプライアンスのLEDをオンまたはオフにします
+    url: "/sg6100/turning-sgf6112-identify-led-on-and-off.html"
+  - title: データセンターにアプライアンスを配置します
+    url: "/sg6100/locating-sgf6112-in-data-center.html"
+  - title: アプライアンスをシャットダウンします
+    url: "/sg6100/shut-down-sgf6112.html"
+  - title: SGF6112の電源をオンにし、動作を確認します
+    url: "/sg6100/powering-on-sgf6112-and-verifying-operation.html"
+  - title: リンク設定を変更します
+    url: "/sg6100/changing-link-configuration-of-sgf6112-appliance.html"
+- title: ハードウェアのメンテナンス手順
+  pdf-filename: ハードウェアメンテナンス手順- SGF6112
+  entries:
+  - title: 交換するコンポーネントを確認します
+    url: "/sg6100/verify-component-to-replace.html"
+  - title: 1つ以上の電源装置を交換します
+    url: "/sg6100/replacing-one-or-more-power-supplies-in-sgf6112-appliance.html"
+  - title: ファンを交換します
+    url: "/sg6100/replacing-fan-in-sgf6112.html"
+  - title: ドライブを交換します
+    url: "/sg6100/replacing-drive-in-sgf6112.html"
+  - title: NICを交換してください
+    url: "/sg6100/replace-nic-in-sgf6112.html"
+  - title: CMOSバッテリを交換してください
+    url: "/sg6100/replace-cmos-in-sgf6112.html"
+  - title: SGF6112アプライアンスを交換してください
+    url: "/sg6100/replacing-sgf6112-appliance.html"
+  - title: ラック内のSGF6112を移動します
+    url: "/sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html"
+  - title: カバーを交換します
+    url: "/sg6100/reinstalling-sgf6112-cover.html"

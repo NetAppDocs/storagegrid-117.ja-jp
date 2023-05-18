@@ -1,0 +1,46 @@
+---
+permalink: sg6000/reinstalling-fibre-channel-hba.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, sg6000-cn, hba, host bus adapter, fibre channel, fiber channel, install, installing, installation, reinstall, reinstalling, reinstallation 
+summary: 交換用のファイバチャネル HBA は、取り外した HBA と同じ場所に取り付けます。 
+---
+= Fibre Channel HBA を再度取り付けます
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+交換用のファイバチャネル HBA は、取り外した HBA と同じ場所に取り付けます。
+
+.作業を開始する前に
+* 正しい交換用の Fibre Channel HBA を用意しておきます。
+* 既存の Fibre Channel HBA を削除しておきます。
++
+link:removing-fibre-channel-hba.html["ファイバチャネル HBA を取り外します"]
+
+
+
+.手順
+. ESD リストバンドのストラップの端を手首に巻き付け、静電気の放電を防ぐためにクリップの端をメタルアースに固定します。
+. 交換用の Fibre Channel HBA をパッケージから取り出します。
+. 青色のアダプタラッチを開いた状態で、ファイバチャネル HBA をライザーアセンブリのコネクタに合わせ、アダプタが完全に装着されるまで慎重にコネクタに押し込みます。
++
+image::../media/sg6060_fc_hba_location.jpg[ライザーアセンブリ内の SG6060 Fibre Channel HBA]
+
++
+ライザーアセンブリには、ファイバチャネル HBA とイーサネットネットワークアダプタの 2 つのアダプタがあります。この図では Fibre Channel HBA を示しています。
+
+. ライザーアセンブリの位置合わせ穴（丸で囲んだ箇所）を見つけます。この穴は、システム基板のガイドピンに合わせて配置されており、ライザーアセンブリの位置が正しいことを確認します。
++
+image::../media/sg6060_riser_alignment_hole.jpg[SG6060 ライザーアセンブリの位置合わせ穴]
+
+. ライザーアセンブリをシャーシに配置し、システム基板のコネクタとガイドピンの位置が合っていることを確認してから、ライザーアセンブリを挿入します。
+. ライザーアセンブリが完全に装着されるまで、青いマークの付いた穴の横にある中心線に沿って慎重に押し込みます。
+. ケーブルを再取り付けするファイバチャネル HBA ポートから保護キャップを取り外します。
+
+
+.完了後
+コントローラで他のメンテナンス手順を実行する必要がない場合は、コントローラカバーを再度取り付けます。
+
+link:reinstalling-sg6000-cn-controller-cover.html["SG6000-CN コントローラのカバーを再度取り付けます"]

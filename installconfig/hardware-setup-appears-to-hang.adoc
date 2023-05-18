@@ -1,0 +1,80 @@
+---
+permalink: installconfig/hardware-setup-appears-to-hang.html 
+sidebar: sidebar 
+keywords: storage node, storage appliance, troubleshoot, troubleshooting, hardware, setup, hang, hangs, fails, failure, stop, terminate, terminates, stuck 
+summary: ハードウェア障害やケーブル接続エラーによってストレージコントローラまたはアプライアンスコントローラのブート処理が完了しなかった場合は、StorageGRID アプライアンスインストーラを使用できないことがあります。 
+---
+= ハードウェアのセットアップがハングしたように見える（SG6000またはSG5700）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ハードウェア障害やケーブル接続エラーによってストレージコントローラまたはアプライアンスコントローラのブート処理が完了しなかった場合は、StorageGRID アプライアンスインストーラを使用できないことがあります。
+
+.手順
+[role="tabbed-block"]
+====
+.SG6000を使用します
+--
+. ストレージコントローラの場合は、デジタル表示ディスプレイのコードを監視します。
++
+電源投入時にハードウェアが初期化される際に、 2 つのデジタル表示ディスプレイに一連のコードが表示されます。ハードウェアが正常にブートすると、デジタル表示ディスプレイが両方に表示されます `99`。
+
+. SG6000-CN コントローラの LED と、 BMC に表示されたブート時のコードとエラーコードを確認します。
+. 問題 の解決にサポートが必要な場合は、テクニカルサポートにお問い合わせください。
+
+
+--
+.SG5700を使用します
+--
+. デジタル表示ディスプレイのコードを監視します。
++
+電源投入時にハードウェアが初期化される際に、 2 つのデジタル表示ディスプレイに一連のコードが表示されます。ハードウェアが正常にブートされると、各コントローラのデジタル表示ディスプレイに異なるコードが表示されます。
+
+. E5700SG コントローラのデジタル表示ディスプレイのコードを確認してください。
++
+
+NOTE: インストールとプロビジョニングには時間がかかります。一部のインストールフェーズでは、StorageGRID アプライアンスインストーラの更新が数分間報告されません。
+
++
+エラーが発生すると、デジタル表示ディスプレイに HE などの一連のコードが点滅します。
+
+. これらのコードの意味については、次のリソースを参照してください。
++
+[cols="1a,2a"]
+|===
+| コントローラ | 参照 
+
+
+ a| 
+E5700SG コントローラのものです
+ a| 
+** E5700SG コントローラのステータス・インジケータ
+** "`he error:Error synchronizing with SANtricity OS Software`" （エラー： OS ソフトウェアとの同期エラー）
+
+
+
+
+ a| 
+E2800 コントローラ
+ a| 
+E5700 and E2800 System Monitoring Guide
+
+*注：* EシリーズE5700コントローラに関するコードの説明は、アプライアンスのE5700SGコントローラには適用されません。
+
+|===
+. この方法で問題 が解決しない場合は、テクニカルサポートにお問い合わせください。
+
+
+--
+====
+.関連情報
+* link:viewing-status-indicators.html["ステータスインジケータを表示します"]
+* http://["NetApp E シリーズシステムのドキュメントのサイト"^]
+* link:he-error-error-synchronizing-with-santricity-os-software.html["HE エラー： SANtricity OS ソフトウェアとの同期エラー"]
+* https://["E5700 and E2800 System Monitoring Guide"^]
+* link:viewing-boot-up-codes-for-sg6000-cn-controller.html["ブート時のコードの表示（SG6000-CNコントローラ）"]
+* link:viewing-error-codes-for-sg6000-cn-controller.html["エラーコードの確認（SG6000-CNコントローラ）"]
+

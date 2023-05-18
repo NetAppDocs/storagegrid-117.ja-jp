@@ -1,0 +1,26 @@
+---
+permalink: installconfig/configuring-bmc-interface.html 
+sidebar: sidebar 
+keywords: BMC, baseboard management controller, configure, setup, set up 
+summary: SGF6112、SG6000、またはサービスアプライアンスのベースボード管理コントローラ（BMC\）のユーザインターフェイスには、ハードウェアに関するステータス情報が表示され、アプライアンスのSNMP設定やその他のオプションを設定できます。 
+---
+= BMCインターフェイス：概要（SGF6112、SG6000、SG100、およびSG1000）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SGF6112、SG6000、またはサービスアプライアンスのベースボード管理コントローラ（BMC）のユーザインターフェイスには、ハードウェアに関するステータス情報が表示され、アプライアンスのSNMP設定やその他のオプションを設定できます。
+
+このセクションの次の手順に従って、アプライアンスの設置時にBMCを設定します。
+
+* BMC インターフェイスの root パスワードを変更します
+* BMC 管理ポートの IP アドレスを設定します
+* BMC インターフェイスにアクセスします
+* SNMPを設定します
+* Eメール通知とアラートを設定
+
+
+
+NOTE: アプライアンスをグリッドにすでに設置し、StorageGRID ソフトウェアを実行している場合は、次の手順を参照してBMC設定の代替メカニズムを確認してください。

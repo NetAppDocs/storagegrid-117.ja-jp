@@ -1,0 +1,56 @@
+---
+permalink: admin/configuring-admin-proxy-settings.html 
+sidebar: sidebar 
+keywords: admin proxy, autosupport, non-transparent proxy 
+summary: HTTP または HTTPS を使用して AutoSupport メッセージを送信する場合は、管理ノードとテクニカルサポートの間に非透過型プロキシサーバを設定できます（ AutoSupport ）。 
+---
+= 管理プロキシを設定します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+HTTP または HTTPS を使用して AutoSupport メッセージを送信する場合（を参照） link:configure-autosupport-grid-manager.html["AutoSupport を設定します"]）を使用して、管理ノードとテクニカルサポート（ AutoSupport ）の間に非透過型プロキシサーバを設定できます。
+
+.作業を開始する前に
+* 特定のアクセス権限が必要です。
+* を使用して Grid Manager にサインインします link:../admin/web-browser-requirements.html["サポートされている Web ブラウザ"]。
+
+
+.このタスクについて
+設定できる管理プロキシは 1 つです。
+
+.手順
+. [ * 設定 * > * セキュリティ * > * プロキシ設定 * ] を選択します。
++
+Admin Proxy Settings ページが表示されます。デフォルトでは、サイドバーメニューで「 * Storage * 」が選択されています。
+
+. サイドバーのメニューから、 *Admin* を選択します。
++
+image::../media/proxy_settings_menu_admin.png[プロキシ設定メニュー - 管理]
+
+. [Enable Admin Proxy]*チェックボックスをオンにします。
++
+image::../media/proxy_settings_admin.png[管理プロキシ設定ダイアログボックスのスクリーンショット]
+
+. プロキシサーバのホスト名または IP アドレスを入力します。
+. プロキシサーバへの接続に使用するポートを入力します。
+. 必要に応じて、プロキシユーザ名を入力します。
++
+プロキシサーバでユーザ名が不要な場合は、このフィールドを空白のままにします。
+
+. 必要に応じて、プロキシパスワードを入力します。
++
+プロキシサーバでパスワードが不要な場合は、このフィールドを空白のままにします。
+
+. [ 保存（ Save ） ] を選択します。
++
+管理プロキシが保存されると、管理ノードとテクニカルサポートの間にプロキシサーバが設定されます。
+
++
+
+NOTE: プロキシの変更が有効になるまでに最大 10 分かかることがあります。
+
+. プロキシを無効にする必要がある場合は、*[管理プロキシを有効にする]*チェックボックスをオフにし、*[保存]*を選択します。
+

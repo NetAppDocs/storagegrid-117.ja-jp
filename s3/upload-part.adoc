@@ -1,0 +1,47 @@
+---
+permalink: s3/upload-part.html 
+sidebar: sidebar 
+keywords: s3 upload part operation 
+summary: Upload Part 処理では、オブジェクトのマルチパートアップロード内のパートがアップロードされます。 
+---
+= パーツをアップロードします
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Upload Part 処理では、オブジェクトのマルチパートアップロード内のパートがアップロードされます。
+
+
+
+== サポートされる要求ヘッダー
+
+次の要求ヘッダーがサポートされています。
+
+* `Content-Length`
+* `Content-MD5`
+
+
+
+
+== サーバ側の暗号化を行うための要求ヘッダー
+
+Initiate Multipart Upload 要求に SSE-C 暗号化を指定した場合は、各 Upload Part 要求に次の要求ヘッダーも含める必要があります。
+
+* `x-amz-server-side-encryption-customer-algorithm`:指定します `AES256`。
+* `x-amz-server-side-encryption-customer-key`：Initiate Multipart Upload要求で指定した暗号化キーを指定します。
+* `x-amz-server-side-encryption-customer-key-MD5`：Initiate Multipart Upload要求で指定したMD5ダイジェストを指定します。
+
+
+
+IMPORTANT: 指定した暗号化キーが格納されることはありません。暗号化キーを紛失すると、対応するオブジェクトが失われます。お客様提供の鍵を使用してオブジェクト・データを保護する前に ' サーバ側の暗号化を使用の考慮事項を確認してください
+
+
+
+== バージョン管理
+
+マルチパートアップロードは、アップロードの開始、アップロードのリストの表示、パートのアップロード、アップロードしたパートのアセンブル、およびアップロードの完了の個別の処理に分けられます。Complete Multipart Upload 処理が実行されると、オブジェクトが作成されます（該当する場合はバージョン管理されます）。
+
+.関連情報
+link:using-server-side-encryption.html["サーバ側の暗号化を使用します"]

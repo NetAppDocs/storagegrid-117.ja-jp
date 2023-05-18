@@ -1,0 +1,40 @@
+---
+permalink: installconfig/troubleshooting-connection-issues-sg6100.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100, troubleshoot, troubleshooting, connection 
+summary: StorageGRID アプライアンスのインストール時に接続の問題が発生した場合は、以下に記載する対処策を実施する必要があります。 
+---
+= 接続の問題のトラブルシューティング（SGF6112）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID アプライアンスのインストール時に接続の問題が発生した場合は、以下に記載する対処策を実施する必要があります。
+
+
+
+== アプライアンスに接続できません
+
+サービスアプライアンスに接続できない場合は、ネットワーク問題 があるか、ハードウェアの設置が正常に完了していない可能性があります。
+
+.手順
+. アプライアンスのIPアドレスを使用してアプライアンスにpingを送信します。+
+`*ping _services_appliance_IP_*`
+. ping からの応答がない場合は、正しい IP アドレスを使用していることを確認します。
++
+グリッドネットワーク、管理ネットワーク、またはクライアントネットワークでのアプライアンスの IP アドレスを使用できます。
+
+. IP アドレスが正しい場合は、アプライアンスのケーブル接続、 QSFP または SFP トランシーバ、およびネットワークのセットアップを確認します。
+. アプライアンスに物理的にアクセスできる場合は、永続的なリンクローカルIPに直接接続できます `169.254.0.1` コントローラのネットワーク設定を確認し、必要に応じて更新します。詳細な手順については、のステップ 2 を参照してください link:accessing-storagegrid-appliance-installer.html["StorageGRID アプライアンスインストーラにアクセスします"]。
++
+この手順で問題 が解決しない場合は、テクニカルサポートにお問い合わせください。
+
+. ping が成功した場合は、 Web ブラウザを開きます。
+. StorageGRID アプライアンスインストーラのURLとして「+」を入力します
+`*https://_appliances_controller_IP_:8443*`
++
+ホームページが表示されます。
+
+

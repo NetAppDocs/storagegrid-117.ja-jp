@@ -1,0 +1,81 @@
+---
+section: rhel
+title: Red Hat Enterprise Linux または CentOS をインストールします
+entries:
+- title: 概要
+  pdf-filename: StorageGRID 用の Red Hat Enterprise Linux または CentOS をインストールします
+  url: "/rhel/index.html"
+- title: Red Hat または CentOS へのインストールを計画して準備
+  entries:
+  - title: インストールの準備（ Red Hat または CentOS ）
+    url: "/rhel/planning-and-preparation.html"
+  - title: 前提要件
+    url: "/rhel/required-materials.html"
+  - title: StorageGRID インストールファイルをダウンロードして展開します
+    url: "/rhel/downloading-and-extracting-storagegrid-installation-files.html"
+  - title: CPU と RAM の要件
+    url: "/rhel/cpu-and-ram-requirements.html"
+  - title: ストレージとパフォーマンスの要件
+    url: "/rhel/storage-and-performance-requirements.html"
+  - title: ノードコンテナの移行要件
+    url: "/rhel/node-container-migration-requirements.html"
+  - title: 導入ツール
+    url: "/rhel/deployment-tools.html"
+  - title: ホストを準備（ Red Hat または CentOS ）
+    entries:
+    - title: ホスト全体の設定の変更方法
+      url: "/rhel/how-host-wide-settings-change.html"
+    - title: Linux をインストールします
+      url: "/rhel/installing-linux.html"
+    - title: ホストネットワークの設定（ Red Hat または CentOS ）
+      url: "/rhel/configuring-host-network.html"
+    - title: ホストストレージを設定する
+      url: "/rhel/configuring-host-storage.html"
+    - title: コンテナエンジンのストレージボリュームを設定します
+      url: "/rhel/configuring-docker-storage-volume.html"
+    - title: StorageGRID ホストサービスをインストールする
+      url: "/rhel/installing-storagegrid-webscale-host-service.html"
+- title: 仮想グリッドノード（ Red Hat または CentOS ）の導入
+  entries:
+  - title: Red Hat 環境または CentOS 環境のノード構成ファイルを作成します
+    url: "/rhel/creating-node-configuration-files.html"
+  - title: グリッドノードによるプライマリ管理ノードの検出
+    url: "/rhel/how-grid-nodes-discover-primary-admin-node.html"
+  - title: ノード構成ファイルの例
+    url: "/rhel/example-node-configuration-files.html"
+  - title: StorageGRID 構成を検証
+    url: "/rhel/validating-storagegrid-configuration.html"
+  - title: StorageGRID ホストサービスを開始します
+    url: "/rhel/starting-storagegrid-host-service.html"
+- title: グリッドの設定とインストールの完了（ Red Hat または CentOS ）
+  entries:
+  - title: Grid Manager に移動します
+    url: "/rhel/navigating-to-grid-manager.html"
+  - title: ライセンス情報を指定します
+    url: "/rhel/specifying-storagegrid-license-information.html"
+  - title: サイトを追加します
+    url: "/rhel/adding-sites.html"
+  - title: Grid ネットワークサブネットを指定してください
+    url: "/rhel/specifying-grid-network-subnets.html"
+  - title: 保留中のグリッドノードを承認します
+    url: "/rhel/approving-pending-grid-nodes.html"
+  - title: NTPサーバ情報を指定します
+    url: "/rhel/specifying-network-time-protocol-server-information.html"
+  - title: DNSサーバ情報を指定します
+    url: "/rhel/specifying-domain-name-system-server-information.html"
+  - title: システムパスワードを指定します
+    url: "/rhel/specifying-storagegrid-system-passwords.html"
+  - title: 設定を確認し、インストールを完了します
+    url: "/rhel/reviewing-your-configuration-and-completing-installation.html"
+  - title: インストール後のガイドライン
+    url: "/rhel/post-installation-guidelines.html"
+- title: インストールを自動化（ Red Hat または CentOS ）
+  url: "/rhel/automating-installation.html"
+- title: インストール REST API の概要
+  url: "/rhel/overview-of-installation-rest-api.html"
+- title: 次の手順
+  url: "/rhel/where-to-go-next.html"
+- title: インストールに関する問題のトラブルシューティング
+  url: "/rhel/troubleshooting-installation-issues.html"
+- title: "/etc/sysconfig/network-scripts の例"
+  url: "/rhel/example-etc-sysconfig-network-scripts.html"

@@ -1,0 +1,195 @@
+---
+section: installconfig
+title: アプライアンスハードウェアを設置
+entries:
+- title: クイックスタート
+  pdf-filename: StorageGRID アプライアンスハードウェアを設置
+  url: "/installconfig/index.html"
+- title: ハードウェアの概要
+  entries:
+  - title: SGF6112を参照してください
+    url: "/installconfig/hardware-description-sg6100.html"
+  - title: SG6000を使用します
+    url: "/installconfig/hardware-description-sg6000.html"
+  - title: SG6000コントローラ
+    url: "/installconfig/controllers-in-sg6000-appliances.html"
+  - title: SG5700を使用します
+    url: "/installconfig/hardware-description-sg5700.html"
+  - title: SG5700コントローラ
+    url: "/installconfig/controllers-in-sg5700-appliances.html"
+  - title: SG100およびSG1000
+    url: "/installconfig/hardware-description-sg100-and-1000.html"
+- title: 設置を準備
+  entries:
+  - title: サイトを準備
+    url: "/installconfig/preparing-site.html"
+  - title: 箱を開梱します
+    url: "/installconfig/unpacking-boxes.html"
+  - title: 追加の機器と工具を入手します
+    url: "/installconfig/obtaining-additional-equipment-and-tools.html"
+  - title: Web ブラウザの要件
+    url: "/installconfig/web-browser-requirements.html"
+  - title: アプライアンスのネットワーク接続を確認します
+    entries:
+    - title: 概要
+      url: "/installconfig/reviewing-appliance-network-connections.html"
+    - title: ネットワーク接続（SG5700）
+      url: "/installconfig/sg5700-appliance-connections.html"
+    - title: ポートボンディングモード（SGF6112）
+      url: "/installconfig/port-bond-modes-for-sgf6112.html"
+    - title: ポートボンディングモード（SG6000-CNコントローラ）
+      url: "/installconfig/port-bond-modes-for-sg6000-cn-controller.html"
+    - title: ポートボンディングモード（E5700SGコントローラ）
+      url: "/installconfig/port-bond-modes-for-e5700sg-controller-ports.html"
+    - title: ポートボンディングモード（SG100およびSG1000）
+      url: "/installconfig/port-bond-modes-for-sg100-and-sg1000.html"
+  - title: インストール情報を収集します
+    entries:
+    - title: 概要
+      url: "/installconfig/gathering-installation-information-overview.html"
+    - title: SGF6112を参照してください
+      url: "/installconfig/gathering-installation-information-sg6100.html"
+    - title: SG6000を使用します
+      url: "/installconfig/gathering-installation-information-sg6000.html"
+    - title: SG5700を使用します
+      url: "/installconfig/gathering-installation-information-sg5700.html"
+    - title: SG100およびSG1000
+      url: "/installconfig/gathering-installation-information-sg100-and-sg1000.html"
+- title: アプライアンスのインストールと設定を自動化
+  url: "/installconfig/automating-appliance-installation-and-configuration.html"
+- title: StorageGRID の設定を自動化
+  url: "/installconfig/automating-configuration-of-storagegrid.html"
+- title: インストール REST API の概要
+  url: "/installconfig/overview-of-installation-rest-apis.html"
+- title: ハードウェアを設置
+  entries:
+  - title: ハードウェアを登録
+    url: "/installconfig/registering-hardware.html"
+  - title: キャビネットまたはラックに設置します
+    entries:
+    - title: SGF6112を参照してください
+      url: "/installconfig/installing-appliance-in-cabinet-or-rack-sgf6112.html"
+    - title: SG6000を使用します
+      entries:
+      - title: 概要
+        pdf-filename: キャビネットまたはラックにSG6000を設置します
+        url: "/installconfig/installing-hardware-sg6000.html"
+      - title: 60ドライブシェルフの設置（SG6060）
+        url: "/installconfig/sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html"
+      - title: ドライブの取り付け（SG6060）
+        url: "/installconfig/sg6060-installing-drives.html"
+      - title: 24ドライブシェルフの設置（SGF6024）
+        url: "/installconfig/sgf6024-installing-24-drive-shelves-into-cabinet-or-rack.html"
+      - title: SG6000-CNコントローラの設置（SG6060およびSG6024）
+        url: "/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html"
+    - title: SG5700を使用します
+      url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg5700.html"
+    - title: SG100およびSG1000
+      url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html"
+  - title: アプライアンスをケーブル接続します
+    entries:
+    - title: SGF6112を参照してください
+      url: "/installconfig/cabling-appliance-sgf6112.html"
+    - title: SG6000を使用します
+      url: "/installconfig/cabling-appliance-sg6000.html"
+    - title: SG5700を使用します
+      url: "/installconfig/cabling-appliance-sg5700.html"
+    - title: SG100およびSG1000
+      url: "/installconfig/cabling-appliance-sg100-and-sg1000.html"
+  - title: 電源コードを接続し、電源を投入します
+    entries:
+    - title: SGF6112を参照してください
+      url: "/installconfig/connecting-power-cords-and-applying-power-sgf6112.html"
+    - title: SG6000を使用します
+      url: "/installconfig/connecting-power-cords-and-applying-power-sg6000.html"
+    - title: SG5700を使用します
+      url: "/installconfig/connecting-power-cords-and-applying-power-sg5700.html"
+    - title: SG100およびSG1000
+      url: "/installconfig/connecting-power-cords-and-applying-power-sg100-and-sg1000.html"
+  - title: ステータスインジケータとコードを表示します
+    url: "/installconfig/viewing-status-indicators.html"
+- title: ハードウェアをセットアップする
+  entries:
+  - title: 概要
+    url: "/installconfig/configuring-hardware.html"
+  - title: StorageGRID 接続を設定します
+    entries:
+    - title: StorageGRID アプライアンスインストーラにアクセスします
+      url: "/installconfig/accessing-storagegrid-appliance-installer.html"
+    - title: StorageGRID アプライアンスインストーラのバージョンを確認してアップグレードします
+      url: "/installconfig/verifying-and-upgrading-storagegrid-appliance-installer-version.html"
+    - title: ネットワークリンクを設定する
+      url: "/installconfig/configuring-network-links.html"
+    - title: StorageGRID IP アドレスを設定する
+      url: "/installconfig/setting-ip-configuration.html"
+    - title: ネットワーク接続を確認します
+      url: "/installconfig/verifying-network-connections.html"
+    - title: ポートレベルのネットワーク接続を確認
+      url: "/installconfig/verifying-port-level-network-connections.html"
+    - title: SANtricity System Managerのセットアップ（SG6000およびSG5700）
+      url: "/installconfig/accessing-and-configuring-santricity-system-manager.html"
+  - title: BMCインターフェイスの設定（SGF6112、SG6000、SG100、SG1000）
+    entries:
+    - title: 概要
+      url: "/installconfig/configuring-bmc-interface.html"
+    - title: rootパスワードを変更します
+      url: "/installconfig/changing-root-password-for-bmc-interface.html"
+    - title: BMC 管理ポートの IP アドレスを設定します
+      url: "/installconfig/setting-ip-address-for-bmc-management-port.html"
+    - title: BMC インターフェイスにアクセスします
+      url: "/installconfig/accessing-bmc-interface.html"
+    - title: SNMPを設定します
+      url: "/installconfig/configuring-snmp-settings-for-bmc.html"
+    - title: E メール通知を設定
+      url: "/installconfig/setting-up-email-notifications-for-alerts.html"
+  - title: オプション：ノード暗号化を有効にします
+    url: "/installconfig/optional-enabling-node-encryption.html"
+  - title: オプション：RAIDモードを変更（SG5760およびSG6000）
+    url: "/installconfig/optional-changing-raid-mode.html"
+  - title: オプション：ネットワークポートを再マッピングします
+    url: "/installconfig/optional-remapping-network-ports-for-appliance.html"
+- title: アプライアンスノードを導入
+  entries:
+  - title: アプライアンスストレージノードを導入する
+    url: "/installconfig/deploying-appliance-storage-node.html"
+  - title: サービスアプライアンスノードを導入する
+    url: "/installconfig/deploying-services-appliance-node.html"
+  - title: アプライアンスの設置を監視する
+    url: "/installconfig/monitoring-appliance-installation.html"
+  - title: StorageGRID アプライアンスインストーラの実行中にアプライアンスをリブートします
+    url: "/installconfig/rebooting-appliance-while-sg-appliance-installer-is-running.html"
+  - title: インストールのトラブルシューティング（SGF6112）
+    url: "/installconfig/troubleshooting-hardware-installation-sg6100.html"
+    entries:
+    - title: ブート時のコード（SGF6112）
+      url: "/installconfig/viewing-boot-up-codes-for-sgf6112.html"
+    - title: エラーコード（SGF6112）
+      url: "/installconfig/viewing-error-codes-for-sgf6112.html"
+    - title: ハードウェアのセットアップがハングしたように見える（SGF6112）
+      url: "/installconfig/hardware-setup-appears-to-hang-sgf6112.html"
+    - title: 接続の問題（SGF6112）
+      url: "/installconfig/troubleshooting-connection-issues-sgf6112.html"
+  - title: インストールのトラブルシューティング（SG6000またはSG5700）
+    url: "/installconfig/troubleshooting-hardware-installation.html"
+    entries:
+    - title: ブート時のコード（SG6000-CNコントローラ）
+      url: "/installconfig/viewing-boot-up-codes-for-sg6000-cn-controller.html"
+    - title: エラアコオトSG6000-CNコントロオラ
+      url: "/installconfig/viewing-error-codes-for-sg6000-cn-controller.html"
+    - title: ハードウェアのセットアップがハングしたように見える（SG6000またはSG5700）
+      url: "/installconfig/hardware-setup-appears-to-hang.html"
+    - title: 接続の問題（SG6000またはSG5700）
+      url: "/installconfig/troubleshooting-connection-issues.html"
+    - title: HEエラー：SANtricity OSソフトウェアとの同期エラー（SG5700）
+      url: "/installconfig/he-error-error-synchronizing-with-santricity-os-software.html"
+  - title: インストールのトラブルシューティング（SG100およびSG1000）
+    url: "/installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html"
+    entries:
+    - title: ブート時のコード（SG100およびSG1000）
+      url: "/installconfig/viewing-boot-up-codes-for-appliance-sg100-and-sg1000.html"
+    - title: エラーコード（SG100およびSG1000）
+      url: "/installconfig/viewing-error-codes-for-sg1000-controller-sg100-and-sg1000.html"
+    - title: ハードウェアのセットアップがハングしたように見える（ SG100 と SG1000 ）
+      url: "/installconfig/hardware-setup-appears-to-hang-sg100-and-sg1000.html"
+    - title: 接続の問題（SG100およびSG1000）
+      url: "/installconfig/troubleshooting-connection-issues-sg100-and-sg1000.html"

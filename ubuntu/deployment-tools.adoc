@@ -1,0 +1,25 @@
+---
+permalink: ubuntu/deployment-tools.html 
+sidebar: sidebar 
+keywords: deployment tools 
+summary: StorageGRID のインストールのすべてまたは一部を自動化するとメリットが得られる場合があります。 
+---
+= 導入ツール
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID のインストールのすべてまたは一部を自動化するとメリットが得られる場合があります。
+
+導入を自動化すると、次のいずれかの場合に役立ちます。
+
+* 物理ホストや仮想ホストの導入と設定に Ansible 、 Puppet 、 Chef などの標準のオーケストレーションフレームワークをすでに使用している場合。
+* 複数の StorageGRID インスタンスを導入する場合。
+* 大規模で複雑な StorageGRID インスタンスを導入する場合。
+
+
+StorageGRID ホストサービスはパッケージでインストールされ、構成ファイルで制御されます。構成ファイルは、手動インストール時に対話形式で作成できるほか、あらかじめ用意して（またはプログラム化して）標準のオーケストレーションフレームワークを使用した自動インストールに使用できます。StorageGRID には、 StorageGRID アプライアンスと StorageGRID システム全体（「グリッド」）の設定を自動化するためのオプションの Python スクリプトが用意されています。これらのスクリプトは直接使用することも、 StorageGRID インストール REST API の使用方法を調べることもできます。グリッドの導入ツールや設定ツールを独自に開発する際の参考としても使用できます。
+
+StorageGRID の導入のすべてまたは一部の自動化については、を参照してください link:automating-installation.html["インストールを自動化します"] インストールプロセスを開始する前に、

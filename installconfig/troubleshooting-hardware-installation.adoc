@@ -1,0 +1,14 @@
+---
+permalink: installconfig/troubleshooting-hardware-installation.html 
+sidebar: sidebar 
+keywords: storage node, storage appliance, troubleshoot, troubleshooting, hardware, install, installation 
+summary: 設置作業で問題が発生した場合は、ハードウェアのセットアップや接続の問題に関するトラブルシューティング情報を確認すると役立つことがあります。 
+---
+= ハードウェアの設置に関するトラブルシューティング（SG6000またはSG5700）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+設置作業で問題が発生した場合は、ハードウェアのセットアップや接続の問題に関するトラブルシューティング情報を確認すると役立つことがあります。

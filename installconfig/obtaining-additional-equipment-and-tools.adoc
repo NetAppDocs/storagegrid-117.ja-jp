@@ -1,0 +1,237 @@
+---
+permalink: installconfig/obtaining-additional-equipment-and-tools.html 
+sidebar: sidebar 
+keywords: equipment to install appliance, tools for installation 
+summary: StorageGRID アプライアンスを設置する前に、必要な追加機器や工具がすべて揃っていることを確認します。 
+---
+= 追加の機器と工具を入手します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID アプライアンスを設置する前に、必要な追加機器や工具がすべて揃っていることを確認します。
+
+
+
+== すべてのアプライアンス
+
+すべてのアプライアンスを設置および設定するには、次の機器が必要です。
+
+[cols="1a,4a"]
+|===
+| 項目 | それがどのように見えるか 
+
+
+ a| 
+ドライバ
+ a| 
+image::../media/screwdrivers.gif[2 本のドライバ]
+
+* フィリップス番号2 本のドライバ
+* 中型マイナスドライバ
+
+
+
+
+ a| 
+静電気防止用リストストラップ
+ a| 
+image::../media/appliance_wriststrap.gif[静電気防止用リストストラップ]
+
+
+
+ a| 
+サービスラップトップ
+ a| 
+image::../media/sam_management_client.gif[サービスラップトップ]
+
+* link:web-browser-requirements.html["サポートされている Web ブラウザ"]
+* PuTTY などの SSH クライアント
+* 1GbE （ RJ-45 ）ポート
+
+
+
+NOTE: 一部のポートでは 10/100 イーサネット速度がサポートされない場合があります。
+
+
+
+ a| 
+オプションのツール
+ a| 
+image::../media/optional_tools.gif[電動ドリルと懐中電灯]
+
+* ヘッドビット付き電源ドリル
+* 懐中電灯
+
+
+|===
+
+
+== SGF6112を参照してください
+
+SGF6112ハードウェアの設置と設定には、次の追加機器が必要です。
+
+[cols="1a,4a"]
+|===
+| 項目 | それがどのように見えるか 
+
+
+ a| 
+光ケーブルとトランシーバ
+ a| 
+image::../media/fc_cable_and_sfp.gif[光ケーブルと QSFP+ トランシーバ]
+
+* 次のいずれかのタイプのケーブルを1～4本使用します。
++
+** Twinax / Copperの略
+** Fiber/Opticalの略
+
+
+* リンク速度に基づいて、次の各トランシーバ/アダプタを1~4個（速度の混在はサポートされていません）。
++
+** 10GbE SFP+
+** 25GbE SFP28
+
+
+
+
+
+
+ a| 
+RJ-45（Cat5/Cat5e/Cat6/Cat6A）イーサネットケーブル
+ a| 
+image::../media/ethernet_cables.png[イーサネットケーブル]
+
+|===
+
+
+== SG6000を使用します
+
+SG6000ハードウェアの設置と設定には、次の追加機器が必要です。
+
+[cols="1a,4a"]
+|===
+| 項目 | それがどのように見えるか 
+
+
+ a| 
+光ケーブルとSFPトランシーバ
+ a| 
+image::../media/fc_cable_and_sfp.gif[光ケーブルと SFP+ トランシーバ]
+
+* 次のいずれかのタイプのケーブルを1～4本使用します。
++
+** Twinax / Copperの略
+** Fiber/Opticalの略
+
+
+* リンク速度に基づいて、次の各トランシーバ/アダプタを1~4個（速度の混在はサポートされていません）。
++
+** 10GbE SFP+
+** 25GbE SFP28
+
+
+
+
+
+
+ a| 
+RJ-45（Cat5/Cat5e/Cat6）イーサネットケーブル
+ a| 
+image::../media/ethernet_cables.png[イーサネットケーブル]
+
+
+
+ a| 
+オプションのツール
+ a| 
+60 ドライブシェルフのリフト機を使用します
+
+|===
+
+
+== SG5700を使用します
+
+SG5700ハードウェアの設置と設定には、次の追加機器が必要です。
+
+[cols="1a,4a"]
+|===
+| 項目 | それがどのように見えるか 
+
+
+ a| 
+光ケーブルとSFPトランシーバ
+ a| 
+image::../media/fc_cable_and_sfp.gif[光ケーブルと SFP+ トランシーバ]
+
+* 使用する 10 / 25GbE ポート用の光ケーブル
+* オプション： 25GbE のリンク速度を使用する場合は、 SFP28 トランシーバを搭載します
+
+
+
+
+ a| 
+イーサネットケーブル
+ a| 
+image::../media/ethernet_cables.png[イーサネットケーブル]
+
+
+
+ a| 
+オプションのツール
+ a| 
+SG5760 のリフト機械化
+
+|===
+
+
+== SG100およびSG1000
+
+SG100およびSG1000ハードウェアの設置と設定には、次の追加機器が必要です。
+
+[cols="1a,4a"]
+|===
+| 項目 | それがどのように見えるか 
+
+
+ a| 
+光ケーブルとトランシーバ
+ a| 
+image::../media/fc_cable_and_sfp.gif[光ケーブルと QSFP+ トランシーバ]
+
+* 次のいずれかのタイプのケーブルを1～4本使用します。
++
+** Twinax / Copperの略
+** Fiber/Opticalの略
+
+
+* リンク速度に基づいて、次の各トランシーバ/アダプタを1~4個（速度の混在はサポートされていません）。
++
+** SG100 ：
++
+*** 10GbE SFP+
+*** 25GbE SFP28
+
+
+** SG1000 ：
++
+*** 10GbE QSFP-SFPアダプタ（QSA）およびSFP+
+*** 25GbE QSFP / SFPアダプタ（QSA）およびSFP28
+*** 40GbE QSFP+
+*** 100GbE QFSP28
+
+
+
+
+
+
+
+
+ a| 
+RJ-45（Cat5/Cat5e/Cat6/Cat6A）イーサネットケーブル
+ a| 
+image::../media/ethernet_cables.png[イーサネットケーブル]
+
+|===

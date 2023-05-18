@@ -1,0 +1,246 @@
+---
+permalink: swift/configuring-tenant-accounts-and-connections.html 
+sidebar: sidebar 
+keywords: swift configure tenant account, swift configure tenant connection 
+summary: クライアントアプリケーションからの接続を受け入れるように StorageGRID を設定するには、テナントアカウントを 1 つ以上作成し、接続を設定する必要があります。 
+---
+= テナントアカウントと接続を設定する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+クライアントアプリケーションからの接続を受け入れるように StorageGRID を設定するには、テナントアカウントを 1 つ以上作成し、接続を設定する必要があります。
+
+
+
+== Swift テナントアカウントを作成および設定します
+
+Swift API クライアントで StorageGRID に対してオブジェクトの格納や読み出しを行うには、 Swift テナントアカウントが必要です。各テナントアカウントには、専用のアカウント ID 、専用のグループとユーザ、および専用のコンテナとオブジェクトがあります。
+
+Swift テナントアカウントは、 StorageGRID のグリッド管理者がグリッドマネージャまたはグリッド管理 API を使用して作成します。
+
+いつ link:../swift/configuring-tenant-accounts-and-connections.html["Swiftテナントアカウントを作成する"]グリッド管理者は次の情報を指定します。
+
+* link:../admin/editing-tenant-account.html["テナントの表示名"] （テナントのアカウントIDは自動的に割り当てられ、変更できません）
+* オプションで、を指定します link:../admin/editing-tenant-account.html["テナントアカウントのストレージクォータ"] -テナントのオブジェクトに使用できる最大のギガバイト数、テラバイト数、またはペタバイト数。テナントのストレージクォータは、物理容量（ディスクのサイズ）ではなく、論理容量（オブジェクトのサイズ）を表します。
+* 状況 link:../admin/configuring-sso.html["シングルサインオン（SSO）"] StorageGRID システムでは使用されていない。テナントアカウントが独自のアイデンティティソースを使用するかグリッドのアイデンティティソースを共有するか、およびテナントのローカルrootユーザの初期パスワード。
+* SSOが有効な場合は、テナントアカウントを設定するためのRoot Access権限が割り当てられているフェデレーテッドグループ。
+
+
+Swiftテナントアカウントを作成すると、Root Access権限が割り当てられたユーザは、Tenant Managerにアクセスして次のタスクを実行できるようになります。
+
+* アイデンティティフェデレーションの設定（グリッドとアイデンティティソースを共有する場合を除く）、およびローカルグループとユーザの作成
+* ストレージ使用状況を監視しています
+
+
+
+IMPORTANT: Swiftユーザには、に対するRootアクセス権限が必要です link:../tenant/signing-in-to-tenant-manager.html["Tenant Managerにアクセスします"]。ただし Root Access 権限では、 Swift REST API に認証してコンテナを作成したりオブジェクトを取り込んだりすることはできません。Swift REST API に認証するには、 Swift 管理者の権限が必要です。
+
+
+
+== クライアント接続の設定方法
+
+グリッド管理者は、 Swift クライアントがデータの格納と読み出しを行うために StorageGRID に接続する方法に関連する設定を行います。接続するために必要な具体的な情報は、選択した設定によって異なります。
+
+クライアントアプリケーションは、管理ノードまたはゲートウェイノード上のロードバランササービスに接続するか、必要に応じて管理ノードまたはゲートウェイノードのハイアベイラビリティ（HA）グループの仮想IPアドレスに接続することで、オブジェクトの格納や読み出しを行うことができます。
+
+
+NOTE: ロードバランシングにStorageGRID を使用するすべてのアプリケーションは、ロードバランササービスを使用して接続する必要があります。
+
+* 外部ロードバランサを使用するかどうかに関係なく、ストレージノードに追加されます
+
+
+StorageGRID を設定する場合、グリッド管理者はグリッドマネージャまたはグリッド管理 API を使用して次の手順を実行できます。これらはすべてオプションです。
+
+. ロードバランササービスのエンドポイントを設定する。
++
+ロードバランササービスを使用するようにエンドポイントを設定する必要があります。管理ノードまたはゲートウェイノード上のロードバランササービスは、クライアントアプリケーションからの受信ネットワーク接続を複数のストレージノードに分散します。ロードバランサエンドポイントを作成する際、 StorageGRID 管理者は、ポート番号、エンドポイントで HTTP / HTTPS 接続を許可するかどうか、エンドポイントを使用するクライアントのタイプ（ S3 または Swift ）、 HTTPS 接続に使用する証明書（該当する場合）を指定します。Swiftはこれらをサポートしています link:supported-swift-api-endpoints.html["エンドポイントタイプ"]。
+
+. 信頼されていないクライアントネットワークを設定する
++
+StorageGRID 管理者がノードのクライアントネットワークを信頼されていないクライアントネットワークとして設定した場合、ノードはロードバランサエンドポイントとして明示的に設定されたポートでクライアントネットワークのインバウンド接続だけを受け入れます。
+
+. ハイアベイラビリティグループを設定する。
++
+管理者が HA グループを作成すると、複数の管理ノードまたはゲートウェイノードのネットワークインターフェイスがアクティブ / バックアップ構成になります。クライアント接続は、 HA グループの仮想 IP アドレスを使用して確立されます。
+
+
+
+を参照してください link:../admin/configuration-options-for-ha-groups.html["HA グループの設定オプション"] を参照してください。
+
+
+
+=== Summary ：クライアント接続の IP アドレスとポート
+
+クライアントアプリケーションは、グリッドノードの IP アドレスおよびそのノード上のサービスのポート番号を使用して StorageGRID に接続します。ハイアベイラビリティ（ HA ）グループが設定されている場合は、 HA グループの仮想 IP アドレスを使用してクライアントアプリケーションを接続できます。
+
+
+
+==== クライアント接続に必要な情報
+
+次の表に、クライアントが StorageGRID に接続できるさまざまな方法、および各接続タイプで使用される IP アドレスとポートを示します。を参照してください link:../admin/summary-ip-addresses-and-ports-for-client-connections.html["クライアント接続用のIPアドレスとポート"] 詳細については、StorageGRID 管理者にお問い合わせください。
+
+|===
+| 接続が確立される場所 | クライアントが接続するサービス | IP アドレス | ポート 
+
+
+ a| 
+HA グループ
+ a| 
+ロードバランサ
+ a| 
+HA グループの仮想 IP アドレス
+ a| 
+* ロードバランサエンドポイントのポート
+
+
+
+
+ a| 
+管理ノード
+ a| 
+ロードバランサ
+ a| 
+管理ノードの IP アドレス
+ a| 
+* ロードバランサエンドポイントのポート
+
+
+
+
+ a| 
+ゲートウェイノード
+ a| 
+ロードバランサ
+ a| 
+ゲートウェイノードの IP アドレス
+ a| 
+* ロードバランサエンドポイントのポート
+
+
+
+
+ a| 
+ストレージノード
+ a| 
+LDR
+ a| 
+ストレージノードの IP アドレス
+ a| 
+デフォルトの Swift ポート：
+
+* HTTPS ： 18083
+* HTTP ： 18085
+
+
+|===
+
+
+==== 例
+
+Swift クライアントをゲートウェイノードの HA グループのロードバランサエンドポイントに接続するには、次のように構造化された URL を使用します。
+
+* `https://_VIP-of-HA-group:LB-endpoint-port_`
+
+
+たとえば、 HA グループの仮想 IP アドレスが 192.0.2.6 で、 Swift ロードバランサエンドポイントのポート番号が 10444 の場合、 Swift クライアントは次の URL を使用して StorageGRID に接続できます。
+
+* `\https://192.0.2.6:10444`
+
+
+クライアントが StorageGRID への接続に使用する IP アドレスに DNS 名を設定できます。ローカルネットワーク管理者にお問い合わせください。
+
+
+
+=== HTTPS 接続または HTTP 接続を使用するかどうかを決定します
+
+ロードバランサエンドポイントを使用してクライアント接続を行う場合は、そのエンドポイントに指定されているプロトコル（ HTTP または HTTPS ）を使用して接続を確立する必要があります。ストレージノードへのクライアント接続にHTTPを使用するには、HTTPの使用を有効にする必要があります。
+
+デフォルトでは、クライアントアプリケーションがストレージノードに接続する際に、すべての接続に暗号化されたHTTPSを使用する必要があります。必要に応じて、を選択してセキュアでないHTTP接続を有効にすることもできます link:../admin/changing-network-options-object-encryption.html["ストレージノード接続用のHTTPを有効にします"] オプションを選択します。たとえば、非本番環境でストレージノードへの接続をテストする際に、クライアントアプリケーションで HTTP を使用できます。
+
+
+IMPORTANT: 要求と応答が暗号化されずに送信されるため、本番環境のグリッドでHTTPを有効にする場合は注意が必要です。
+
+[ストレージノード接続用のHTTPを有効にする]*オプションが選択されている場合、クライアントはHTTPSとは別のポートをHTTPに使用する必要があります。
+
+
+
+== Swift API 設定で接続をテストします
+
+Swift の CLI を使用して、 StorageGRID システムへの接続をテストし、システムに対するオブジェクトの読み取りと書き込みが可能であることを確認できます。
+
+.作業を開始する前に
+* Swift のコマンドラインクライアント python-swiftclient をダウンロードしてインストールしておく必要があります。
++
+https://["swifftStack ： python-swiftclient"^]
+
+* StorageGRID システムに Swift テナントアカウントが必要です。
+
+
+.このタスクについて
+セキュリティを設定していない場合は、を追加する必要があります `--insecure` これらの各コマンドにフラグを設定します。
+
+.手順
+. StorageGRID Swift 環境の情報 URL を照会します。
++
+[listing]
+----
+swift
+-U <Tenant_Account_ID:Account_User_Name>
+-K <User_Password>
+-A https://<FQDN | IP>:<Port>/info
+capabilities
+----
++
+この手順で、 Swift 環境が機能することをテストできます。オブジェクトを格納してアカウント設定をさらにテストするには、以降の手順を実行します。
+
+. オブジェクトをコンテナに配置します。
++
+[listing]
+----
+touch test_object
+swift
+-U <Tenant_Account_ID:Account_User_Name>
+-K <User_Password>
+-A https://<FQDN | IP>:<Port>/auth/v1.0
+upload test_container test_object
+--object-name test_object
+----
+. コンテナを取得してオブジェクトを確認します。
++
+[listing]
+----
+swift
+-U <Tenant_Account_ID:Account_User_Name>
+-K <User_Password>
+-A https://<FQDN | IP>:<Port>/auth/v1.0
+list test_container
+----
+. オブジェクトを削除します。
++
+[listing]
+----
+swift
+-U <Tenant_Account_ID:Account_User_Name>
+-K <User_Password>
+-A https://<FQDN | IP>:<Port>/auth/v1.0
+delete test_container test_object
+----
+. コンテナを削除します。
++
+[listing]
+----
+swift
+-U `<_Tenant_Account_ID:Account_User_Name_>`
+-K `<_User_Password_>`
+-A `\https://<_FQDN_ | _IP_>:<_Port_>/auth/v1.0'
+delete test_container
+----
+
+
+.関連情報
+link:configuring-tenant-accounts-and-connections.html["Swift テナントアカウントを作成および設定します"]
+
+link:configuring-security-for-rest-api.html["REST API のセキュリティを設定する"]

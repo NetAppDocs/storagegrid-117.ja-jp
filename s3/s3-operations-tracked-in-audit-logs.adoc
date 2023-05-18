@@ -1,0 +1,51 @@
+---
+permalink: s3/s3-operations-tracked-in-audit-logs.html 
+sidebar: sidebar 
+keywords: audit log actions tracked 
+summary: バケットおよびオブジェクトのいくつかの処理は、 StorageGRID の監査ログで追跡されます。 
+---
+= 監査ログで追跡される S3 処理
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+バケットおよびオブジェクトのいくつかの処理は、 StorageGRID の監査ログで追跡されます。
+
+
+
+== 監査ログで追跡されるバケットの処理
+
+* バケットを削除します
+* バケットのタグ付けを削除します
+* 複数のオブジェクトを削除します
+* GET Bucket （ List Objects ）
+* GET Bucket Object versions
+* GET Bucket tagging
+* HEAD Bucket （ヘッドバケット）
+* PUT Bucket の場合
+* PUT Bucket compliance で確認してください
+* PUT Bucket tagging
+* PUT Bucket versioning の場合
+
+
+
+
+== 監査ログで追跡されるオブジェクトの処理
+
+* Complete Multipart Upload の実行
+* Upload Part（ILMルールの取り込み動作がBalancedまたはStrictの場合）
+* Upload Part - Copy（ILMルールの取り込み動作がBalancedまたはStrictの場合）
+* オブジェクトを削除します
+* オブジェクトの取得
+* HEAD Object の実行
+* POST Object restore の実行
+* PUT Object の場合
+* PUT Object - Copy の各コマンドを実行します
+
+
+.関連情報
+link:operations-on-buckets.html["バケットの処理"]
+
+link:operations-on-objects.html["オブジェクトの処理"]

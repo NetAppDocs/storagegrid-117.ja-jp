@@ -1,0 +1,113 @@
+---
+permalink: s3/custom-operations-on-buckets.html 
+sidebar: sidebar 
+keywords: operations, buckets, custom, custom operations on buckets 
+summary: StorageGRID システムでは、 S3 REST API に追加されたシステム固有のカスタムバケット処理をサポートしています。 
+---
+= バケットのカスタム処理
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID システムでは、 S3 REST API に追加されたシステム固有のカスタムバケット処理をサポートしています。
+
+次の表に、 StorageGRID でサポートされるカスタムバケット処理を示します。
+
+[cols="1a,1a,1a"]
+|===
+| 操作 | 説明 | を参照してください。 
+
+
+ a| 
+GET Bucket consistency
+ a| 
+特定のバケットに適用されている整合性レベルを返します。
+ a| 
+link:get-bucket-consistency-request.html["GET Bucket consistency"]
+
+
+
+ a| 
+PUT Bucket consistency
+ a| 
+特定のバケットに適用される整合性レベルを設定します。
+ a| 
+link:put-bucket-consistency-request.html["PUT Bucket consistency"]
+
+
+
+ a| 
+GET Bucket last access time の場合
+ a| 
+特定のバケットで最終アクセス時間の更新が有効になっているか無効になっているかを返します。
+ a| 
+link:get-bucket-last-access-time-request.html["GET Bucket last access time の場合"]
+
+
+
+ a| 
+PUT Bucket last access time のように指定します
+ a| 
+特定のバケットの最終アクセス時間の更新を有効または無効にできます。
+ a| 
+link:put-bucket-last-access-time-request.html["PUT Bucket last access time のように指定します"]
+
+
+
+ a| 
+バケットのメタデータ通知設定を削除します
+ a| 
+特定のバケットに関連付けられているメタデータ通知設定 XML を削除します。
+ a| 
+link:delete-bucket-metadata-notification-configuration-request.html["バケットのメタデータ通知設定を削除します"]
+
+
+
+ a| 
+GET Bucket metadata notification configuration
+ a| 
+特定のバケットに関連付けられているメタデータ通知設定 XML を返します。
+ a| 
+link:get-bucket-metadata-notification-configuration-request.html["GET Bucket metadata notification configuration"]
+
+
+
+ a| 
+PUT Bucket metadata notification configuration のコマンドです
+ a| 
+バケットのメタデータ通知サービスを設定します。
+ a| 
+link:put-bucket-metadata-notification-configuration-request.html["PUT Bucket metadata notification configuration のコマンドです"]
+
+
+
+ a| 
+準拠設定の PUT Bucket
+ a| 
+廃止およびサポート終了：準拠を有効にした新しいバケットを作成できなくなりました。
+ a| 
+link:deprecated-put-bucket-request-modifications-for-compliance.html["廃止：準拠設定を指定した PUT Bucket"]
+
+
+
+ a| 
+GET Bucket compliance で確認します
+ a| 
+廃止されましたがサポートされています：既存の古い準拠バケットに対して現在有効な準拠設定を返します。
+ a| 
+link:deprecated-get-bucket-compliance-request.html["廃止予定：バケット準拠を取得します"]
+
+
+
+ a| 
+PUT Bucket compliance で確認してください
+ a| 
+廃止されましたがサポートされています：既存の古い準拠バケットの準拠設定を変更できます。
+ a| 
+link:deprecated-put-bucket-compliance-request.html["廃止予定：PUT Bucket compliance"]
+
+|===
+.関連情報
+link:s3-operations-tracked-in-audit-logs.html["監査ログで追跡される S3 処理"]

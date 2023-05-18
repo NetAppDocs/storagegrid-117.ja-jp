@@ -1,0 +1,95 @@
+---
+permalink: upgrade/removed-or-deprecated-features.html 
+sidebar: sidebar 
+keywords: features, removed, deprecated 
+summary: 一部の機能については、このリリースで削除または廃止されています。以下の項目を確認して、アップグレードの前にクライアントアプリケーションを更新する必要があるか、または設定を変更する必要があるかを理解してください。 
+---
+= 削除または廃止された機能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+一部の機能については、このリリースで削除または廃止されています。以下の項目を確認して、アップグレードの前にクライアントアプリケーションを更新する必要があるか、または設定を変更する必要があるかを理解してください。
+
+
+
+== Connection Load Balancer（CLB）サービスが削除されました
+
+ゲートウェイノード上のConnection Load Balancer（CLB）サービスは、StorageGRID 11.4で廃止され、ソフトウェアから完全に削除されています。クライアントアプリケーションからの受信ネットワーク接続をストレージノードに分散するには、すべての管理ノードとゲートウェイノードに含まれるロードバランササービスのロードバランサエンドポイントを設定するか、他社製のロードバランサを統合します。を参照してください link:../admin/managing-load-balancing.html["ロードバランシングに関する考慮事項"]。
+
+既存のStorageGRID バージョンでS3またはSwift API用のカスタム証明書が設定されている場合は、StorageGRID 11.7へのアップグレード時にCLBポート8082、8083、8084、および8085がロードバランサエンドポイントに自動的に変換されます。
+
+
+
+== SG5600アプライアンスのサポートは終了しました
+
+SG5600アプライアンスのサポートが終了しました。ハードウェア更新のオプションについては、ネットアップの営業担当者にお問い合わせください。
+
+SG5600ハードウェアのメンテナンス手順を実行する必要がある場合は、を使用してください https://["StorageGRID 11.6の手順"^]。
+
+
+
+== Swiftのサポートは廃止されました
+
+StorageGRID 11.7リリースでは、Swiftクライアントアプリケーションのサポートは廃止されました。SwiftクライアントアプリケーションをサポートするユーザインターフェイスとAPIは、今後のリリースで削除される予定です。
+
+
+
+== アーカイブノードのサポートは廃止されました
+
+アーカイブノードのサポート（S3 APIを使用してクラウドにアーカイブする場合とTSMミドルウェアを使用してテープにアーカイブする場合の両方）は廃止され、今後のリリースで削除される予定です。アーカイブノードから外部アーカイブストレージシステムへのオブジェクトの移動は、より多くの機能を提供するILMクラウドストレージプールに置き換えられました。
+
+を参照してください
+
+* link:../admin/migrating-objects-from-cloud-tiering-s3-to-cloud-storage-pool.html["オブジェクトをクラウドストレージプールに移行します"]
+* link:../ilm/what-cloud-storage-pool-is.html["クラウドストレージプールを使用"]
+
+
+また、StorageGRID 11.7以前では、アクティブなILMポリシーからアーカイブノードを削除する必要があります。アーカイブノードに格納されているオブジェクトデータを削除すると、将来のアップグレードが簡単になります。を参照してください link:../ilm/working-with-ilm-rules-and-ilm-policies.html["ILMルールおよびILMポリシーの操作"]。
+
+
+
+== CIFS / Sambaによる監査エクスポートが削除されました
+
+CIFS / Sambaを使用した監査エクスポートは、StorageGRID Webscale 11.1で廃止され、現在は削除されています。必要に応じて、できます link:../monitor/considerations-for-external-syslog-server.html["外部syslogサーバを使用します"] または link:../admin/configuring-audit-client-access.html["NFSの監査クライアントアクセスを設定します"]。
+
+
+
+== 一時的な場所としてストレージプールを指定するオプションを削除します
+
+これまでは、ストレージプールを1つ含むオブジェクトの配置を使用してILMルールを作成する際に、一時的な場所として使用する2つ目のストレージプールを指定するように求められていました。StorageGRID 11.7以降では、このオプションは削除されています。
+
+
+
+== Grid Managerのオプションが移動または削除されました
+
+Grid Managerのいくつかのオプションが移動または削除されました。
+
+* 。 link:../admin/configuring-stored-object-compression.html["格納オブジェクトを圧縮します"] オプションは* configuration *>* System *>* Object compression *に移動されました。
+* ネットワーク転送の暗号化*内部接続設定が削除され、に置き換えられました link:../admin/manage-tls-ssh-policy.html["TLSおよびSSHポリシー"] 新しい*構成*>*セキュリティ*>*セキュリティ設定*ページのタブをクリックします。
++
+
+NOTE: StorageGRID 11.6ではAES256-SHAオプションがデフォルトであり、StorageGRID 11.7で使用できる設定はこのオプションのみです。AES128-SHAの値は、グリッド管理APIでは無視されます。StorageGRID 11.7へのアップグレードでは、ネットワーク転送暗号化アルゴリズムがAES256-SHAに設定されます。
+
+* [Stored Object Encryption]*、[Prevent client modification]*、および[Enable HTTP for Storage Node connections]*の各オプションがに移動されました link:../admin/changing-network-options-object-encryption.html["[ネットワークとオブジェクト]タブ"] 新しい* configuration *>* Security *>* Security settings *ページ。
+* 。 link:../admin/changing-browser-session-timeout-interface.html["ブラウザの非アクティブタイムアウト"] オプションは、新しい*構成*>*セキュリティ*>*セキュリティ設定*ページに移動されました。
+* 。 link:../admin/manage-link-costs.html["リンクコスト"] オプションは* support *>* other *>* Link cost *に移動されました。
+* NMSエンティティのリストは、* support *>* other *>* NMSエンティティ*に移動されました。
+* [Stored Object Hashing]*オプションが削除されました。*SHA-1 *および*SHA-256 *の設定は、MD5およびパケットCRC32チェックで追加のCPUリソースを必要とするため、内部バックグラウンド検証には使用されなくなりました。
+* *優先送信者*オプションが削除されました。StorageGRID 環境に複数の管理ノードが含まれている場合は、プライマリ管理ノードがアラート通知、AutoSupport メッセージ、SNMPトラップとインフォーム、および従来のアラーム通知の優先送信者となります。プライマリ管理ノードが使用できなくなると、他の管理ノードから一時的に通知が送信されます。を参照してください link:../admin/what-admin-node-is.html["管理ノードとは"]。
+* 。 link:../admin/configure-firewall-controls.html#untrusted-client-network["信頼されていないクライアントネットワークの設定"] は* configuration *>* Firewall control *に移動されました。
+
+
+
+
+== S3エンドポイントのドメイン名の形式に関する制限事項
+
+エンドポイントドメイン名としてのIPアドレスの使用はサポートされていません。今後のリリースでは設定できなくなります。エンドポイントのドメイン名にIPアドレスを使用する必要がある場合は、テクニカルサポートにお問い合わせください。を参照してください link:../admin/configuring-s3-api-endpoint-domain-names.html["S3エンドポイントのドメイン名"]。
+
+
+
+== ユーザ開始のVolume Lostコマンドが削除されました
+
+。 `proc/CMSI/Volume_Lost` が削除されました。を使用します `repair-data start-replicated-volume-repair` ボリュームのレプリケートデータをリストアするコマンド。

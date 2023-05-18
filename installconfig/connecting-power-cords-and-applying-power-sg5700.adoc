@@ -1,0 +1,33 @@
+---
+permalink: installconfig/connecting-power-cords-and-applying-power-sg5700.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, wire, wiring, cabling, cable, Connecting, connect, power cords, power, applying power, apply power, turn on, power up, ac, ac power 
+summary: アプライアンスの電源を入れると、両方のコントローラがブートされます。 
+---
+= 電源コードを接続して電源を投入（ SG5700 ）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アプライアンスの電源を入れると、両方のコントローラがブートされます。
+
+.作業を開始する前に
+両方のアプライアンスの電源スイッチをオフにしてから、電源を接続する必要があります。
+
+
+CAUTION: * 感電の危険性 * -- 電源コードを接続する前に、アプライアンスの 2 つの電源スイッチがオフになっていることを確認してください。
+
+.手順
+. アプライアンスの 2 つの電源スイッチがオフになっていることを確認します。
+. アプライアンスに 2 本の電源コードを接続します。
+. 2 本の電源コードを、キャビネットまたはラック内の別々の配電ユニットに接続します。
+. アプライアンスの 2 つの電源スイッチをオンにします。
++
+** 電源投入プロセス中は、電源スイッチをオフにしないでください。
+** ファンは初回起動時に大きな音を立てます。起動時に大きな音がしても問題はありません。
+
+
+. コントローラがブートしたら、コントローラのデジタル表示ディスプレイを確認します。
+

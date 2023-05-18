@@ -1,0 +1,61 @@
+---
+permalink: expand/contacting-technical-support.html 
+sidebar: sidebar 
+keywords: contact technical support 
+summary: グリッド拡張プロセスで解決できないエラーが発生した場合やグリッドタスクに失敗した場合は、テクニカルサポートにお問い合わせください。 
+---
+= テクニカルサポートにお問い合わせください
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+グリッド拡張プロセスで解決できないエラーが発生した場合やグリッドタスクに失敗した場合は、テクニカルサポートにお問い合わせください。
+
+.このタスクについて
+テクニカルサポートにお問い合わせいただく際は、発生したエラーのトラブルシューティングに必要なログファイルをお送りください。
+
+.手順
+. 障害が発生した拡張ノードに接続します。
++
+.. 次のコマンドを入力します。``ssh -p 8022 admin@_grid_node_IP_``
++
+
+NOTE: ポート 8022 はベース OS の SSH ポートで、ポート 22 は StorageGRID を実行しているコンテナエンジンの SSH ポートです。
+
+.. に記載されているパスワードを入力します `Passwords.txt` ファイル。
+.. 次のコマンドを入力してrootに切り替えます。 `su -`
+.. に記載されているパスワードを入力します `Passwords.txt` ファイル。
+
+
++
+rootとしてログインすると、プロンプトがから変わります `$` 終了： `#`。
+
+. インストールの段階に応じて、グリッドノードから次のいずれかのログを取得します。
++
+[cols="1a,2a"]
+|===
+| プラットフォーム | ログ 
+
+
+ a| 
+VMware
+ a| 
+** `/var/log/daemon.log`
+** `/var/log/storagegrid/daemon.log`
+** `/var/log/storagegrid/nodes/<node-name>.log`
+
+
+
+
+ a| 
+Linux の場合
+ a| 
+** `/var/log/storagegrid/daemon.log`
+** `/etc/storagegrid/nodes/<node-name>.conf` （障害が発生した各ノード）
+** `/var/log/storagegrid/nodes/<node-name>.log` （障害が発生した各ノード、ない場合もある）
+
+
+|===
+

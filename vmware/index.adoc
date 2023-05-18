@@ -1,0 +1,49 @@
+---
+permalink: vmware/index.html 
+sidebar: sidebar 
+keywords: vmware 
+summary: VMware 環境への StorageGRID システムのインストールは、主に 3 つの手順で行われます。 
+---
+= Install VMware ： Overview 」を参照してください
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+VMware 環境への StorageGRID システムのインストールは、主に 3 つの手順で行われます。
+
+. * 準備 * ：計画と準備の際に、次のタスクを実行します。
++
+** StorageGRID のハードウェア、ソフトウェア、仮想マシン、ストレージ、パフォーマンスの要件について説明します。
+** の詳細については、を参照してください link:../network/index.html["StorageGRID ネットワーク"] これにより、ネットワークを適切に設定できます。
+** StorageGRID グリッドノードのホストとして使用する物理サーバを決めて準備する。
+** 準備したサーバで、次の作業を行います。
++
+*** VMware vSphere ハイパーバイザーをインストールする
+*** ESX ホストを設定
+*** VMware vSphere および vCenter をインストールして設定
+
+
+
+
+. * 導入 * ： VMware vSphere Web Client を使用してグリッドノードを導入します。導入したグリッドノードは、 StorageGRID システムの一部として作成され、 1 つ以上のネットワークに接続されます。
++
+.. VMware vSphere Web Client 、 .vmdk ファイル、および一連の .ovf ファイルテンプレートを使用して、手順 1 で準備したサーバにソフトウェアベースのノードを仮想マシン（ VM ）として導入します。
+.. StorageGRID アプライアンスノードを導入するには、 StorageGRID アプライアンスインストーラを使用します。
++
+
+NOTE: ハードウェア固有のインストールと統合の手順は、StorageGRID のインストール手順 には含まれていません。StorageGRID アプライアンスのインストール方法については、を参照してください link:../installconfig/index.html["ハードウェア設置のクイックスタート"] をクリックして、アプライアンスの手順を確認してください。
+
+
+
+. * 設定 * ：すべてのノードを導入したら、 Grid Manager を使用してグリッドを設定し、インストールを完了します。
+
+
+ここでは、標準的なアプローチで StorageGRID システムを VMware 環境に導入して設定する方法を推奨します。次の代替アプローチに関する情報も参照してください。
+
+* deploy-vsphere-ovftool.sh Bash スクリプト（インストールアーカイブから入手可能）を使用して VMware vSphere にグリッドノードを導入します。
+* Python 設定スクリプト（インストールアーカイブに付属）を使用して、 StorageGRID システムの導入と設定を自動化します。
+* Python 設定スクリプト（インストールアーカイブまたは StorageGRID アプライアンスインストーラで入手可能）を使用して、アプライアンスグリッドノードの導入と設定を自動化する。
+* StorageGRID 環境を高度に開発する場合は、インストール REST API を使用して StorageGRID グリッドノードのインストールを自動化します。
+

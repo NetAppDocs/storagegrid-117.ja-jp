@@ -1,0 +1,18 @@
+---
+permalink: maintain/site-decommissioning.html 
+sidebar: sidebar 
+keywords: site decommission 
+summary: データセンターサイトの StorageGRID システムからの削除が必要になる場合があります。サイトを削除するには、サイトの運用を停止する必要があります。 
+---
+= サイトの運用停止：概要
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+データセンターサイトの StorageGRID システムからの削除が必要になる場合があります。サイトを削除するには、サイトの運用を停止する必要があります。
+
+次のフローチャートは、サイトの運用停止手順の概要を示しています。
+
+image::../media/overview_decommission_site.png[概要：運用停止サイト]
