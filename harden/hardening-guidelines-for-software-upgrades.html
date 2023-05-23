@@ -42,6 +42,7 @@
   <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/storagegrid-117/harden/hardening-guidelines-for-software-upgrades.html" />
   <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/storagegrid-117/harden/hardening-guidelines-for-software-upgrades.html" />
   <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/storagegrid-117/harden/hardening-guidelines-for-software-upgrades.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/storagegrid-117/harden/hardening-guidelines-for-software-upgrades.html" />
   <link rel='stylesheet' href='/ja-jp/storagegrid-117/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
     function addAdobeLaunch(adobeId) {
       var head = document.getElementsByTagName('head')[0];
@@ -311,6 +312,8 @@
           <a href="https://docs.netapp.com/es-es/storagegrid-117/harden/hardening-guidelines-for-software-upgrades.html" target="_self"><span translate="no" class="notranslate">Español</span></a>
         </li><li>
           <a href="https://docs.netapp.com/fr-fr/storagegrid-117/harden/hardening-guidelines-for-software-upgrades.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/it-it/storagegrid-117/harden/hardening-guidelines-for-software-upgrades.html" target="_self"><span translate="no" class="notranslate">Italiano</span></a>
         </li></ul>
     </div>
     <!-- End Language Selector -->
@@ -15002,7 +15005,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-05-18 18:30:28 +0000">05/18/2023</time>
+    <time datetime="2023-05-23 19:07:55 +0000">05/23/2023</time>
     
   
 
@@ -15026,12 +15029,12 @@
 <p>StorageGRID ソフトウェアは、可能なかぎり、最新のメジャーリリースまたは以前のメジャーリリースにアップグレードする必要があります。StorageGRID を最新の状態に保つことで、既知の脆弱性がアクティブになる時間を短縮し、攻撃対象領域全体を削減できます。また、StorageGRID の最新リリースには、以前のリリースには含まれていないセキュリティ強化機能が含まれていることがよくあります。</p>
 </div>
 <div class="paragraph">
-<p>を参照してください https://["NetApp Interoperability Matrix Tool で確認できます"^] （IMT ）をクリックして、使用するStorageGRID ソフトウェアのバージョンを確認します。ホットフィックスが必要になったときに、ネットアップは最新リリースの更新プログラムの作成に優先順位を付けます。一部のパッチは、以前のリリースと互換性がない場合があります。</p>
+<p>を参照してください <a href="https://imt.netapp.com/matrix/#welcome" target="_blank" rel="noopener">"NetApp Interoperability Matrix Tool で確認できます"</a> （IMT ）をクリックして、使用するStorageGRID ソフトウェアのバージョンを確認します。ホットフィックスが必要になったときに、ネットアップは最新リリースの更新プログラムの作成に優先順位を付けます。一部のパッチは、以前のリリースと互換性がない場合があります。</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>最新のStorageGRID リリースとホットフィックスをダウンロードするには、に進みます https://["ネットアップのダウンロード： StorageGRID"^]。</p>
+<p>最新のStorageGRID リリースとホットフィックスをダウンロードするには、に進みます <a href="https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab" target="_blank" rel="noopener">"ネットアップのダウンロード： StorageGRID"</a>。</p>
 </li>
 <li>
 <p>StorageGRID ソフトウェアをアップグレードするには、を参照してください <a href="../upgrade/performing-upgrade.html">"アップグレード手順"</a>。</p>
@@ -15050,7 +15053,7 @@
 <p>外部サービスには、 StorageGRID に間接的に影響する脆弱性が存在する場合がありますStorageGRID が依存するサービスが最新の状態に保たれていることを確認してください。LDAP 、 KMS （ KMIP サーバ）、 DNS 、 NTP などのサービスを利用できます。</p>
 </div>
 <div class="paragraph">
-<p>を使用します https://["NetApp Interoperability Matrix Tool で確認できます"^] をクリックすると、サポートされるバージョンのリストが表示されます。</p>
+<p>を使用します <a href="https://imt.netapp.com/matrix/#welcome" target="_blank" rel="noopener">"NetApp Interoperability Matrix Tool で確認できます"</a> をクリックすると、サポートされるバージョンのリストが表示されます。</p>
 </div>
 </div>
 </div>
@@ -15061,7 +15064,7 @@
 <p>StorageGRID ノードが VMware または別のハイパーバイザーで実行されている場合は、ハイパーバイザーのソフトウェアとファームウェアが最新であることを確認する必要があります。</p>
 </div>
 <div class="paragraph">
-<p>を使用します https://["NetApp Interoperability Matrix Tool で確認できます"^] をクリックすると、サポートされるバージョンのリストが表示されます。</p>
+<p>を使用します <a href="https://imt.netapp.com/matrix/#welcome" target="_blank" rel="noopener">"NetApp Interoperability Matrix Tool で確認できます"</a> をクリックすると、サポートされるバージョンのリストが表示されます。</p>
 </div>
 </div>
 </div>
@@ -15072,7 +15075,7 @@
 <p>StorageGRID ノードで Linux ホストプラットフォームを使用している場合は、セキュリティ更新とカーネル更新がホスト OS に適用されていることを確認する必要があります。また、これらの更新プログラムが利用可能になった場合は、脆弱なハードウェアにファームウェアの更新プログラムを適用する必要があります。</p>
 </div>
 <div class="paragraph">
-<p>を使用します https://["NetApp Interoperability Matrix Tool で確認できます"^] をクリックすると、サポートされるバージョンのリストが表示されます。</p>
+<p>を使用します <a href="https://imt.netapp.com/matrix/#welcome" target="_blank" rel="noopener">"NetApp Interoperability Matrix Tool で確認できます"</a> をクリックすると、サポートされるバージョンのリストが表示されます。</p>
 </div>
 </div>
 </div>
