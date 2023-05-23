@@ -17,8 +17,8 @@ summary: カスタムのアラートルールを作成して、アラートを�
 * を使用して Grid Manager にサインインします link:../admin/web-browser-requirements.html["サポートされている Web ブラウザ"]
 * Manage alertsまたはRoot access権限が必要です
 * に精通していること link:commonly-used-prometheus-metrics.html["よく使用される Prometheus 指標"]
-* を理解しておきます https://["Prometheus クエリの構文"^]
-* 必要に応じて、次のビデオを視聴しました。 https://["ビデオ：StorageGRID 11.7で指標を使用してカスタムアラートを作成する"^]
+* を理解しておきます https://prometheus.io/docs/querying/basics/["Prometheus クエリの構文"^]
+* 必要に応じて、次のビデオを視聴しました。 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=61acb7ba-7683-488a-a689-afb7010088f3["ビデオ：StorageGRID 11.7で指標を使用してカスタムアラートを作成する"^]
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=61acb7ba-7683-488a-a689-afb7010088f3]
 image::../media/video-screenshot-alert-create-custom-117.png[ビデオ：StorageGRID 11.7で指標を使用してカスタムアラートを作成する]

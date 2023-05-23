@@ -56,7 +56,7 @@ NOTE: バケットまたはオブジェクトの S3 オブジェクトロック�
 ** 仮想ホスト形式の要求でピリオドを使用しないでください。ピリオドを使用すると、サーバワイルドカード証明書の検証で原因 の問題が発生します。
 
 
-詳細については、を参照してください https://["バケットの命名規則に関する Amazon Web Services （ AWS ）のドキュメント"^]。
+詳細については、を参照してください https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html["バケットの命名規則に関する Amazon Web Services （ AWS ）のドキュメント"^]。
 
 *注*：バケットの作成後にバケット名を変更することはできません。
 

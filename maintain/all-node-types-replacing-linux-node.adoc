@@ -13,7 +13,7 @@ summary: 障害発生時に新しい物理ホストまたは仮想ホストを�
 [role="lead"]
 障害発生時に新しい物理ホストまたは仮想ホストを導入するか、既存のホストにLinuxを再インストールする必要がある場合は、グリッドノードをリカバリする前に交換ホストを導入して設定します。この手順 は、すべてのタイプのグリッドノードのリカバリプロセスの 1 つのステップです。
 
-「 Linux 」とは、 Red Hat ® Enterprise Linux ® 、 Ubuntu ® 、 CentOS 、または Debian ® の環境を指します。を使用します https://["ネットアップの Interoperability Matrix Tool （ IMT ）"^] をクリックすると、サポートされるバージョンのリストが表示されます。
+「 Linux 」とは、 Red Hat ® Enterprise Linux ® 、 Ubuntu ® 、 CentOS 、または Debian ® の環境を指します。を使用します https://imt.netapp.com/matrix/#welcome["ネットアップの Interoperability Matrix Tool （ IMT ）"^] をクリックすると、サポートされるバージョンのリストが表示されます。
 
 この手順 は、ソフトウェアベースのストレージノード、プライマリまたは非プライマリ管理ノード、ゲートウェイノード、またはアーカイブノードのリカバリプロセスの一部としてのみ実行されます。リカバリするグリッドノードのタイプに関係なく、手順は同じです。
 

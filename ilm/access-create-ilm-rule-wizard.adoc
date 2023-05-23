@@ -24,7 +24,7 @@ NOTE: ポリシーのデフォルトのILMルールを作成する場合は、�
 * 使用するクラウドストレージプールを設定しておきます。を参照してください link:creating-cloud-storage-pool.html["クラウドストレージプールを作成"]。
 * に精通していること link:data-protection-options-for-ingest.html["取り込みオプション"]。
 * S3 オブジェクトロックで使用する準拠ルールを作成する必要がある場合は、を参照してください link:requirements-for-s3-object-lock.html["S3 オブジェクトのロックの要件"]。
-* 必要に応じて、次のビデオを視聴しました。 https://["ビデオ：StorageGRID 11.7の情報ライフサイクル管理ルール"^]。
+* 必要に応じて、次のビデオを視聴しました。 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6baa2e69-95b7-4bcf-a0ff-afbd0092231c["ビデオ：StorageGRID 11.7の情報ライフサイクル管理ルール"^]。
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6baa2e69-95b7-4bcf-a0ff-afbd0092231c]
 image::../media/video-screenshot-ilm-rules-117.png[ビデオ：StorageGRID 11.7の情報ライフサイクル管理ルール]

@@ -117,7 +117,7 @@ image:../media/icon_alert_green_checkmark.png["緑色のチェックマークの
 
 *解決済みのアラート*：解決済みのアラートの履歴を検索して表示できます。
 
-必要に応じて、次のビデオを視聴しました。 https://["ビデオ：StorageGRID 11.7のアラートの概要"^]
+必要に応じて、次のビデオを視聴しました。 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=18df5a3d-bf19-4a9e-8922-afbd009b141b["ビデオ：StorageGRID 11.7のアラートの概要"^]
 
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=18df5a3d-bf19-4a9e-8922-afbd009b141b]
 image::../media/video-screenshot-alert-overview-117.png[ビデオ：StorageGRID 11.7のアラートの概要]

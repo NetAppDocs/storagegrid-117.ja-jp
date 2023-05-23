@@ -19,7 +19,7 @@ StorageGRID グリッドノードをリカバリする前に、ソフトウェ�
 . 現在インストールされているソフトウェアのバージョンを確認します。Grid Manager の上部からヘルプアイコンを選択し、 * バージョン情報 * を選択します。
 . ネットアップの StorageGRID ダウンロードページにアクセスします。
 +
-https://["ネットアップのダウンロード： StorageGRID"^]
+https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["ネットアップのダウンロード： StorageGRID"^]
 
 . グリッドで現在実行されている StorageGRID のバージョンを選択します。
 +

@@ -50,7 +50,7 @@ Cross-Origin Resource Sharing （ CORS ）は、あるドメインのクライ�
 </CORSConfiguration>
 ----
 +
-CORS 設定 XML の詳細については、を参照してください http://["Amazon Web Services （ AWS ）ドキュメント：「 Amazon Simple Storage Service Developer Guide"^]。
+CORS 設定 XML の詳細については、を参照してください http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html["Amazon Web Services （ AWS ）ドキュメント：「 Amazon Simple Storage Service Developer Guide"^]。
 
 . ダッシュボードで* View Buckets *を選択するか、* storage（S3）*>* Buckets *を選択します。
 . 表からバケット名を選択します。

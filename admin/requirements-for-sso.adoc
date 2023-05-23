@@ -59,7 +59,7 @@ Azure
 
 
 
-NOTE: Windows Server 2016 でが使用されている必要があります https://["KB3201845 の更新プログラム"^]またはそれ以上。
+NOTE: Windows Server 2016 でが使用されている必要があります https://support.microsoft.com/en-us/help/3201845/cumulative-update-for-windows-10-version-1607-and-windows-server-2016["KB3201845 の更新プログラム"^]またはそれ以上。
 
 * AD FS 3.0 （ Windows Server 2012 R2 Update 以降に付属）。
 

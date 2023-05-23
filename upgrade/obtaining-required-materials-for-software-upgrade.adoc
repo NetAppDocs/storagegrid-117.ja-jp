@@ -56,8 +56,8 @@ Linuxホストにノードが導入されている場合は、を実行する必
 StorageGRID のドキュメント
  a| 
 * link:../release-notes/index.html["リリースノート"] StorageGRID 11.7の場合（サインインが必要）。アップグレードを開始する前に、このドキュメントに記載されている情報をよくお読みください。
-* https://["StorageGRID ソフトウェアアップグレード解決ガイド"^] アップグレード先のメジャーバージョン（サインインが必要）
-* その他 https://["StorageGRID 11.7ドキュメント"^]、必要に応じて。
+* https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/StorageGRID_software_upgrade_resolution_guide["StorageGRID ソフトウェアアップグレード解決ガイド"^] アップグレード先のメジャーバージョン（サインインが必要）
+* その他 https://docs.netapp.com/us-en/storagegrid-117/index.html["StorageGRID 11.7ドキュメント"^]、必要に応じて。
 
 
 |===

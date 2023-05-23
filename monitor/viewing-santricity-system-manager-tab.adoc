@@ -44,7 +44,7 @@ NOTE: SANtricity System Manager のリンクを使用すると、 SANtricity Sys
 
 ストレージアレイレベルのパフォーマンスと使用容量の詳細を確認するには、各グラフにカーソルを合わせます。
 
-SANtricity の System Manager タブからアクセスできる情報の表示の詳細については、を参照してください https://["NetApp E シリーズおよび SANtricity に関するドキュメント"^]。
+SANtricity の System Manager タブからアクセスできる情報の表示の詳細については、を参照してください https://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E シリーズおよび SANtricity に関するドキュメント"^]。
 
 .関連情報
 * link:../sg6000/index.html["SG6000 アプライアンスをメンテナンスする"]

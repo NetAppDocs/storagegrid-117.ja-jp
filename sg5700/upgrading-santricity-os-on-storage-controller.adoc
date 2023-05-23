@@ -13,9 +13,9 @@ summary: ストレージコントローラが最適に機能するようにす�
 [role="lead"]
 ストレージコントローラが最適に機能するようにするには、 StorageGRID アプライアンスに対応した最新の SANtricity OS メンテナンスリリースにアップグレードする必要があります。
 
-を参照してください https://["ネットアップの Interoperability Matrix Tool （ IMT ）"^] をクリックして、使用する必要があるバージョンを確認します。
+を参照してください https://imt.netapp.com/matrix/#welcome["ネットアップの Interoperability Matrix Tool （ IMT ）"^] をクリックして、使用する必要があるバージョンを確認します。
 
-から新しいSANtricity OSソフトウェアファイルをダウンロードします https://["ネットアップのダウンロード：StorageGRID アプライアンス"^]。
+から新しいSANtricity OSソフトウェアファイルをダウンロードします https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^]。
 
 現在インストールされている SANtricity OS のバージョンに応じて、次のいずれかの手順を実行します。
 

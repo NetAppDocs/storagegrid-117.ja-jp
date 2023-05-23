@@ -42,12 +42,12 @@ NOTE: 各処理のAWSドキュメントを参照するには、見出しのリ�
 
 .関連情報
 * link:../s3/s3-rest-api-supported-operations-and-limitations.html["S3 REST APIの実装の詳細"]
-* https://["Amazon Simple Storage Service API Reference：Common Request Headers"^]
+* https://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonRequestHeaders.html["Amazon Simple Storage Service API Reference：Common Request Headers"^]
 
 
 
 
-== https://["AbortMultipartUpload の略"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_AbortMultipartUpload.html["AbortMultipartUpload の略"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求に加えて、次の追加のURIクエリパラメータを指定します。
@@ -63,7 +63,7 @@ link:operations-for-multipart-uploads.html["マルチパートアップロード
 
 
 
-== https://["CompleteMultipartUpload"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompleteMultipartUpload.html["CompleteMultipartUpload"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求に加えて、次の追加のURIクエリパラメータを指定します。
@@ -85,7 +85,7 @@ link:complete-multipart-upload.html["Complete Multipart Upload の実行"]
 
 
 
-== https://["CopyObject"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html["CopyObject"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求に加え、次のヘッダーが追加されています。
@@ -120,7 +120,7 @@ link:put-object-copy.html["PUT Object - Copyの略"]
 
 
 
-== https://["CreateBucketを選択します"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucket.html["CreateBucketを選択します"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求に加え、次のヘッダーが追加されています。
@@ -136,7 +136,7 @@ link:operations-on-buckets.html["バケットの処理"]
 
 
 
-== https://["CreateMultipartUpload を実行します"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateMultipartUpload.html["CreateMultipartUpload を実行します"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求に加え、次のヘッダーが追加されています。
@@ -166,7 +166,7 @@ link:initiate-multipart-upload.html["マルチパートアップロードを開�
 
 
 
-== https://["DeleteBucketの場合"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucket.html["DeleteBucketの場合"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -176,20 +176,7 @@ link:operations-on-buckets.html["バケットの処理"]
 
 
 
-== https://["DeleteBucketCors"^]
-
-.URIクエリパラメータと要求ヘッダー
-StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
-
-.本文を要求します
-なし
-
-.StorageGRID のドキュメント
-link:operations-on-buckets.html["バケットの処理"]
-
-
-
-== https://["DeleteBucketEncryption"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketCors.html["DeleteBucketCors"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -202,7 +189,20 @@ link:operations-on-buckets.html["バケットの処理"]
 
 
 
-== https://["DeleteBucketLifecycle"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketEncryption.html["DeleteBucketEncryption"^]
+
+.URIクエリパラメータと要求ヘッダー
+StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
+
+.本文を要求します
+なし
+
+.StorageGRID のドキュメント
+link:operations-on-buckets.html["バケットの処理"]
+
+
+
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketLifecycle.html["DeleteBucketLifecycle"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -217,7 +217,7 @@ StorageGRID はすべてをサポートします <<common-params,共通のパラ
 
 
 
-== https://["DeleteBucketPolicyのようになります"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketPolicy.html["DeleteBucketPolicyのようになります"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -230,7 +230,7 @@ link:operations-on-buckets.html["バケットの処理"]
 
 
 
-== https://["DeleteBucketReplication"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketReplication.html["DeleteBucketReplication"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -243,7 +243,7 @@ link:operations-on-buckets.html["バケットの処理"]
 
 
 
-== https://["DeleteBucketTagging"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketTagging.html["DeleteBucketTagging"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -256,7 +256,7 @@ link:operations-on-buckets.html["バケットの処理"]
 
 
 
-== https://["deleteObject"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.html["deleteObject"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求と追加の要求ヘッダー：
@@ -272,7 +272,7 @@ link:operations-on-objects.html["オブジェクトの処理"]
 
 
 
-== https://["オブジェクトを削除します"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObjects.html["オブジェクトを削除します"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求と追加の要求ヘッダー：
@@ -288,7 +288,7 @@ link:operations-on-objects.html["オブジェクトの処理"] （複数のオ�
 
 
 
-== https://["DeleteObjectTagging の場合"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObjectTagging.html["DeleteObjectTagging の場合"^]
 
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
 
@@ -300,7 +300,7 @@ link:operations-on-objects.html["オブジェクトの処理"]
 
 
 
-== https://["GetBucketAcl"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketAcl.html["GetBucketAcl"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -313,7 +313,7 @@ link:operations-on-buckets.html["バケットの処理"]
 
 
 
-== https://["GetBucketCors"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketCors.html["GetBucketCors"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -326,7 +326,7 @@ link:operations-on-buckets.html["バケットの処理"]
 
 
 
-== https://["GetBucketEncryptionの略"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketEncryption.html["GetBucketEncryptionの略"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -339,7 +339,7 @@ link:operations-on-buckets.html["バケットの処理"]
 
 
 
-== https://["GetBucketLifecycleConfiguration"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLifecycleConfiguration.html["GetBucketLifecycleConfiguration"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -354,7 +354,7 @@ StorageGRID はすべてをサポートします <<common-params,共通のパラ
 
 
 
-== https://["GetBucketLocation"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLocation.html["GetBucketLocation"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -367,7 +367,7 @@ link:operations-on-buckets.html["バケットの処理"]
 
 
 
-== https://["GetBucketNotificationConfigurationを参照してください"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketNotificationConfiguration.html["GetBucketNotificationConfigurationを参照してください"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -380,7 +380,7 @@ link:operations-on-buckets.html["バケットの処理"] （バケット通知�
 
 
 
-== https://["GetBucketPolicyのようになります"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketPolicy.html["GetBucketPolicyのようになります"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -393,7 +393,7 @@ link:operations-on-buckets.html["バケットの処理"]
 
 
 
-== https://["GetBucketReplicationの略"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketReplication.html["GetBucketReplicationの略"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -406,7 +406,7 @@ link:operations-on-buckets.html["バケットの処理"]
 
 
 
-== https://["GetBucketTagging"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketTagging.html["GetBucketTagging"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -419,7 +419,7 @@ link:operations-on-buckets.html["バケットの処理"]
 
 
 
-== https://["GetBucketVersioningの各ノードの設定"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketVersioning.html["GetBucketVersioningの各ノードの設定"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -432,7 +432,7 @@ link:operations-on-buckets.html["バケットの処理"]
 
 
 
-== https://["GetObject"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html["GetObject"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求に加えて、次の追加のURIクエリパラメータを使用します。
@@ -466,7 +466,7 @@ link:get-object.html["オブジェクトの取得"]
 
 
 
-== https://["GetObjectAcl"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectAcl.html["GetObjectAcl"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -479,7 +479,7 @@ link:operations-on-objects.html["オブジェクトの処理"]
 
 
 
-== https://["GetObjectLegalHold"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectLegalHold.html["GetObjectLegalHold"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -492,7 +492,7 @@ link:../s3/use-s3-api-for-s3-object-lock.html["S3 REST APIを使用してS3オ�
 
 
 
-== https://["GetObjectLockConfigurationの略"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectLockConfiguration.html["GetObjectLockConfigurationの略"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -505,7 +505,7 @@ link:../s3/use-s3-api-for-s3-object-lock.html["S3 REST APIを使用してS3オ�
 
 
 
-== https://["GetObjectRetentionの略"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectRetention.html["GetObjectRetentionの略"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -518,7 +518,7 @@ link:../s3/use-s3-api-for-s3-object-lock.html["S3 REST APIを使用してS3オ�
 
 
 
-== https://["GetObjectTagging の 2 つの機能を"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectTagging.html["GetObjectTagging の 2 つの機能を"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -531,7 +531,7 @@ link:operations-on-objects.html["オブジェクトの処理"]
 
 
 
-== https://["ヘッドバケット"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadBucket.html["ヘッドバケット"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -544,7 +544,7 @@ link:operations-on-buckets.html["バケットの処理"]
 
 
 
-== https://["HeadObject （ヘッドオブジェクト）"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html["HeadObject （ヘッドオブジェクト）"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求に加え、次のヘッダーが追加されています。
@@ -567,7 +567,7 @@ link:head-object.html["HEAD Object の実行"]
 
 
 
-== https://["ListBuckets"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListBuckets.html["ListBuckets"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -580,7 +580,7 @@ link:operations-on-the-service.html["サービス> Get Serviceに対する操作
 
 
 
-== https://["ListMultipartUploads"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListMultipartUploads.html["ListMultipartUploads"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求に加え、次の追加パラメータが含まれます。
@@ -601,7 +601,7 @@ link:list-multipart-uploads.html["マルチパートアップロードをリス�
 
 
 
-== https://["ListObjects"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjects.html["ListObjects"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求に加え、次の追加パラメータが含まれます。
@@ -621,7 +621,7 @@ link:operations-on-buckets.html["バケットの処理"] （GET Bucket）
 
 
 
-== https://["ListObjectsV2"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectsV2.html["ListObjectsV2"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求に加え、次の追加パラメータが含まれます。
@@ -643,7 +643,7 @@ link:operations-on-buckets.html["バケットの処理"] （GET Bucket）
 
 
 
-== https://["ListObjectVersions"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListObjectVersions.html["ListObjectVersions"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求に加え、次の追加パラメータが含まれます。
@@ -664,7 +664,7 @@ link:operations-on-buckets.html["バケットの処理"] （バケットオブ�
 
 
 
-== https://["ListParts"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListParts.html["ListParts"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求に加え、次の追加パラメータが含まれます。
@@ -682,7 +682,7 @@ link:list-multipart-uploads.html["マルチパートアップロードをリス�
 
 
 
-== https://["PutBucketCorsの略"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketCors.html["PutBucketCorsの略"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -695,7 +695,7 @@ link:operations-on-buckets.html["バケットの処理"]
 
 
 
-== https://["PutBucketEncryptionの略"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketEncryption.html["PutBucketEncryptionの略"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -714,7 +714,7 @@ link:operations-on-buckets.html["バケットの処理"]
 
 
 
-== https://["PutBucketLifecycleConfigurationの略"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLifecycleConfiguration.html["PutBucketLifecycleConfigurationの略"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -751,7 +751,7 @@ StorageGRID は、次の要求本文XMLタグをサポートしています。
 
 
 
-== https://["PutBucketNotificationConfigurationの略"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketNotificationConfiguration.html["PutBucketNotificationConfigurationの略"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -778,7 +778,7 @@ link:operations-on-buckets.html["バケットの処理"] （PUT Bucket通知）
 
 
 
-== https://["PutBucketPolicyのように指定します"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketPolicy.html["PutBucketPolicyのように指定します"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -788,7 +788,7 @@ StorageGRID はすべてをサポートします <<common-params,共通のパラ
 
 
 
-== https://["PutBucketReplicationの略"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketReplication.html["PutBucketReplicationの略"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -808,7 +808,7 @@ link:operations-on-buckets.html["バケットの処理"]
 
 
 
-== https://["PutBucketTaggingの略"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketTagging.html["PutBucketTaggingの略"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -821,7 +821,7 @@ link:operations-on-buckets.html["バケットの処理"]
 
 
 
-== https://["PutBucketVersioningの各ノードの設定"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketVersioning.html["PutBucketVersioningの各ノードの設定"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -838,7 +838,7 @@ link:operations-on-buckets.html["バケットの処理"]
 
 
 
-== https://["PutObject"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html["PutObject"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求に加え、次のヘッダーが追加されています。
@@ -868,7 +868,7 @@ link:put-object.html["PUT Object の場合"]
 
 
 
-== https://["PutObjectLegalHold"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectLegalHold.html["PutObjectLegalHold"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -881,7 +881,7 @@ link:use-s3-api-for-s3-object-lock.html["S3 REST APIを使用してS3オブジ�
 
 
 
-== https://["PutObjectLockConfigurationの略"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectLockConfiguration.html["PutObjectLockConfigurationの略"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -894,7 +894,7 @@ link:use-s3-api-for-s3-object-lock.html["S3 REST APIを使用してS3オブジ�
 
 
 
-== https://["PutObjectRetentionの略"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectRetention.html["PutObjectRetentionの略"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求とこの追加ヘッダー：
@@ -910,7 +910,7 @@ link:use-s3-api-for-s3-object-lock.html["S3 REST APIを使用してS3オブジ�
 
 
 
-== https://["PutObjectTagging の 2 つのグループが"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectTagging.html["PutObjectTagging の 2 つのグループが"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -923,7 +923,7 @@ link:operations-on-objects.html["オブジェクトの処理"]
 
 
 
-== https://["SelectObjectContent の順に選択します"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html["SelectObjectContent の順に選択します"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求のために。
@@ -937,7 +937,7 @@ StorageGRID はすべてをサポートします <<common-params,共通のパラ
 
 
 
-== https://["UploadPart のアップロード"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPart.html["UploadPart のアップロード"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求に加えて、次の追加のURIクエリパラメータを使用します。
@@ -962,7 +962,7 @@ link:upload-part.html["パーツをアップロードします"]
 
 
 
-== https://["UploadPartCopyをクリックします"^]
+== https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPartCopy.html["UploadPartCopyをクリックします"^]
 
 .URIクエリパラメータと要求ヘッダー
 StorageGRID はすべてをサポートします <<common-params,共通のパラメータとヘッダー>> この要求に加えて、次の追加のURIクエリパラメータを使用します。

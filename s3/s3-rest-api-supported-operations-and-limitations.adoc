@@ -27,7 +27,7 @@ StorageGRID システムでは、日付の値を設定できるすべてのヘ�
 
 == 代表的な要求ヘッダー
 
-StorageGRID システムは、で定義されている共通の要求ヘッダーをサポートします https://["Amazon Simple Storage Service API Reference：Common Request Headers"^]1 つの例外を除いて。
+StorageGRID システムは、で定義されている共通の要求ヘッダーをサポートします https://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonRequestHeaders.html["Amazon Simple Storage Service API Reference：Common Request Headers"^]1 つの例外を除いて。
 
 [cols="1a,2a"]
 |===

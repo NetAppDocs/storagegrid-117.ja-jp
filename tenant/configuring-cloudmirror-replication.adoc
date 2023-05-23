@@ -31,7 +31,7 @@ NOTE: CloudMirrorレプリケーションには、クロスグリッドレプリ
 
 NOTE: S3 オブジェクトロックが有効なソースバケットまたはデスティネーションバケットでは、レプリケーションはサポートされません。
 
-バケットレプリケーションとその設定方法の一般的な情報については、を参照してください https://["Amazon Simple Storage Service（S3）のドキュメント：「オブジェクトのレプリケート"^]。StorageGRID でのGetBucketReplication、DeleteBucketReplication、およびPutBucketReplicationの実装方法については、を参照してください link:../s3/operations-on-buckets.html["バケットの処理"]。
+バケットレプリケーションとその設定方法の一般的な情報については、を参照してください https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html["Amazon Simple Storage Service（S3）のドキュメント：「オブジェクトのレプリケート"^]。StorageGRID でのGetBucketReplication、DeleteBucketReplication、およびPutBucketReplicationの実装方法については、を参照してください link:../s3/operations-on-buckets.html["バケットの処理"]。
 
 オブジェクトを含むバケットでCloudMirrorレプリケーションを有効にすると、バケットに追加された新しいオブジェクトがレプリケートされますが、バケット内の既存のオブジェクトはレプリケートされません。レプリケーションをトリガーするには、既存のオブジェクトを更新する必要があります。
 

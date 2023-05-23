@@ -37,7 +37,7 @@ StorageGRID インストールアーカイブ
  a| 
 VMware のソフトウェアとドキュメント
  a| 
-インストール時に、 VMware vSphere Web Client を使用して仮想マシンに仮想グリッドノードを導入します。サポートされるバージョンについては、を参照してください https://["NetApp Interoperability Matrix Tool で確認できます"^]。
+インストール時に、 VMware vSphere Web Client を使用して仮想マシンに仮想グリッドノードを導入します。サポートされるバージョンについては、を参照してください https://imt.netapp.com/matrix/#welcome["NetApp Interoperability Matrix Tool で確認できます"^]。
 
 
 

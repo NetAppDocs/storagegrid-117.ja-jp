@@ -51,7 +51,7 @@ Active IQ は、ネットアップのインストールベースが提供する�
 
 Active IQ のダッシュボードと機能をNetApp Support Site で使用する場合は、AutoSupport を有効にする必要があります。
 
-https://["Active IQ Digital Advisorのドキュメント"^]
+https://docs.netapp.com/us-en/active-iq/index.html["Active IQ Digital Advisorのドキュメント"^]
 
 
 
@@ -98,4 +98,4 @@ StorageGRID AutoSupport では、DIMMやホストインターフェイスカー�
 
 
 .関連情報
-https://["ネットアップサポート"^]
+https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"^]

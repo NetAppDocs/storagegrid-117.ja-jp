@@ -94,7 +94,7 @@ FabricPool ウィザードの手順に従って、1つのStorageGRID クラウ�
 複数のクラスタにあるローカル階層に単一のクラウド階層を接続することは推奨されません。
 
 
-NOTE: StorageGRID とNetApp MetroCluster ™およびFabricPool ミラーを併用する場合のベストプラクティスについては、を参照してください https://["TR-4598：『FabricPool Best Practices in ONTAP 』"^]。
+NOTE: StorageGRID とNetApp MetroCluster ™およびFabricPool ミラーを併用する場合のベストプラクティスについては、を参照してください https://www.netapp.com/pdf.html?item=/media/17239-tr4598pdf.pdf["TR-4598：『FabricPool Best Practices in ONTAP 』"^]。
 
 
 

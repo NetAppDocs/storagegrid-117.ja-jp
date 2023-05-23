@@ -13,7 +13,7 @@ summary: S3 SelectObjectContent 要求を使用すると、シンプルな SQL �
 [role="lead"]
 S3 SelectObjectContent 要求を使用すると、シンプルな SQL ステートメントに基づいて S3 オブジェクトのコンテンツをフィルタリングできます。
 
-詳細については、を参照してください https://["SelectObjectContent に関する AWS ドキュメント"^]。
+詳細については、を参照してください https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html["SelectObjectContent に関する AWS ドキュメント"^]。
 
 .作業を開始する前に
 * テナントアカウントには S3 Select 権限が割り当てられます。

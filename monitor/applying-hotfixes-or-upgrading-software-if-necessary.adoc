@@ -17,7 +17,7 @@ summary: ホットフィックスや新しいバージョンの StorageGRID ソ�
 StorageGRID のホットフィックスには、フィーチャーパックまたはフィーチャーパックに含まれないソフトウェアの変更が含まれます。今後のリリースにも同じ変更が含まれます。
 
 .手順
-. に進みますhttps://["ネットアップのダウンロード： StorageGRID"^]。
+. に進みますhttps://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["ネットアップのダウンロード： StorageGRID"^]。
 . [* タイプ / バージョンの選択 *] フィールドの下矢印を選択して、ダウンロード可能なアップデートのリストを表示します。
 +
 ** * StorageGRID ソフトウェアのバージョン * ： 11._x.y_

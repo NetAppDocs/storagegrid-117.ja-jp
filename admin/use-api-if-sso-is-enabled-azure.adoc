@@ -42,7 +42,7 @@ URLエンコード問題 を使用している場合は、次のエラーが表�
 .手順
 . 必要な依存関係を次のようにインストールします。
 +
-.. Node.js をインストールします（を参照） https://["https://nodejs.org/en/download/"^]）。
+.. Node.js をインストールします（を参照） https://nodejs.org/en/download/["https://nodejs.org/en/download/"^]）。
 .. 必要な Node.js モジュール（ puppeteer および jsdom ）を取り付けます。
 +
 `npm install -g <module>`

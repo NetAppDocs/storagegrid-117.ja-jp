@@ -18,7 +18,7 @@ summary: アラートルールは、特定のアラートをトリガーする�
 .作業を開始する前に
 * を使用して Grid Manager にサインインします link:../admin/web-browser-requirements.html["サポートされている Web ブラウザ"]。
 * Manage alertsまたはRoot access権限が必要です。
-* 必要に応じて、次のビデオを視聴しました。 https://["ビデオ：StorageGRID 11.7のアラートの概要"^]
+* 必要に応じて、次のビデオを視聴しました。 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=18df5a3d-bf19-4a9e-8922-afbd009b141b["ビデオ：StorageGRID 11.7のアラートの概要"^]
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=18df5a3d-bf19-4a9e-8922-afbd009b141b]
 image::../media/video-screenshot-alert-overview-117.png[ビデオ：StorageGRID 11.7のアラートの概要]

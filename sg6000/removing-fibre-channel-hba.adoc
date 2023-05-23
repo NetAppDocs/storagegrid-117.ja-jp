@@ -53,4 +53,4 @@ image::../media/sg6060_fc_hba_location.jpg[ライザーアセンブリ内の SG6
 .完了後
 link:reinstalling-fibre-channel-hba.html["交換用ファイバチャネルHBAを取り付けます"]。
 
-部品の交換後、障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://["パーツの返品と交換"^] 詳細については、を参照してください。
+部品の交換後、障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"^] 詳細については、を参照してください。

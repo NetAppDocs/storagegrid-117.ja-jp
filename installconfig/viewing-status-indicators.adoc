@@ -275,7 +275,7 @@ image::../media/seven_segment_display_codes_for_e2800.gif[E2800 のデジタル�
 
 
 .関連情報
-* https://["ネットアップサポート"^]
+* https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"^]
 * link:../sg6000/powering-on-sg6000-cn-controller-and-verifying-operation.html["SG6000-CN コントローラの電源をオンにして、動作を確認します"]
 
 
@@ -662,8 +662,8 @@ E2800 コントローラとのインストールまたは通信に失敗しま�
 
 
 .関連情報
-* https://["ネットアップサポート"^]
-* https://["E5700 and E2800 System Monitoring Guide"^]
+* https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"^]
+* https://library.netapp.com/ecmdocs/ECMLP2588751/html/frameset.html["E5700 and E2800 System Monitoring Guide"^]
 
 
 --

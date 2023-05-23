@@ -22,7 +22,7 @@ StorageGRID システムのインストール中に問題が発生した場合�
 .関連情報
 ログファイルへのアクセス方法については、を参照してください link:../monitor/logs-files-reference.html["ログファイル参照"]。
 
-サポートが必要な場合は、にお問い合わせください https://["ネットアップサポート"^]。
+サポートが必要な場合は、にお問い合わせください https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"^]。
 
 
 

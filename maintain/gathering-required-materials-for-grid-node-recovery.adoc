@@ -72,7 +72,7 @@ Grid Managerにアクセスできない場合は、ADCサービスを含む一�
  a| 
 ドキュメントについては、プラットフォームのベンダーの Web サイトを参照してください。
 
-現在サポートされているプラットフォームのバージョンについては、を参照してください https://["NetApp Interoperability Matrix Tool で確認できます"^]。
+現在サポートされているプラットフォームのバージョンについては、を参照してください https://imt.netapp.com/matrix/#welcome["NetApp Interoperability Matrix Tool で確認できます"^]。
 
 |===
 
@@ -86,7 +86,7 @@ Grid Managerにアクセスできない場合は、ADCサービスを含む一�
 
 .手順
 . 現在インストールされているソフトウェアのバージョンを確認します。Grid Manager の上部からヘルプアイコンを選択し、 * バージョン情報 * を選択します。
-. にアクセスします https://["ネットアップの StorageGRID ダウンロードページ"^]。
+. にアクセスします https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["ネットアップの StorageGRID ダウンロードページ"^]。
 . グリッドで現在実行されている StorageGRID のバージョンを選択します。
 +
 StorageGRID ソフトウェアのバージョンの形式は次のとおりです。 `11.x.y`。

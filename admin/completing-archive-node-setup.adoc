@@ -15,6 +15,6 @@ summary: インストールプロセスを完了した時点ではアーカイ�
 
 必要に応じて次の IBM のドキュメントを参照し、 StorageGRID システムでアーカイブノードと TSM サーバを統合する準備をしてください。
 
-* http://["『 IBM Tape Device Drivers Installation and User's Guide 』（ IBM テープデバイスドライバインストールおよびユーザーズガイド）"^]
-* http://["IBM Tape Device Drivers Programming Reference"^]
+* http://www.ibm.com/support/docview.wss?rs=577&uid=ssg1S7002972["『 IBM Tape Device Drivers Installation and User's Guide 』（ IBM テープデバイスドライバインストールおよびユーザーズガイド）"^]
+* http://www.ibm.com/support/docview.wss?rs=577&uid=ssg1S7003032["IBM Tape Device Drivers Programming Reference"^]
 

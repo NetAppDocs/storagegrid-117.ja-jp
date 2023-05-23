@@ -32,6 +32,6 @@ summary: 以下の手順に従って、システム処理を中断すること�
 ノードを追加する手順は、 StorageGRID アプライアンスを追加するか、 VMware または Linux を実行しているホストを追加するかによっても異なります。
 
 
-NOTE: 「 Linux 」とは、 Red Hat ® Enterprise Linux ® 、 Ubuntu ® 、 CentOS 、または Debian ® の環境を指します。を使用します https://["ネットアップの Interoperability Matrix Tool （ IMT ）"^] をクリックすると、サポートされるバージョンのリストが表示されます。
+NOTE: 「 Linux 」とは、 Red Hat ® Enterprise Linux ® 、 Ubuntu ® 、 CentOS 、または Debian ® の環境を指します。を使用します https://imt.netapp.com/matrix/#welcome["ネットアップの Interoperability Matrix Tool （ IMT ）"^] をクリックすると、サポートされるバージョンのリストが表示されます。
 
 image::../media/expansion_workflow.png[拡張プロセスの概要を示すフローチャート]

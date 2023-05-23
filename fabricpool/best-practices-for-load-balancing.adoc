@@ -56,6 +56,6 @@ CAUTION: ONTAP とStorageGRID 間の接続の保護に使用されている証�
 * 公開署名されたCA証明書を使用する。CAによって署名された証明書を使用する場合は、グリッド管理APIを使用して証明書のローテーションを自動化できます。これにより、有効期限が近い証明書を無停止で交換できます。
 * 自己署名StorageGRID 証明書を生成した証明書の有効期限が近づいている場合は、既存の証明書の有効期限が切れる前に、StorageGRID とONTAP の両方で証明書を手動で置き換える必要があります。自己署名証明書の有効期限が切れている場合は、アクセスが失われないように、ONTAP で証明書の検証をオフにします。
 +
-を参照してください https://["ネットアップナレッジベース：既存のONTAP FabricPool 環境に新しいStorageGRID 自己署名サーバ証明書を設定する方法"^] 手順については、を参照し
+を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/How_to_configure_a_new_StorageGRID_self-signed_server_certificate_on_an_existing_ONTAP_FabricPool_deployment["ネットアップナレッジベース：既存のONTAP FabricPool 環境に新しいStorageGRID 自己署名サーバ証明書を設定する方法"^] 手順については、を参照し
 
 

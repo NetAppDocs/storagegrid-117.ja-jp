@@ -19,7 +19,7 @@ PingFederate を使用して、システム内の管理ノードごとにサー�
 * システム内の管理ノードごとに * SP 接続 ID * を用意しておきます。これらの値は、 StorageGRID のシングルサインオンページの管理ノード詳細テーブルにあります。
 * システムの管理ノードごとに * SAML メタデータ * をダウンロードしておきます。
 * PingFederate サーバーで SP 接続を作成した経験があります。
-* を使用することができますhttps://["管理者向けリファレンスガイド"^] PingFederate サーバー用。PingFederate ドキュメントでは、詳細な手順と説明を説明しています。
+* を使用することができますhttps://docs.pingidentity.com/bundle/pingfederate-103/page/kfj1564002962494.html["管理者向けリファレンスガイド"^] PingFederate サーバー用。PingFederate ドキュメントでは、詳細な手順と説明を説明しています。
 * PingFederate サーバーの管理者権限があります。
 
 

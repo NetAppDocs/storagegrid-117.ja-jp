@@ -14,7 +14,7 @@ summary: ホットフィックスを適用する前に、ホットフィック�
 ホットフィックスを適用する前に、ホットフィックスファイルをダウンロードする必要があります。
 
 .手順
-. に進みます https://["ネットアップのダウンロード： StorageGRID"^]。
+. に進みます https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["ネットアップのダウンロード： StorageGRID"^]。
 . [ 利用可能なソフトウェア ] の下にある下矢印をクリックすると、ダウンロード可能なホットフィックスのリストが表示されます。
 +
 

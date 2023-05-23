@@ -20,7 +20,7 @@ StorageGRID システムのメンテナンスには、次の手順を使用し�
 ここでは、ソフトウェアホットフィックスの適用、グリッドノードのリカバリ、障害が発生したサイトのリカバリ、グリッドノードまたはサイト全体の運用停止、ネットワークメンテナンスの実行、ホストレベルおよびミドルウェアのメンテナンス手順の実行、グリッドノードの手順の実行など、すべてのノードに共通の手順について説明します。
 
 
-NOTE: これらの説明では、「 Linux 」とは Red Hat ® Enterprise Linux ® 、 Ubuntu ® 、 CentOS 、または Debian ® の環境を指します。を使用します https://["ネットアップの Interoperability Matrix Tool （ IMT ）"^] をクリックすると、サポートされるバージョンのリストが表示されます。
+NOTE: これらの説明では、「 Linux 」とは Red Hat ® Enterprise Linux ® 、 Ubuntu ® 、 CentOS 、または Debian ® の環境を指します。を使用します https://imt.netapp.com/matrix/#welcome["ネットアップの Interoperability Matrix Tool （ IMT ）"^] をクリックすると、サポートされるバージョンのリストが表示されます。
 
 
 

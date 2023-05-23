@@ -264,5 +264,5 @@ NOTE: を指定する場合 `x-amz-object-lock-mode`、も指定する必要が�
 .関連情報
 * link:../ilm/managing-objects-with-s3-object-lock.html["S3 オブジェクトロックでオブジェクトを管理します"]
 * link:../tenant/using-s3-object-lock.html["S3オブジェクトロックを使用してオブジェクトを保持します"]
-* https://["Amazon Simple Storage Service User Guide ： Using S3 Object Lock"^]
+* https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html["Amazon Simple Storage Service User Guide ： Using S3 Object Lock"^]
 

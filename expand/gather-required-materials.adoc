@@ -74,7 +74,7 @@ StorageGRID のドキュメント
  a| 
 ご使用のプラットフォームの最新ドキュメント
  a| 
-サポートされるバージョンについては、を参照してください https://["Interoperability Matrix Tool （ IMT ）"^]。
+サポートされるバージョンについては、を参照してください https://imt.netapp.com/matrix/#welcome["Interoperability Matrix Tool （ IMT ）"^]。
 
 |===
 
@@ -88,7 +88,7 @@ StorageGRID のドキュメント
 拡張処理は、グリッドで現在実行されているバージョンの StorageGRID を使用して実行する必要があります。
 
 .手順
-. に進みます https://["ネットアップのダウンロード： StorageGRID"^]。
+. に進みます https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["ネットアップのダウンロード： StorageGRID"^]。
 . グリッドで現在実行されている StorageGRID のバージョンを選択します。
 . ネットアップアカウントのユーザ名とパスワードを使用してサインインします。
 . [End User License Agreement]を読み、チェックボックスをオンにして、*[Accept & Continue]*を選択します。

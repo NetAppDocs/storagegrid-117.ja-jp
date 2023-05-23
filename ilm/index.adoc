@@ -33,12 +33,12 @@ ILM ルールと ILM ポリシーを設計して実装するには、慎重な�
 
 詳細については、次のビデオをご覧ください。
 
-* https://["ビデオ：StorageGRID 11.7の情報ライフサイクル管理ルール"^]。
+* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6baa2e69-95b7-4bcf-a0ff-afbd0092231c["ビデオ：StorageGRID 11.7の情報ライフサイクル管理ルール"^]。
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6baa2e69-95b7-4bcf-a0ff-afbd0092231c]
 image::../media/video-screenshot-ilm-rules-117.png[ビデオ：StorageGRID 11.7の情報ライフサイクル管理ルール]
 
-* https://["ビデオ：StorageGRID 11.7の情報ライフサイクル管理ポリシー"^]
+* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0009ebe1-3665-4cdc-a101-afbd009a0466["ビデオ：StorageGRID 11.7の情報ライフサイクル管理ポリシー"^]
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0009ebe1-3665-4cdc-a101-afbd009a0466]
 image::../media/video-screenshot-ilm-policies-117.png[ビデオ：StorageGRID 11.7の情報ライフサイクル管理ポリシー]

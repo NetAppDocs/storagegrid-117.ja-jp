@@ -14,7 +14,7 @@ summary: KMS を StorageGRID に追加する前に、各外部キー管理サー
 KMS を StorageGRID に追加する前に、各外部キー管理サーバまたは KMS クラスタのクライアントとして StorageGRID を設定する必要があります。
 
 .このタスクについて
-これらの手順はタレスCipherTrust Managerに適用されます。サポートされているバージョンの一覧については、を参照してください https://["ネットアップの Interoperability Matrix Tool （ IMT ）"^]。
+これらの手順はタレスCipherTrust Managerに適用されます。サポートされているバージョンの一覧については、を参照してください https://imt.netapp.com/matrix/#welcome["ネットアップの Interoperability Matrix Tool （ IMT ）"^]。
 
 .手順
 . KMS ソフトウェアから、使用する KMS または KMS クラスタごとに StorageGRID クライアントを作成します。

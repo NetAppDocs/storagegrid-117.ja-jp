@@ -13,7 +13,7 @@ summary: StorageGRID ソフトウェアをインストールする前に、ハ�
 [role="lead"]
 StorageGRID ソフトウェアをインストールする前に、ハードウェアの確認と設定を行って、 StorageGRID システムをサポートできる状態にしておきます。
 
-サポートされているサーバの詳細については、を参照してください https://["NetApp Interoperability Matrix Tool で確認できます"^]。
+サポートされているサーバの詳細については、を参照してください https://imt.netapp.com/matrix/#welcome["NetApp Interoperability Matrix Tool で確認できます"^]。
 
 各 StorageGRID ノードに必要な最小リソースは次のとおりです。
 

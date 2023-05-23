@@ -11,7 +11,7 @@ summary: Ubuntu または Debian をすべてのグリッドホストにイン�
 
 
 [role="lead"]
-すべてのグリッドホストに Linux をインストールする必要があります。を使用します https://["ネットアップの Interoperability Matrix Tool （ IMT ）"^] をクリックすると、サポートされるバージョンのリストが表示されます。
+すべてのグリッドホストに Linux をインストールする必要があります。を使用します https://imt.netapp.com/matrix/#welcome["ネットアップの Interoperability Matrix Tool （ IMT ）"^] をクリックすると、サポートされるバージョンのリストが表示されます。
 
 
 IMPORTANT: オペレーティングシステムがLinuxカーネル4.15以降にアップグレードされていることを確認します。

@@ -20,7 +20,7 @@ LinuxホストにStorageGRID ノードが導入されている場合は、アッ
 Grid ManagerからStorageGRID のアップグレードを実行すると、最初の手順として、アップグレードアーカイブと必要なホットフィックスをダウンロードするように求められます。ただし、Linuxホストをアップグレードするためにファイルをダウンロードする必要がある場合は、必要なファイルをすべて事前にダウンロードすることで時間を節約できます。
 
 .手順
-. に進みます https://["ネットアップのダウンロード： StorageGRID"^]。
+. に進みます https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["ネットアップのダウンロード： StorageGRID"^]。
 . 最新のリリースをダウンロードするボタンを選択するか、ドロップダウンメニューから別のバージョンを選択して、「 * Go * 」を選択します。
 +
 StorageGRID ソフトウェアのバージョンの形式は、 11._x.y_. です。StorageGRID ホットフィックスの形式は、 11._x.y.z _ です。
@@ -48,7 +48,7 @@ StorageGRID ソフトウェアのバージョンの形式は、 11._x.y_. です
 
 . 必要なホットフィックスが原因で「注意」/「必ずお読みください」の通知に同意する必要がある場合は、ホットフィックスをダウンロードしてください。
 +
-.. に戻ります https://["ネットアップのダウンロード： StorageGRID"^]。
+.. に戻ります https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["ネットアップのダウンロード： StorageGRID"^]。
 .. ドロップダウンからホットフィックス番号を選択します。
 .. 注意事項とEULAに再度同意します。
 .. ホットフィックスとそのREADMEをダウンロードして保存します。

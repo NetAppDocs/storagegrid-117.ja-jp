@@ -117,7 +117,7 @@ StorageGRID に取り込まれる前にオブジェクトデータとメタデ�
 
 外部暗号化方式を使用すると、暗号化アルゴリズムと暗号キーを厳密に制御できます。は、記載されている他の方法と組み合わせることができます。
 
-https://["Amazon Simple Storage Service - Developer Guide ：クライアント側の暗号化を使用したデータの保護"^]
+https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingClientSideEncryption.html["Amazon Simple Storage Service - Developer Guide ：クライアント側の暗号化を使用したデータの保護"^]
 
 |===
 

@@ -57,4 +57,4 @@ StorageGRID のドキュメント
 
 |===
 .関連情報
-https://["NetApp Interoperability Matrix Tool で確認できます"^]
+https://imt.netapp.com/matrix/#welcome["NetApp Interoperability Matrix Tool で確認できます"^]

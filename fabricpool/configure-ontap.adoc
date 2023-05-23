@@ -22,7 +22,7 @@ summary: 必要なStorageGRID 情報を入手したら、ONTAP に移動してSt
 
 == ONTAP システムマネージャにアクセスします
 
-ここでは、ONTAP System Managerを使用してStorageGRID をクラウド階層として追加する方法について説明します。ONTAP CLIを使用して同じ設定を行うことができます。手順については、を参照してください https://["ONTAP 9：CLIを使用したFabricPool 階層管理"^]。
+ここでは、ONTAP System Managerを使用してStorageGRID をクラウド階層として追加する方法について説明します。ONTAP CLIを使用して同じ設定を行うことができます。手順については、を参照してください https://docs.netapp.com/us-en/ontap/fabricpool/index.html["ONTAP 9：CLIを使用したFabricPool 階層管理"^]。
 
 .手順
 . StorageGRID に階層化するONTAP クラスタのSystem Managerにアクセスします。
@@ -35,7 +35,7 @@ summary: 必要なStorageGRID 情報を入手したら、ONTAP に移動してSt
 
 == StorageGRID 値を入力します
 
-を参照してください https://["ONTAP 9：System ManagerによるFabricPool 階層管理の概要"^] を参照してください。
+を参照してください https://docs.netapp.com/us-en/ontap/concept_cloud_overview.html["ONTAP 9：System ManagerによるFabricPool 階層管理の概要"^] を参照してください。
 
 .手順
 . を使用して、[クラウド階層の追加]フォームに入力します `ONTAP_FabricPool_settings___bucketname__.txt` ファイルまたは手動で取得した値。

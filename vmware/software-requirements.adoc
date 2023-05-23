@@ -40,6 +40,6 @@ CAUTION: 各 ESX ホストでネットワークタイムプロトコル（ NTP �
 
 StorageGRID グリッドノードを導入する前に、 VMware vSphere および vCenter をインストールして設定する必要があります。
 
-サポートされるVMware vSphere HypervisorおよびVMware vCenter Serverソフトウェアのバージョンについては、を参照してください https://["NetApp Interoperability Matrix Tool で確認できます"^]。
+サポートされるVMware vSphere HypervisorおよびVMware vCenter Serverソフトウェアのバージョンについては、を参照してください https://imt.netapp.com/matrix/#welcome["NetApp Interoperability Matrix Tool で確認できます"^]。
 
 これらの VMware 製品をインストールするために必要な手順については、 VMware のドキュメントを参照してください。

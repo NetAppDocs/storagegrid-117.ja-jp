@@ -17,7 +17,7 @@ summary: システムのセキュリティ強化とは、 StorageGRID システ�
 
 StorageGRID をインストールして構成する際に、これらのガイドラインを使用して、情報システムの機密性、整合性、可用性に関する規定のセキュリティ目標を達成できます。
 
-StorageGRID はに準拠しています https://["NetApp Vulnerability Handling Policyの略"^]。報告された脆弱性は、製品セキュリティインシデント対応プロセスに従って検証および解決されます。
+StorageGRID はに準拠しています https://security.netapp.com/policy/["NetApp Vulnerability Handling Policyの略"^]。報告された脆弱性は、製品セキュリティインシデント対応プロセスに従って検証および解決されます。
 
 
 

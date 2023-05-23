@@ -17,12 +17,12 @@ summary: アラートシステムでは、 StorageGRID の運用中に発生す�
 
 詳細については、以下をご覧ください。
 
-* ビデオを確認します。 https://["ビデオ：StorageGRID 11.7のアラートの概要"^]
+* ビデオを確認します。 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=18df5a3d-bf19-4a9e-8922-afbd009b141b["ビデオ：StorageGRID 11.7のアラートの概要"^]
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=18df5a3d-bf19-4a9e-8922-afbd009b141b]
 image::../media/video-screenshot-alert-overview-117.png[ビデオ：StorageGRID 11.7のアラートの概要]
 
-* ビデオを確認します。 https://["ビデオ：StorageGRID 11.7で指標を使用してカスタムアラートを作成する"^]
+* ビデオを確認します。 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=61acb7ba-7683-488a-a689-afb7010088f3["ビデオ：StorageGRID 11.7で指標を使用してカスタムアラートを作成する"^]
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=61acb7ba-7683-488a-a689-afb7010088f3]
 image::../media/video-screenshot-alert-create-custom-117.png[ビデオ：StorageGRID 11.7で指標を使用してカスタムアラートを作成する]

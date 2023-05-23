@@ -3,11 +3,11 @@
 
 
 .作業を開始する前に
-* を参照してください https://["ネットアップの Interoperability Matrix Tool （ IMT ）"^] アップグレードに使用しているSANtricity OSのバージョンがアプライアンスと互換性があることを確認します。
+* を参照してください https://imt.netapp.com/matrix/#welcome["ネットアップの Interoperability Matrix Tool （ IMT ）"^] アップグレードに使用しているSANtricity OSのバージョンがアプライアンスと互換性があることを確認します。
 * を使用することができます link:../admin/admin-group-permissions.html["Maintenance権限またはRoot Access権限"]。
 * を使用して Grid Manager にサインインします link:../admin/web-browser-requirements.html["サポートされている Web ブラウザ"]。
 * プロビジョニングパスフレーズを用意します。
-* にアクセスできます https://["ネットアップのダウンロード：StorageGRID アプライアンス"^]。
+* にアクセスできます https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^]。
 
 
 .このタスクについて
@@ -25,7 +25,7 @@ NOTE: この手順 は、 SANtricity OS のアップグレードに関連付け�
 IMPORTANT: この手順 を開始する前に、最新のStorageGRID ホットフィックスを適用してください。を参照してください link:../maintain/storagegrid-hotfix-procedure.html["StorageGRID ホットフィックス手順"] を参照してください。
 
 .手順
-. [download-santricity-os]]から新しいSANtricity OSソフトウェアファイルをダウンロードします https://["ネットアップのダウンロード：StorageGRID アプライアンス"^]。
+. [download-santricity-os]]から新しいSANtricity OSソフトウェアファイルをダウンロードします https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^]。
 +
 ご使用のストレージコントローラに対応する SANtricity OS バージョンを選択してください。
 

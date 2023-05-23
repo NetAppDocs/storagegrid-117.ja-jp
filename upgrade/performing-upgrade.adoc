@@ -41,7 +41,7 @@ TIP: 更新パスが表示されない場合は、ブラウザがNetApp Support 
 . [ファイルの選択]ステップで、更新パスを確認します。
 . [Download files]セクションで、各*[Download]*リンクを選択して、NetApp Support Site から必要なファイルをダウンロードします。
 +
-更新パスが表示されない場合は、に進みます https://["ネットアップのダウンロード： StorageGRID"^] 新しいバージョンまたはホットフィックスが利用可能かどうかを確認し、必要なファイルをダウンロードします。
+更新パスが表示されない場合は、に進みます https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["ネットアップのダウンロード： StorageGRID"^] 新しいバージョンまたはホットフィックスが利用可能かどうかを確認し、必要なファイルをダウンロードします。
 
 +
 
@@ -74,7 +74,7 @@ NOTE: すべてのLinuxホストにRPMパッケージまたはDEBパッケージ
 IMPORTANT: リカバリパッケージファイルには StorageGRID システムからデータを取得するための暗号キーとパスワードが含まれているため、安全に保管する必要があります。
 
 . [事前確認を実行]*を選択し、事前確認が完了するまで待ちます。
-. 報告された各事前確認の詳細を確認し、報告されたエラーを解決します。を参照してください https://["StorageGRID ソフトウェアアップグレード解決ガイド"^] （StorageGRID 11.7リリース）。
+. 報告された各事前確認の詳細を確認し、報告されたエラーを解決します。を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/StorageGRID_software_upgrade_resolution_guide["StorageGRID ソフトウェアアップグレード解決ガイド"^] （StorageGRID 11.7リリース）。
 +
 システムをアップグレードする前に、precheck_errors_をすべて解決する必要があります。ただし、アップグレード前にprecheck_warnings_に対処する必要はありません。
 

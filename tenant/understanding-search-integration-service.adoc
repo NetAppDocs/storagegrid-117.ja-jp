@@ -35,7 +35,7 @@ NOTE: タグとユーザメタデータの場合、 StorageGRID は文字列ま�
 * すでにバケットに含まれているすべてのオブジェクトに対して、メタデータ通知メッセージをデスティネーションに送信するトリガーとなる処理を実行する。
 
 
-StorageGRID 検索統合サービスは、デスティネーションとして Elasticsearch クラスタをサポートします。他のプラットフォームサービスと同様、 URN がサービスの設定 XML で使用されているエンドポイントにデスティネーションが指定されます。を使用します https://["NetApp Interoperability Matrix Tool で確認できます"^] サポートされている Elasticsearch のバージョンを確認できます。
+StorageGRID 検索統合サービスは、デスティネーションとして Elasticsearch クラスタをサポートします。他のプラットフォームサービスと同様、 URN がサービスの設定 XML で使用されているエンドポイントにデスティネーションが指定されます。を使用します https://imt.netapp.com/matrix/#welcome["NetApp Interoperability Matrix Tool で確認できます"^] サポートされている Elasticsearch のバージョンを確認できます。
 
 .関連情報
 link:configuration-xml-for-search-configuration.html["検索統合用の XML を設定します"]

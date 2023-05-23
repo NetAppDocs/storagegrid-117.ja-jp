@@ -32,10 +32,10 @@ NetApp ONTAP ソフトウェアを使用している場合は、NetApp FabricPoo
 * のFabricPool のベストプラクティスを確認します link:best-practices-for-high-availability-groups.html["HAグループ"]、 link:best-practices-for-load-balancing.html["負荷分散"]、 link:best-practices-ilm.html["ILM"]および link:other-best-practices-for-storagegrid-and-fabricpool.html["もっと"]。
 * ONTAP およびFabricPool の使用と設定に関する詳細については、次のリソースを参照してください。
 +
-https://["TR-4598：『FabricPool Best Practices in ONTAP 』"^]
+https://www.netapp.com/pdf.html?item=/media/17239-tr4598pdf.pdf["TR-4598：『FabricPool Best Practices in ONTAP 』"^]
 
 +
-https://["ONTAP 9：System ManagerによるFabricPool 階層管理の概要"^]
+https://docs.netapp.com/us-en/ontap/concept_cloud_overview.html["ONTAP 9：System ManagerによるFabricPool 階層管理の概要"^]
 
 
 

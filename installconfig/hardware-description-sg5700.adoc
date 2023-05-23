@@ -284,4 +284,4 @@ E5700SG コントローラ（コンピューティングコントローラ）
 
 |===
 .関連情報
-http://["NetApp E シリーズシステムのドキュメントのサイト"^]
+http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E シリーズシステムのドキュメントのサイト"^]

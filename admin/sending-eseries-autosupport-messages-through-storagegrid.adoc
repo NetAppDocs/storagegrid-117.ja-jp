@@ -13,7 +13,7 @@ summary: E シリーズ SANtricity System Manager AutoSupport メッセージは
 [role="lead"]
 E シリーズ SANtricity System Manager AutoSupport メッセージは、ストレージアプライアンスの管理ポートではなく StorageGRID 管理ノードからテクニカルサポートに送信できます。
 
-を参照してください https://["EシリーズハードウェアAutoSupport"^] EシリーズアプライアンスでのAutoSupport の使用の詳細については、を参照してください。
+を参照してください https://docs.netapp.com/us-en/e-series-santricity/sm-support/autosupport-feature-overview.html["EシリーズハードウェアAutoSupport"^] EシリーズアプライアンスでのAutoSupport の使用の詳細については、を参照してください。
 
 .作業を開始する前に
 * を使用して Grid Manager にサインインします link:../admin/web-browser-requirements.html["サポートされている Web ブラウザ"]。
@@ -34,7 +34,7 @@ E シリーズ AutoSupport メッセージには、ストレージハードウ�
 SANtricity System Managerでは、アプライアンスの管理ポートを使用せずにStorageGRID 管理ノード経由でAutoSupport メッセージを送信するように特別なプロキシサーバアドレスを設定できます。この方法で送信されるAutoSupport メッセージは、によって送信されます link:../admin/what-admin-node-is.html["優先送信者管理ノード"]そして、それらは任意を使用します link:../admin/configuring-admin-proxy-settings.html["管理プロキシの設定"] グリッドマネージャで設定されているデータセンターを選択します。
 
 
-NOTE: この手順 は、 E シリーズ AutoSupport メッセージ用に StorageGRID プロキシサーバを設定するためだけに使用します。E シリーズ AutoSupport 構成の詳細については、を参照してください https://["NetApp E シリーズおよび SANtricity に関するドキュメント"^]。
+NOTE: この手順 は、 E シリーズ AutoSupport メッセージ用に StorageGRID プロキシサーバを設定するためだけに使用します。E シリーズ AutoSupport 構成の詳細については、を参照してください https://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E シリーズおよび SANtricity に関するドキュメント"^]。
 
 .手順
 . Grid Manager で * nodes * を選択します。

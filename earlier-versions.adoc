@@ -16,9 +16,9 @@ summary: NetApp StorageGRID ソフトウェアの他のリリースのドキュ�
 [role="lead"]
 NetApp StorageGRID ソフトウェアの他のリリースのドキュメントは、次のURLから入手できます。
 
-* https://["StorageGRID 11.6のドキュメント"^]
-* https://["StorageGRID 11.5 のドキュメント"^]
-* https://["StorageGRID 11.4 ドキュメントセンター"^]
-* https://["StorageGRID 11.3 ドキュメントセンター"^]
-* https://["StorageGRID 11.2 ドキュメントセンター"^]
+* https://docs.netapp.com/us-en/storagegrid-116/index.html["StorageGRID 11.6のドキュメント"^]
+* https://docs.netapp.com/us-en/storagegrid-115/index.html["StorageGRID 11.5 のドキュメント"^]
+* https://docs.netapp.com/sgws-114/index.jsp["StorageGRID 11.4 ドキュメントセンター"^]
+* https://docs.netapp.com/sgws-113/index.jsp["StorageGRID 11.3 ドキュメントセンター"^]
+* https://docs.netapp.com/sgws-112/index.jsp["StorageGRID 11.2 ドキュメントセンター"^]
 

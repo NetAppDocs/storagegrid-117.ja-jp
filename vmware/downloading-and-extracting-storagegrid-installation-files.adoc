@@ -14,7 +14,7 @@ summary: StorageGRID インストールアーカイブをダウンロードし�
 StorageGRID インストールアーカイブをダウンロードし、ファイルを展開する必要があります。
 
 .手順
-. にアクセスします https://["ネットアップの StorageGRID ダウンロードページ"^]。
+. にアクセスします https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["ネットアップの StorageGRID ダウンロードページ"^]。
 . 最新のリリースをダウンロードするボタンを選択するか、ドロップダウンメニューから別のバージョンを選択して、「 * Go * 」を選択します。
 . ネットアップアカウントのユーザ名とパスワードを使用してサインインします。
 . Caution/MustRead文が表示された場合は'その文を読み'チェックボックスをオンにします

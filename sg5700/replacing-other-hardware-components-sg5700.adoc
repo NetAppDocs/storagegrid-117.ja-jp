@@ -84,4 +84,4 @@ E2860 シェルフのドライブドロワーの交換
 .関連情報
 link:replacing-e2800-controller.html["E2800 コントローラを交換"]
 
-http://["NetApp E シリーズシステムのドキュメントのサイト"^]
+http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E シリーズシステムのドキュメントのサイト"^]

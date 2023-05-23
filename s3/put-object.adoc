@@ -227,7 +227,7 @@ NOTE: SSE または SSE-C で暗号化されたオブジェクトは、バケッ
 
 IMPORTANT: 一般的なベストプラクティスとして、には常にこれらのヘッダーを含めてください `CanonicalHeaders` これらのヘッダーが検証されるようにするためですが、これらのヘッダーを除外しても、StorageGRID はエラーを返しません。
 
-詳細については、を参照してください https://["Authorizationヘッダーのシグニチャ計算：単一チャンクでのペイロードの転送（AWS Signature Version 4）"^]。
+詳細については、を参照してください https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-header-based-auth.html["Authorizationヘッダーのシグニチャ計算：単一チャンクでのペイロードの転送（AWS Signature Version 4）"^]。
 
 .関連情報
 link:../ilm/index.html["ILM を使用してオブジェクトを管理する"]
