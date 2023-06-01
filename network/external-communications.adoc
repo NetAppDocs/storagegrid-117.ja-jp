@@ -38,7 +38,7 @@ SMTP 、 DNS 、 SSH 、 DHCP などのシステムとプロトコルを使用�
 次の表に、ノードに着信するトラフィックに使用されるポートを示します。
 
 
-NOTE: このリストには、として設定されている可能性のあるポートは含まれていません link:../admin/configuring-load-balancer-endpoints.html["ロードバランサエンドポイント"]。
+NOTE: このリストには、として設定されている可能性のあるポートは含まれていません link:../admin/configuring-load-balancer-endpoints.html["ロードバランサエンドポイント"] またはに使用されます link:../monitor/configuring-syslog-server.html["syslogサーバ"]。
 
 [cols="1a,1a,1a,1a,1a,4a"]
 |===
