@@ -41,3 +41,5 @@ entries:
     url: "/fabricpool/best-practices-ilm.html"
   - title: その他のベストプラクティス
     url: "/fabricpool/other-best-practices-for-storagegrid-and-fabricpool.html"
+- title: StorageGRIDからFabricPoolデータを削除します
+  url: "/fabricpool/remove-fabricpool-data.html"
