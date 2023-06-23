@@ -3318,6 +3318,8 @@
   
 
 
+
+
         </li>
       </ul>
     
@@ -10573,7 +10575,14 @@
       class=" "
     ><a class="na-navbar-padding" href="/ja-jp/storagegrid-117/fabricpool/other-best-practices-for-storagegrid-and-fabricpool.html">
         その他のベストプラクティス
-      </a></li></ul></li></ul></li></ul></li><li 
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="StorageGRIDからFabricPoolデータを削除します"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/storagegrid-117/fabricpool/remove-fabricpool-data.html">
+        StorageGRIDからFabricPoolデータを削除します
+      </a></li></ul></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="StorageGRID を使用します"
       data-li-level="1" 
@@ -15005,7 +15014,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-05-18 18:30:28 +0000">05/18/2023</time>
+    <time datetime="2023-06-22 22:02:05 +0000">06/22/2023</time>
     
   
 
@@ -15067,7 +15076,19 @@ FabricPool は、 StorageGRID の ILM ルールやポリシーを認識しませ
 </div>
 </li>
 <li>
-<p>FabricPool クラウド階層のデータが期限切れになるILMルールは使用しないでください。FabricPool オブジェクトがStorageGRID ILMによって削除されないようにするには、各ILMルールの保持期間を「無期限」に設定します。</p>
+<p>必要に応じて <a href="remove-fabricpool-data.html">"StorageGRIDからFabricPoolデータを削除します"</a>ONTAPを使用してFabricPoolボリュームのすべてのデータを取得し、高パフォーマンス階層に昇格します。</p>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/storagegrid-117/images/caution.svg" alt="注意">
+</td>
+<td class="content">
+データ損失を回避するために、FabricPoolクラウド階層のデータが期限切れになるILMルールを使用しないでください。StorageGRID ILMによってFabricPoolオブジェクトが削除されないように、各ILMルールの保持期間を* forever *に設定します。
+</td>
+</tr>
+</table>
+</div>
 </li>
 <li>
 <p>FabricPool クラウド階層のデータをバケットから別の場所に移動するルールを作成しないでください。クラウドストレージプールを使用してFabricPool データを別のオブジェクトストアに移動することはできません。同様に、アーカイブノードを使用してFabricPool データをテープにアーカイブすることはできません。</p>
