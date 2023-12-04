@@ -15,12 +15,19 @@ SGF6112、SG6000、またはサービスアプライアンスのベースボー�
 
 このセクションの次の手順に従って、アプライアンスの設置時にBMCを設定します。
 
-* BMC インターフェイスの root パスワードを変更します
-* BMC 管理ポートの IP アドレスを設定します
-* BMC インターフェイスにアクセスします
-* SNMPを設定します
-* Eメール通知とアラートを設定
+* link:../installconfig/changing-root-password-for-bmc-interface.html["BMC インターフェイスの root パスワードを変更します"]
+* link:../installconfig/setting-ip-address-for-bmc-management-port.html["BMC 管理ポートの IP アドレスを設定します"]
+* link:../installconfig/accessing-bmc-interface.html["BMC インターフェイスにアクセスします"]
+* link:../installconfig/configuring-snmp-settings-for-bmc.html["SNMPを設定します"]
+* link:../installconfig/setting-up-email-notifications-for-alerts.html["BMCアラートのEメール通知を設定する"]
 
 
+[NOTE]
+====
+アプライアンスがグリッドにすでに設置されていて、StorageGRIDソフトウェアを実行している場合は、次の手順を実行します。
 
-NOTE: アプライアンスをグリッドにすでに設置し、StorageGRID ソフトウェアを実行している場合は、次の手順を参照してBMC設定の代替メカニズムを確認してください。
+* link:../commonhardware/placing-appliance-into-maintenance-mode.html["アプライアンスをメンテナンスモードにします"] をクリックして、StorageGRIDアプライアンスインストーラにアクセスします。
+* を参照してください link:../installconfig/setting-ip-address-for-bmc-management-port.html["BMC 管理ポートの IP アドレスを設定します"] StorageGRIDアプライアンスインストーラを使用してBMCインターフェイスにアクセスする方法については、を参照してください。
+
+
+====

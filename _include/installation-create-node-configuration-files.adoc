@@ -606,17 +606,17 @@ link:../ubuntu/configuring-host-network.html#considerations-and-recommendations-
 
 
  a| 
-Interfaces_target_nnnn
+interface_target_nnnn
  a| 
 o
  a| 
 このノードに追加するインターフェイスの名前とオプションの概要 。各ノードに複数のインターフェイスを追加できます。
 
-「 _nnnnnn _ 」には、追加する各 interfaces _ target エントリの一意の番号を指定します。
+_nnnn_には、追加する各interface_targetエントリに一意の番号を指定します。
 
 値には、ベアメタルホスト上の物理インターフェイスの名前を指定します。その後、必要に応じて、カンマを追加してインターフェイスの概要 を指定します。このインターフェイスは、 VLAN インターフェイスのページと HA グループのページに表示されます。
 
-例： `INTERFACES_TARGET_01=ens256, Trunk`
+例： `INTERFACE_TARGET_0001=ens256, Trunk`
 
 トランクインターフェイスを追加する場合は、 StorageGRID で VLAN インターフェイスを設定する必要があります。アクセスインターフェイスを追加する場合は、そのインターフェイスをHAグループに直接追加できます。VLANインターフェイスを設定する必要はありません。
 
