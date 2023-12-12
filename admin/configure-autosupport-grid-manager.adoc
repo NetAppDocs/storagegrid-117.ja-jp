@@ -18,6 +18,9 @@ AutoSupport 機能および個々の AutoSupport オプションは、 StorageGR
 * Root Access 権限またはその他の Grid 設定権限が必要です。
 * AutoSupport メッセージの送信にHTTPSを使用する場合は、プライマリ管理ノードへのアウトバウンドインターネットアクセス（直接または）を設定しておきます link:configuring-admin-proxy-settings.html["プロキシサーバを使用する"] （インバウンド接続は必要ありません）。
 * [HTTP] StorageGRID AutoSupport ページで[HTTP]が選択されている場合は、AutoSupport メッセージをHTTPSとして転送するようにプロキシサーバを設定しています。ネットアップのAutoSupport サーバはHTTPを使用して送信されたメッセージを拒否します。
++
+link:configuring-admin-proxy-settings.html["管理プロキシの設定について"]。
+
 * AutoSupport メッセージのプロトコルとして SMTP を使用する場合は、 SMTP メールサーバを設定しておきます。アラームの E メール通知には同じメールサーバ設定（従来のシステム）が使用されます。
 
 

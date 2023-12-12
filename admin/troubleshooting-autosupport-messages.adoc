@@ -18,6 +18,9 @@ AutoSupport メッセージの送信に失敗すると、 AutoSupport ページ�
 image::../media/autosupport_results_tab.png[AutoSupport メッセージの送信に失敗しました]
 
 
+NOTE: AutoSupportメッセージをNetAppに転送するようにプロキシサーバを設定した場合は、 link:configuring-admin-proxy-settings.html["プロキシサーバの設定が正しいことを確認します。"]。
+
+
 
 == 週次 AutoSupport メッセージのエラーです
 
