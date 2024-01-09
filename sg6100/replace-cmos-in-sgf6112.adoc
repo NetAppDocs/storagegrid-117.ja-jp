@@ -114,6 +114,9 @@ image::../media/sgf6112_two-slot-riser_guide-pin.png[2スロットライザー�
 +
 ... 静的IP、ネットマスク、およびゲートウェイを使用するようにBMCの設定をリストアするには、次のコマンドを入力します。
 +
+`*run-host-command ipmitool lan set 1 ipsrc static*`
+
++
 `*run-host-command ipmitool lan set 1 ipaddr _Appliance_IP_*`
 
 +
