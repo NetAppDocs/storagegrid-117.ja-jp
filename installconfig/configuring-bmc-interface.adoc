@@ -15,7 +15,7 @@ SGF6112、SG6000、またはサービスアプライアンスのベースボー�
 
 このセクションの次の手順に従って、アプライアンスの設置時にBMCを設定します。
 
-* link:../installconfig/changing-root-password-for-bmc-interface.html["BMC インターフェイスの root パスワードを変更します"]
+* link:../installconfig/changing-root-password-for-bmc-interface.html["BMCインターフェイスの管理者パスワードまたはrootパスワードの変更"]
 * link:../installconfig/setting-ip-address-for-bmc-management-port.html["BMC 管理ポートの IP アドレスを設定します"]
 * link:../installconfig/accessing-bmc-interface.html["BMC インターフェイスにアクセスします"]
 * link:../installconfig/configuring-snmp-settings-for-bmc.html["SNMPを設定します"]
