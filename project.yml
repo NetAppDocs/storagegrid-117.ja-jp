@@ -1,6 +1,6 @@
 ---
 settings:
-  name: StorageGRID 11.7
+  name: StorageGRID
   search: storagegrid-enable,storagegrid-117
   downlevel: true
   internal:
@@ -10,10 +10,21 @@ settings:
     pdf_enabled: true
     harmony_enabled: false
     hide_language_selector: false
+  versions:
+  - version-number: '11.7'
+    url: "/storagegrid-117"
+  - version-number: '11.9'
+    url: "/storagegrid"
+  - version-number: '11.8'
+    url: "/storagegrid-118"
+  - version-number: '11.6'
+    url: "/storagegrid-116"
+  - version-number: '11.5'
+    url: "/storagegrid-115"
   langs: ja-jp,us-en,de-de,es-es,fr-fr,it-it,pt-br,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: StorageGRID 11.7ドキュメント
+  - title: StorageGRID 11.7のドキュメント
     url: "/index.html"
   - title: リリースノート
     url: "/release-notes/index.html"
@@ -58,8 +69,6 @@ sidebar:
     - section: sg100-1000
   - title: StorageGRID を有効にします
     url: "/storagegrid-enable.html"
-  - title: その他のバージョン
-    url: "/earlier-versions.html"
   - title: 法的通知
     url: "/legal-notices.html"
 product-family:
