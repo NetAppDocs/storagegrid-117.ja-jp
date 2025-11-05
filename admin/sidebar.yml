@@ -283,6 +283,8 @@ entries:
       url: "/admin/what-storage-volume-watermarks-are.html"
   - title: オブジェクトメタデータストレージを管理する
     url: "/admin/managing-object-metadata-storage.html"
+  - title: メタデータ予約領域設定を増やす
+    url: "/admin/increasing-metadata-reserved-space-setting.html"
   - title: 格納オブジェクトを圧縮します
     url: "/admin/configuring-stored-object-compression.html"
   - title: ストレージノード設定
